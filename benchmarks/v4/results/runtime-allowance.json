@@ -1,0 +1,71 @@
+{
+  "checks": {
+    "statusPaused": true,
+    "guidedResponse": true,
+    "noPaidCallNotice": true
+  },
+  "status": {
+    "configured": false,
+    "service": "allowance-reached",
+    "remainingUsd": 0,
+    "dailyAllowanceUsd": 0.5,
+    "resetsAt": "00:00 UTC"
+  },
+  "response": {
+    "topic": "refund",
+    "foreign": false,
+    "urgent": false,
+    "cyber": false,
+    "danger": false,
+    "lawCards": [
+      {
+        "id": "ecommerce-grievance",
+        "topic": "refund",
+        "sourceId": "ecommerce-guidance",
+        "section": "Official grievance guidance",
+        "title": "An e-commerce platform has a grievance route",
+        "text": "The Department states that e-commerce grievance officers must acknowledge complaints within 48 hours and redress them within one month. These are platform grievance duties, not a guaranteed refund or a court limitation period.",
+        "hi": "\u0908-\u0915\u0949\u092e\u0930\u094d\u0938 \u0936\u093f\u0915\u093e\u092f\u0924 \u0905\u0927\u093f\u0915\u093e\u0930\u0940 \u0915\u094b \u0936\u093f\u0915\u093e\u092f\u0924 48 \u0918\u0902\u091f\u0947 \u092e\u0947\u0902 \u0938\u094d\u0935\u0940\u0915\u093e\u0930 \u0915\u0930\u0928\u0940 \u0914\u0930 \u090f\u0915 \u092e\u0939\u0940\u0928\u0947 \u092e\u0947\u0902 \u0928\u093f\u0935\u093e\u0930\u0923 \u0915\u0930\u0928\u093e \u0939\u094b\u0924\u093e \u0939\u0948\u0964 \u092f\u0939 \u0930\u093f\u092b\u0902\u0921 \u0915\u0940 \u0917\u093e\u0930\u0902\u091f\u0940 \u092f\u093e \u0905\u0926\u093e\u0932\u0924 \u0915\u0940 \u0938\u092e\u092f-\u0938\u0940\u092e\u093e \u0928\u0939\u0940\u0902 \u0939\u0948\u0964",
+        "caution": "Check that the entity and transaction fall within the rules. Preserve the complaint and response. Do not wait on this process if a legal deadline needs advice."
+      },
+      {
+        "id": "ecommerce-future",
+        "topic": "refund",
+        "sourceId": "ecommerce-upcoming",
+        "section": "Commencement date",
+        "title": "Keep announced changes separate from current duties",
+        "text": "The announced 2026 e-commerce amendments commence on 1 January 2027. As of this source review on 6 November 2026, they are future changes, including the announced duty to provide a copy of the recorded complaint.",
+        "hi": "\u0918\u094b\u0937\u093f\u0924 2026 \u0938\u0902\u0936\u094b\u0927\u0928 1 \u091c\u0928\u0935\u0930\u0940 2027 \u0938\u0947 \u0932\u093e\u0917\u0942 \u0939\u094b\u0902\u0917\u0947\u0964 6 \u0928\u0935\u0902\u092c\u0930 2026 \u0915\u0940 \u0938\u092e\u0940\u0915\u094d\u0937\u093e \u0915\u0947 \u0905\u0928\u0941\u0938\u093e\u0930 \u092f\u0947 \u092d\u0935\u093f\u0937\u094d\u092f \u0915\u0947 \u092c\u0926\u0932\u093e\u0935 \u0939\u0948\u0902\u0964",
+        "caution": "Check the effective date and operative notification before relying on an amended duty. The library is not a live update service."
+      },
+      {
+        "id": "consumer-complaint",
+        "topic": "refund",
+        "sourceId": "consumer-act",
+        "section": "Section 35",
+        "title": "Consumer complaints have a formal route",
+        "text": "Section 35 of the Consumer Protection Act, 2019 provides for complaints by consumers and certain other eligible complainants to a District Commission. The correct forum, eligibility and filing requirements still need checking.",
+        "hi": "\u0909\u092a\u092d\u094b\u0915\u094d\u0924\u093e \u0938\u0902\u0930\u0915\u094d\u0937\u0923 \u0905\u0927\u093f\u0928\u093f\u092f\u092e, 2019 \u0915\u0940 \u0927\u093e\u0930\u093e 35 \u0909\u092a\u092d\u094b\u0915\u094d\u0924\u093e\u0913\u0902 \u0914\u0930 \u0915\u0941\u091b \u0905\u0928\u094d\u092f \u092a\u093e\u0924\u094d\u0930 \u0936\u093f\u0915\u093e\u092f\u0924\u0915\u0930\u094d\u0924\u093e\u0913\u0902 \u0926\u094d\u0935\u093e\u0930\u093e \u091c\u093f\u0932\u093e \u0906\u092f\u094b\u0917 \u092e\u0947\u0902 \u0936\u093f\u0915\u093e\u092f\u0924 \u0915\u093e \u092a\u094d\u0930\u093e\u0935\u0927\u093e\u0928 \u0915\u0930\u0924\u0940 \u0939\u0948\u0964 \u092a\u093e\u0924\u094d\u0930\u0924\u093e, \u0938\u0939\u0940 \u092e\u0902\u091a \u0914\u0930 \u092a\u094d\u0930\u0915\u094d\u0930\u093f\u092f\u093e \u0915\u0940 \u091c\u093e\u0901\u091a \u091c\u0930\u0942\u0930\u0940 \u0939\u0948.",
+        "caution": "NCH is a pre-litigation service, not a consumer court. Do not assume every commercial purchase or rental dispute qualifies."
+      }
+    ],
+    "knowledgeVersion": "2026-11-06.1",
+    "mode": "guided",
+    "reply": "For a delayed refund, preserve the order, payment and seller messages. Write to the seller with the resolution you want. The National Consumer Helpline provides pre-litigation help; it is not a consumer court and does not guarantee a refund.",
+    "question": "What did you buy, when did you pay, and what refund response have you received?",
+    "sourceIds": [
+      "nch",
+      "consumer-act",
+      "nalsa",
+      "ecommerce-guidance",
+      "ecommerce-upcoming"
+    ],
+    "summary": "Is NCH a consumer court?",
+    "facts": [],
+    "documentFindings": [],
+    "failureCode": "connection_error",
+    "notice": "The daily AI allowance is reached or usage tracking is unavailable. Guided information remains available; no paid request was sent.",
+    "requestId": "431d6873-3530-4ead-9778-96e1b2c41855"
+  },
+  "scope": "Local preview only; temporary counter setting restored to the saved actual usage afterwards."
+}

@@ -2,9 +2,27 @@ import { unzipSync, strFromU8 } from 'fflate';
 
 export type Attachment = {
   id: string; name: string; kind: 'text' | 'image'; text: string;
-  image?: string; pages?: number; warnings: string[]; size: number;
+  image?: string; pages?: number; page?:number; coverage?:string; sourceFile?:File; warnings: string[]; size: number;
 };
 export const DOCUMENT_LIMITS={files:3,bytes:10*1024*1024,characters:18000,pages:20,imagePixels:1800};
+
+export async function readScannedPdfPage(file:File,pageNumber=1,id=crypto.randomUUID()):Promise<Attachment>{
+ if(file.size>DOCUMENT_LIMITS.bytes)throw new Error('Each file must be 10 MB or smaller.');
+ const pdfjs=await import('pdfjs-dist');pdfjs.GlobalWorkerOptions.workerSrc='/pdf.worker.min.mjs';
+ const task=pdfjs.getDocument({data:new Uint8Array(await file.arrayBuffer()),useSystemFonts:true});
+ const timer=setTimeout(()=>task.destroy(),25000);
+ try{
+  const pdf=await task.promise;
+  if(!Number.isInteger(pageNumber)||pageNumber<1||pageNumber>Math.min(pdf.numPages,500))throw new Error('Choose an available page between 1 and 500.');
+  const page=await pdf.getPage(pageNumber),size=page.getViewport({scale:1});
+  const viewport=page.getViewport({scale:Math.min(2,DOCUMENT_LIMITS.imagePixels/Math.max(size.width,size.height))});
+  const canvas=document.createElement('canvas');canvas.width=Math.ceil(viewport.width);canvas.height=Math.ceil(viewport.height);
+  await page.render({canvas,viewport}).promise;
+  const image=canvas.toDataURL('image/jpeg',0.92);page.cleanup();
+  if(image.length>3000000)throw new Error('Rendered page is too detailed; crop the relevant section as an image.');
+  return {id,name:file.name.slice(0,180),kind:'image',text:'',image,pages:pdf.numPages,page:pageNumber,sourceFile:file,size:file.size,coverage:`Only PDF page ${pageNumber} of ${pdf.numPages} is supplied as an image. All other pages are unseen.`,warnings:['Scanned page reading uses unverified AI vision. Check every name, amount and date against the page.',`Only page ${pageNumber} will be sent. Select another page below if needed; the entire PDF is not sent.`]};
+ }finally{clearTimeout(timer);await task.destroy()}
+}
 
 function limitText(text:string){
  const cleaned=text.replace(/\u0000/g,'').trim();
@@ -58,7 +76,7 @@ export async function readAttachment(file:File):Promise<Attachment>{
   const task=pdfjs.getDocument({data:new Uint8Array(await file.arrayBuffer()),useSystemFonts:true});
   const timeout=setTimeout(()=>task.destroy(),25000);
   try{
-   const pdf=await task.promise;base.pages=pdf.numPages;
+   const pdf=await task.promise;base.pages=pdf.numPages;base.sourceFile=file;
    if(pdf.numPages>DOCUMENT_LIMITS.pages)base.warnings.push(`Only the first ${DOCUMENT_LIMITS.pages} of ${pdf.numPages} pages were read.`);
    let text='';const blank:number[]=[];
    for(let i=1;i<=Math.min(pdf.numPages,DOCUMENT_LIMITS.pages);i++){
@@ -68,9 +86,9 @@ export async function readAttachment(file:File):Promise<Attachment>{
     text+=`\n[Page ${i}]\n${pageText}\n`;page.cleanup();
     if(text.length>DOCUMENT_LIMITS.characters){base.warnings.push(`Text extraction stopped on page ${i} at the 18,000-character limit.`);break;}
    }
-   base.text=limitText(text).text;
+   base.text=limitText(text).text;base.coverage=`Extracted up to ${Math.min(pdf.numPages,DOCUMENT_LIMITS.pages)} of ${pdf.numPages} PDF pages, capped at 18000 characters. Blank, omitted or truncated content is not established by the extract.`;
    if(blank.length)base.warnings.push(`Little or no text on page(s) ${blank.join(', ')}. Scans are not read as text: attach a clear image of the relevant page for AI vision.`);
-   if(base.text.replace(/\[Page \d+\]/g,'').trim().length<15)throw new Error('This PDF appears scanned or has no readable text. Attach a JPG/PNG of the relevant page instead.');
+   if(base.text.replace(/\[Page \d+\]/g,'').trim().length<15)return await readScannedPdfPage(file,1,base.id);
   }catch(e){if(e instanceof Error&&/password/i.test(e.message))throw new Error('This PDF is password protected. Please provide an unlocked copy.');throw e}finally{clearTimeout(timeout);await task.destroy()}
  }else throw new Error('Supported formats: PDF, DOCX, TXT, MD, CSV, JPG, PNG and WebP.');
  if(!base.text.trim())throw new Error('No readable text found. Try another format.');

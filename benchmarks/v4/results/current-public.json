@@ -1,0 +1,1290 @@
+{
+  "engine": "current",
+  "split": "public",
+  "sourceHash": "bae7ca8cef37679e3e2da2d60d30316c8c4038670ad35a25e040856ac8ca9e2e",
+  "inputHash": "bda1362e14378b1cbe6f3fee288ae00c67c564b30b7ace48d3b6ba2321649f23",
+  "startedAt": "2026-11-05T19:41:07.785Z",
+  "records": [
+    {
+      "id": "public-row-7",
+      "checks": [
+        {
+          "name": "public-label",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.1",
+        "mode": "ai",
+        "reply": "Supported in substance: the clause says the execution, existence and performance of the Agreement must be kept confidential and not disclosed by either Party without prior written consent. It does not separately say “the fact that the Agreement was agreed or negotiated,” though that may be related wording rather than a separate term. This is a document-reading assessment only, not a view on enforceability.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [
+          {
+            "attachmentId": "doc-1",
+            "quote": "The execution, existence and performance of this Agreement shall be kept confidential",
+            "comment": "This text supports confidentiality over the agreement’s execution, existence, and performance. Vision is unverified; this is from the supplied text.",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 4,
+                "end": 89,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          },
+          {
+            "attachmentId": "doc-1",
+            "quote": "shall not be disclosed by either Party without the prior written consent of the other",
+            "comment": "This states a non-disclosure rule for both parties unless the other party gives prior written consent.",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 116,
+                "end": 201,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          }
+        ],
+        "documentAnswer": {
+          "verdict": "supported",
+          "answer": "The clause supports a confidentiality duty covering the Agreement’s execution, existence, and performance, and it bars disclosure by either party without prior written consent. It does not expressly use the words “agreed or negotiated,” so that specific phrasing is not separately stated in the text.",
+          "evidence": [
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "The execution, existence and performance of this Agreement shall be kept confidential",
+              "locators": [
+                {
+                  "start": 4,
+                  "end": 89,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            },
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "shall not be disclosed by either Party without the prior written consent of the other",
+              "locators": [
+                {
+                  "start": 116,
+                  "end": 201,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 1714,
+          "outputTokens": 321,
+          "totalTokens": 2035
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 1714,
+        "completion_tokens": 321,
+        "total_tokens": 2035,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.00273,
+      "latencyMs": 2510,
+      "promptHash": "33cbb63e943a220c7fb69e0d33d7b96eb55fd226c6138cd12fe1f435ecbf32d9",
+      "requestId": "req_a3519584ebcd4944a8e345a7b7f6580e"
+    },
+    {
+      "id": "public-row-11",
+      "checks": [
+        {
+          "name": "public-label",
+          "pass": false
+        }
+      ],
+      "pass": false,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.1",
+        "mode": "ai",
+        "reply": "Supported in part: the clause defines “Confidential Information” to include information relating to the existence of the Agreement. But it does not expressly say the Receiving Party shall not disclose that the Agreement was agreed or negotiated, and it does not mention negotiation at all. So the text supports confidentiality of existence-related information, not the broader statement you asked about.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [
+          {
+            "attachmentId": "doc-1",
+            "quote": "information relating to the existence of this Agreement",
+            "comment": "This text includes existence-related information within the defined confidential information. Vision is unverified; this is from the supplied text.",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 45,
+                "end": 100,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          }
+        ],
+        "documentAnswer": {
+          "verdict": "not_found",
+          "answer": "The supplied clause does not state that the Receiving Party shall not disclose that the Agreement was agreed or negotiated. It only says confidential information includes information relating to the existence of the Agreement.",
+          "evidence": [
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "Confidential Information shall mean: ii) information relating to the existence of this Agreement;",
+              "locators": [
+                {
+                  "start": 4,
+                  "end": 101,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 1696,
+          "outputTokens": 223,
+          "totalTokens": 1919
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 1696,
+        "completion_tokens": 223,
+        "total_tokens": 1919,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.0022755,
+      "latencyMs": 1628,
+      "promptHash": "f117628f79f15a9e55dcab4cb9b6ad3e2afc723a7408edc64b451401aea15bf0",
+      "requestId": "req_cb50489566fc4492be7cf081a40c4335"
+    },
+    {
+      "id": "public-row-14",
+      "checks": [
+        {
+          "name": "public-label",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.1",
+        "mode": "ai",
+        "reply": "Supported in part: the clause says neither party may make “public disclosure… relating to this Agreement, its subject matter or the Information” without prior written consent, and that includes “promotional or marketing” announcements. It does not expressly say the Receiving Party may not disclose the fact that the Agreement was agreed or negotiated; that broader wording is not stated in the excerpt. The only express exception shown is disclosure required by a governmental or legal requirement, with prior written notice.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [
+          {
+            "attachmentId": "doc-1",
+            "quote": "No media releases, public announcements or public disclosure by either party relating to this Agreement, its subject matter or the Information",
+            "comment": "This text supports a restriction on public disclosure connected to the agreement and related information.",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 204,
+                "end": 346,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          },
+          {
+            "attachmentId": "doc-1",
+            "quote": "required to be disclosed pursuant to a governmental or legal requirement",
+            "comment": "This shows an express exception for legally required disclosure, with notice to the other party.",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 6,
+                "end": 78,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          }
+        ],
+        "documentAnswer": {
+          "verdict": "supported",
+          "answer": "The clause supports a ban on public disclosure relating to the Agreement, its subject matter, or the Information, unless prior written consent is given. It does not expressly state that the Receiving Party may not disclose the fact that the Agreement was agreed or negotiated, so that broader proposition is not shown by this excerpt.",
+          "evidence": [
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "No media releases, public announcements or public disclosure by either party relating to this Agreement, its subject matter or the Information",
+              "locators": [
+                {
+                  "start": 204,
+                  "end": 346,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            },
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "required to be disclosed pursuant to a governmental or legal requirement provided that the disclosing party gives to the other party written notice of such requirement prior to any such disclosure",
+              "locators": [
+                {
+                  "start": 6,
+                  "end": 202,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 1759,
+          "outputTokens": 367,
+          "totalTokens": 2126
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 1759,
+        "completion_tokens": 367,
+        "total_tokens": 2126,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.00297075,
+      "latencyMs": 1828,
+      "promptHash": "90e0960fe7d7e46179641a94823a5e1799092d07849b79a1704dc3fe769648d5",
+      "requestId": "req_319854526d1849f18a5caff0f373473c"
+    },
+    {
+      "id": "public-row-17",
+      "checks": [
+        {
+          "name": "public-label",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.1",
+        "mode": "ai",
+        "reply": "Supported: the clause includes “the existence and content of this Agreement” within Confidential Information, so it treats the fact of the agreement as confidential information. What is not stated is a separate, explicit sentence saying the Receiving Party “shall not disclose” that the Agreement was agreed or negotiated. The excerpt does not expressly mention “negotiated,” so that part is not established from this text alone.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [
+          {
+            "attachmentId": "doc-1",
+            "quote": "the existence and content of this Agreement",
+            "comment": "This text shows the agreement’s existence is included in Confidential Information. Vision is unverified; this is from the supplied text only.",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 756,
+                "end": 799,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          }
+        ],
+        "documentAnswer": {
+          "verdict": "supported",
+          "answer": "The clause supports that the existence of the Agreement is treated as confidential information. It does not expressly state, in those words, that the Receiving Party shall not disclose that the Agreement was agreed or negotiated, and “negotiated” is not mentioned in the excerpt.",
+          "evidence": [
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "the existence and content of this Agreement",
+              "locators": [
+                {
+                  "start": 756,
+                  "end": 799,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            },
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "including: (e) the contemplation and implementation of the Purpose, and the existence and content of this Agreement;",
+              "locators": [
+                {
+                  "start": 684,
+                  "end": 800,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 1821,
+          "outputTokens": 271,
+          "totalTokens": 2092
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 1821,
+        "completion_tokens": 271,
+        "total_tokens": 2092,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.00258525,
+      "latencyMs": 1741,
+      "promptHash": "b7b1269500d45cfd54ea81e1f38e72be9daf7b0316de5d428ee61da331384160",
+      "requestId": "req_73d42a57beca452bb1653d74ddf7e02a"
+    },
+    {
+      "id": "public-row-34",
+      "checks": [
+        {
+          "name": "public-label",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.1",
+        "mode": "ai",
+        "reply": "Supported in part: the clause says a party may not disclose “the fact that discussions between the parties are taking place concerning the Transaction,” which covers the existence of negotiations. It also bars disclosure of “any terms or other facts relating to the Transaction.” What is not stated is a separate, general ban on disclosing that the Agreement itself was “agreed”; that exact point is not expressly written here.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [
+          {
+            "attachmentId": "doc-1",
+            "quote": "the fact that discussions between the parties are taking place concerning the Transaction",
+            "comment": "This expressly protects the existence of discussions/negotiations.",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 344,
+                "end": 433,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          },
+          {
+            "attachmentId": "doc-1",
+            "quote": "any terms or other facts relating to the Transaction",
+            "comment": "This is a broader confidentiality phrase about transaction-related information, but it does not separately say the Agreement was “agreed.”",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 438,
+                "end": 490,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          }
+        ],
+        "documentAnswer": {
+          "verdict": "supported",
+          "answer": "The clause supports a confidentiality rule covering the fact that the parties are discussing the Transaction, which includes negotiations. It does not expressly state a separate prohibition on saying the Agreement was agreed.",
+          "evidence": [
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "the fact that discussions between the parties are taking place concerning the Transaction",
+              "locators": [
+                {
+                  "start": 344,
+                  "end": 433,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            },
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "any terms or other facts relating to the Transaction",
+              "locators": [
+                {
+                  "start": 438,
+                  "end": 490,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 1766,
+          "outputTokens": 287,
+          "totalTokens": 2053
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 1766,
+        "completion_tokens": 287,
+        "total_tokens": 2053,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.002616,
+      "latencyMs": 1656,
+      "promptHash": "2ec3b9da92434e6c6c19ec7fdb883596f9328743d8f88ae9a809d1bb784ab2e4",
+      "requestId": "req_92e4e9f3fef04f15bfdfebaed53eb9eb"
+    },
+    {
+      "id": "public-row-38",
+      "checks": [
+        {
+          "name": "public-label",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.1",
+        "mode": "ai",
+        "reply": "The clause supports that the Receiving Party must not disclose the existence of discussions about the Proposed Transaction, and it also treats that existence as Confidential Information. It does not use the exact words “agreed or negotiated,” but it does cover “the fact that discussions are taking place” and related facts. This is a document-reading answer only, not a view on enforceability.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [
+          {
+            "attachmentId": "doc-1",
+            "quote": "the existence of discussions between the Parties regarding the Proposed Transaction shall constitute Confidential Information hereunder.",
+            "comment": "This says the existence of discussions is treated as Confidential Information.",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 32,
+                "end": 168,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          },
+          {
+            "attachmentId": "doc-1",
+            "quote": "the fact that discussions are taking place with respect thereto",
+            "comment": "This supports a duty not to disclose that discussions are taking place, subject to the stated representative exception.",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 483,
+                "end": 546,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          }
+        ],
+        "documentAnswer": {
+          "verdict": "supported",
+          "answer": "The clause supports that the Receiving Party must not disclose that discussions are taking place about the Proposed Transaction, and it treats that fact as Confidential Information. It does not separately say “agreed” in those exact words, but it does cover related discussion/negotiation facts.",
+          "evidence": [
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "the existence of discussions between the Parties regarding the Proposed Transaction shall constitute Confidential Information hereunder.",
+              "locators": [
+                {
+                  "start": 32,
+                  "end": 168,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            },
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "the fact that discussions are taking place with respect thereto",
+              "locators": [
+                {
+                  "start": 483,
+                  "end": 546,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 1896,
+          "outputTokens": 306,
+          "totalTokens": 2202
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 1896,
+        "completion_tokens": 306,
+        "total_tokens": 2202,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.002799,
+      "latencyMs": 1779,
+      "promptHash": "2400f8f3e647518e04f1a887001dc2d9c72e46ba8ec086dca1d4268c33b911ee",
+      "requestId": "req_39ef4271c7664d4fb33bda2909c1d4cf"
+    },
+    {
+      "id": "public-row-41",
+      "checks": [
+        {
+          "name": "public-label",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.1",
+        "mode": "ai",
+        "reply": "The clause supports that confidentiality and privilege over the Information are expressly reserved, even if disputes are pending or arise later. It does not state that the Receiving Party must not disclose the fact that the Agreement was agreed or negotiated. So that specific non-disclosure point is not found in the supplied text.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [
+          {
+            "attachmentId": "doc-1",
+            "quote": "the provision of the Information is not intended to and should not be construed as a waiver of any confidentiality or privilege",
+            "comment": "This text expressly reserves confidentiality and privilege over the Information.",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 159,
+                "end": 286,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          },
+          {
+            "attachmentId": "doc-1",
+            "quote": "any pending or future disputes between them",
+            "comment": "The clause says the reservation applies despite pending or future disputes.",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 58,
+                "end": 101,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          }
+        ],
+        "documentAnswer": {
+          "verdict": "not_found",
+          "answer": "The supplied clause does not state that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated. It only says confidentiality and privilege over the Information are expressly reserved.",
+          "evidence": [
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "the provision of the Information is not intended to and should not be construed as a waiver of any confidentiality or privilege",
+              "locators": [
+                {
+                  "start": 159,
+                  "end": 286,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            },
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "such confidentiality and privileges are expressly reserved",
+              "locators": [
+                {
+                  "start": 332,
+                  "end": 390,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 1743,
+          "outputTokens": 267,
+          "totalTokens": 2010
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 1743,
+        "completion_tokens": 267,
+        "total_tokens": 2010,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.00250875,
+      "latencyMs": 1572,
+      "promptHash": "33131b4451567f4c30167c7fa8e311baeccc9c79eb190dd28a8325c53cc6409d",
+      "requestId": "req_5817cdeb219f4140844c7dc685c8a307"
+    },
+    {
+      "id": "public-row-45",
+      "checks": [
+        {
+          "name": "public-label",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.1",
+        "mode": "ai",
+        "reply": "The clause does not support a statement that the Receiving Party must keep secret the fact that the Agreement was agreed or negotiated. What it does say is narrower: the materials may be used only for evaluating a Possible Transaction. On the supplied text, a broader non-disclosure rule about the agreement or negotiations is not stated.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": {
+          "verdict": "not_found",
+          "answer": "The supplied clause does not establish a rule that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated. It only states a limited purpose for using the Evaluation Materials, so the broader non-disclosure proposition is not stated in this text.",
+          "evidence": [],
+          "verification": "No supporting passage identified in the supplied text. Omitted pages and authenticity still need review."
+        },
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 1701,
+          "outputTokens": 227,
+          "totalTokens": 1928
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 1701,
+        "completion_tokens": 227,
+        "total_tokens": 1928,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.00229725,
+      "latencyMs": 1647,
+      "promptHash": "c06a51c1a42aa4acee5911099fff010e060146107ac64c4f24b2b2a762bf9e84",
+      "requestId": "req_b080552be52e456992177766a844ac2a"
+    },
+    {
+      "id": "public-row-50",
+      "checks": [
+        {
+          "name": "public-label",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.1",
+        "mode": "ai",
+        "reply": "Supported: the clause says the Receiving Party must not divulge “any such Proprietary Information or any information derived therefrom” to third persons without written permission, except to Representatives. It does not expressly say the Receiving Party may not disclose the fact that the Agreement was agreed or negotiated. On this excerpt alone, that specific point is not stated.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [
+          {
+            "attachmentId": "doc-1",
+            "quote": "not to divulge any such Proprietary Information or any information derived therefrom to any third person without prior written permission",
+            "comment": "This states a nondisclosure duty for Proprietary Information and derived information, with an exception for Representatives.",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 517,
+                "end": 654,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          }
+        ],
+        "documentAnswer": {
+          "verdict": "not_found",
+          "answer": "The excerpt supports a duty not to disclose Proprietary Information or derived information, except to Representatives. It does not expressly state that the Receiving Party must not disclose the fact that the Agreement was agreed or negotiated.",
+          "evidence": [
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "not to divulge any such Proprietary Information or any information derived therefrom to any third person without prior written permission",
+              "locators": [
+                {
+                  "start": 517,
+                  "end": 654,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            },
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "excluding disclosure to Representatives",
+              "locators": [
+                {
+                  "start": 680,
+                  "end": 719,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 1813,
+          "outputTokens": 259,
+          "totalTokens": 2072
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 1813,
+        "completion_tokens": 259,
+        "total_tokens": 2072,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.00252525,
+      "latencyMs": 1530,
+      "promptHash": "6b5dcfb889790d72d359d3d6776c5c6ca157c13229576b5e1a6e207cb2b72dc7",
+      "requestId": "req_6680866b1955487abed5bb2d489d6e3e"
+    },
+    {
+      "id": "public-row-55",
+      "checks": [
+        {
+          "name": "public-label",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.1",
+        "mode": "ai",
+        "reply": "The clause does not clearly say that the Receiving Party must not disclose that the Agreement was agreed or negotiated. What it does say is that the agreement’s purpose includes obligations relating to the protection of confidential information, but the excerpt does not define that specific fact as confidential or state a separate non-disclosure rule for the fact of negotiation/agreement. Because only this short excerpt is supplied, the point needs verification from the full document.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [
+          {
+            "attachmentId": "doc-1",
+            "quote": "obligations relating to the protection of confidential information",
+            "comment": "This shows the agreement refers to confidentiality obligations as part of its purpose, but it does not itself state the exact non-disclosure rule asked about. Vision is unverified because this is a text document.",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 221,
+                "end": 287,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          }
+        ],
+        "documentAnswer": {
+          "verdict": "not_found",
+          "answer": "The excerpt does not establish a rule that the Receiving Party must not disclose that the Agreement was agreed or negotiated. It only refers generally to obligations about protecting confidential information, without stating that the fact of negotiation or agreement is covered.",
+          "evidence": [
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "obligations relating to the protection of confidential information",
+              "locators": [
+                {
+                  "start": 221,
+                  "end": 287,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [
+          {
+            "kind": "missing_context",
+            "summary": "The supplied excerpt is incomplete and does not identify any specific clause saying the Receiving Party may or may not disclose that the Agreement was agreed or negotiated.",
+            "evidence": [
+              {
+                "attachmentId": "doc-1",
+                "name": "public-legalbench-clause.txt",
+                "quote": "obligations relating to the protection of confidential information",
+                "locators": [
+                  {
+                    "start": 221,
+                    "end": 287,
+                    "page": null,
+                    "lineStart": 1,
+                    "lineEnd": 1
+                  }
+                ]
+              }
+            ],
+            "verification": "Quotes matched to supplied text. Potential issue only; legal precedence and completeness are not determined."
+          }
+        ],
+        "usage": {
+          "inputTokens": 1723,
+          "outputTokens": 341,
+          "totalTokens": 2064
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 1723,
+        "completion_tokens": 341,
+        "total_tokens": 2064,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.00282675,
+      "latencyMs": 1964,
+      "promptHash": "299de4f76989b534d53735866a92e06ce342186c8b7646264d7258bdc9015063",
+      "requestId": "req_440455707cbd4ece87266b60e2834c36"
+    },
+    {
+      "id": "public-row-75",
+      "checks": [
+        {
+          "name": "public-label",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.1",
+        "mode": "ai",
+        "reply": "The clause supports a limited non-reproduction rule for “Confidential Information,” but it does not state that the Receiving Party must keep secret the fact that the Agreement was agreed or negotiated. On the supplied text alone, that specific proposition is not established. I can also check whether the defined term “Confidential Information” elsewhere includes negotiation or agreement facts, if you have that text.",
+        "question": "Is there any other clause that defines “Confidential Information” or separately mentions negotiation/agreement discussions?",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [
+          {
+            "attachmentId": "doc-1",
+            "quote": "Confidential Information shall not be reproduced in any form",
+            "comment": "This shows a restriction on reproducing confidential information, but not a specific ban on disclosing that the agreement was negotiated or agreed.",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 3,
+                "end": 63,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          }
+        ],
+        "documentAnswer": {
+          "verdict": "not_found",
+          "answer": "The supplied clause does not establish that the Receiving Party must keep secret the fact that the Agreement was agreed or negotiated. It only says Confidential Information shall not be reproduced except as required to accomplish the intent of the Agreement.",
+          "evidence": [
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "Confidential Information shall not be reproduced in any form except as required to accomplish the intent of this Agreement.",
+              "locators": [
+                {
+                  "start": 3,
+                  "end": 126,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 1700,
+          "outputTokens": 264,
+          "totalTokens": 1964
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 1700,
+        "completion_tokens": 264,
+        "total_tokens": 1964,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.002463,
+      "latencyMs": 1916,
+      "promptHash": "24d837966b1d87e52437f7a0f5183e5021c8027820b76d50a985f54aad3f6201",
+      "requestId": "req_ebf7734ee70b403c89686c752a5f813e"
+    },
+    {
+      "id": "public-row-77",
+      "checks": [
+        {
+          "name": "public-label",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.1",
+        "mode": "ai",
+        "reply": "The clause does not support that the Receiving Party must keep secret the fact that the Agreement was agreed or negotiated. The supplied text only shows an exclusion from “Confidential Information” for independently developed or created information; it does not mention agreement, negotiation, or any non-disclosure duty about those facts. Because only one excerpt is provided, the answer is limited to that text.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [
+          {
+            "attachmentId": "doc-1",
+            "quote": "Confidential Information shall not include: iv) information developed or created by one Party independently of the other",
+            "comment": "This states one category that is excluded from Confidential Information.",
+            "name": "public-legalbench-clause.txt",
+            "locators": [
+              {
+                "start": 4,
+                "end": 124,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to extracted text"
+          }
+        ],
+        "documentAnswer": {
+          "verdict": "not_found",
+          "answer": "The excerpt does not establish a rule that the Receiving Party must not disclose that the Agreement was agreed or negotiated. It only excludes independently developed or created information from the definition of Confidential Information, and says nothing about negotiation or agreement facts.",
+          "evidence": [
+            {
+              "attachmentId": "doc-1",
+              "name": "public-legalbench-clause.txt",
+              "quote": "Confidential Information shall not include: iv) information developed or created by one Party independently of the other",
+              "locators": [
+                {
+                  "start": 4,
+                  "end": 124,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 1720,
+          "outputTokens": 321,
+          "totalTokens": 2041
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 1720,
+        "completion_tokens": 321,
+        "total_tokens": 2041,
+        "prompt_tokens_details": {
+          "cached_tokens": 1536,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.0027345,
+      "latencyMs": 1795,
+      "promptHash": "8e33675a609623138f57c9b370e6a7bb04bdf5def93763cc963a15070981e011",
+      "requestId": "req_a3d9f7d387914833aaff767213669ac7"
+    }
+  ],
+  "summary": {
+    "completed": 12,
+    "planned": 12,
+    "pass": 11,
+    "aiAnswers": 12,
+    "ledgerAttempts": 79,
+    "ledgerAccountedUsd": 0.1600530000000001,
+    "expertReview": "pending"
+  }
+}

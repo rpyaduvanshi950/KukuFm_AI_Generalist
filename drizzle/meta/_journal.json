@@ -1,5 +1,13 @@
 {
   "version": "7",
   "dialect": "sqlite",
-  "entries": []
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1793906918723,
+      "tag": "0000_cooing_sauron",
+      "breakpoints": true
+    }
+  ]
 }

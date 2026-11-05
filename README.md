@@ -1,3 +1,9 @@
+## Ordered improvements — 6 November 2026
+
+The private pilot now includes focused document reading, source-derived page/line references, potential conflict flags, selected-page scanned-PDF vision, Maharashtra rental registration guidance, e-commerce grievance information, wage records, a user-entered timeline and a downloadable lawyer summary. A persistent D1 usage guard provides a conservative $0.50 daily AI allowance.
+
+See [v4 benchmark results](benchmarks/v4/REPORT.md), [the source register](SOURCE_REGISTER.md), [operations and privacy](OPERATIONS.md) and [the independent review pack](benchmarks/v4/REVIEW.md). These changes do not constitute independent legal validation or a broad public release.
+
 ## GPT update — 6 November 2026
 
 The private deployment now uses GPT-5.4 mini with a 1,200-token output ceiling and the evaluated v2 prompt. See [the GPT benchmark report](benchmarks/openai/REPORT.md) for raw results, costs and remaining failures. The interface uses a simpler case workspace with readable text and expandable references. The local benchmark key belongs in the ignored `.env.openai.local` file; hosted keys are server secrets.

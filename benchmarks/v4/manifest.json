@@ -1,0 +1,19 @@
+{
+  "frozenDate": "2026-11-06",
+  "development": {
+    "count": 24,
+    "sha256": "d48dcd197176caa8541dfbbbc00a0b91210d54e598fd3d497b977e45c6b730ef"
+  },
+  "final": {
+    "count": 16,
+    "sha256": "c93092ced141c604899d21b5df9aab7bba7fdfa9eaaf5034587bf9adf2cdd3a5"
+  },
+  "reviewStatus": "Authored by implementer. Independent lawyer review pending. Final cases not used for tuning after this freeze.",
+  "maxAttempts": 100,
+  "maxUsd": 0.5,
+  "public": {
+    "count": 12,
+    "sha256": "bda1362e14378b1cbe6f3fee288ae00c67c564b30b7ace48d3b6ba2321649f23",
+    "scope": "Previously inspected 12-row LegalBench sample; regression only, not holdout. Licence and attribution in benchmarks/ATTRIBUTION.md."
+  }
+}

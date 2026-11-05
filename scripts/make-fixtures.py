@@ -28,7 +28,7 @@ im=Image.new('RGB',(1200,650),'white');draw=ImageDraw.Draw(im)
 font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',23)
 for i,line in enumerate(text.splitlines()):draw.text((35,25+i*48),line,fill='black',font=font)
 im.save(root/'refund-record.png')
-# A scanned PDF must produce an honest unsupported-text warning, not an empty success.
+# A scanned PDF must render a selected page and label vision reading as unverified.
 pdf=canvas.Canvas(str(root/'scanned-record.pdf'));pdf.drawImage(str(root/'refund-record.png'),20,350,width=570,height=310);pdf.save()
 (root/'broken.pdf').write_bytes(b'%PDF-1.7\nnot a valid PDF')
 (root/'empty.txt').write_text('')

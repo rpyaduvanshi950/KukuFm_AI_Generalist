@@ -1,3 +1,7 @@
+# Latest ordered improvement pass
+
+See [the v4 evaluation](benchmarks/v4/REPORT.md): frozen development and final sets, exact document verdicts, raw failures, usage and review limitations. Independent lawyer review remains pending.
+
 # Latest GPT evaluation
 
 See [the GPT mini evaluation](benchmarks/openai/REPORT.md) for the 6 November prompt comparison, fresh reading tests, token usage and retained failures.

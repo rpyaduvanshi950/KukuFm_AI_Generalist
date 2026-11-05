@@ -1,0 +1,476 @@
+{
+  "attempts": 94,
+  "accountedUsd": 0.18312825000000008,
+  "requests": [
+    {
+      "runId": "baseline:development:timing-unfixed",
+      "reservedUsd": 0.019173,
+      "at": "2026-11-05T19:27:36.059Z"
+    },
+    {
+      "runId": "baseline:development:timing-denied",
+      "reservedUsd": 0.019143,
+      "at": "2026-11-05T19:27:38.480Z"
+    },
+    {
+      "runId": "baseline:development:timing-positive",
+      "reservedUsd": 0.019161,
+      "at": "2026-11-05T19:27:39.941Z"
+    },
+    {
+      "runId": "baseline:development:missing-price",
+      "reservedUsd": 0.0191595,
+      "at": "2026-11-05T19:27:41.638Z"
+    },
+    {
+      "runId": "baseline:development:price-opposite",
+      "reservedUsd": 0.019119,
+      "at": "2026-11-05T19:27:42.965Z"
+    },
+    {
+      "runId": "baseline:development:conditional-duty",
+      "reservedUsd": 0.0209355,
+      "at": "2026-11-05T19:27:44.301Z"
+    },
+    {
+      "runId": "baseline:development:conditional-overstatement",
+      "reservedUsd": 0.020874,
+      "at": "2026-11-05T19:27:45.840Z"
+    },
+    {
+      "runId": "baseline:development:definition-chain",
+      "reservedUsd": 0.019248,
+      "at": "2026-11-05T19:27:47.599Z"
+    },
+    {
+      "runId": "baseline:development:missing-reference",
+      "reservedUsd": 0.0191835,
+      "at": "2026-11-05T19:27:49.320Z"
+    },
+    {
+      "runId": "baseline:development:quotation-injection",
+      "reservedUsd": 0.02115,
+      "at": "2026-11-05T19:27:50.778Z"
+    },
+    {
+      "runId": "baseline:development:page-citation",
+      "reservedUsd": 0.0208995,
+      "at": "2026-11-05T19:27:52.493Z"
+    },
+    {
+      "runId": "baseline:development:conflicting-dates",
+      "reservedUsd": 0.01929,
+      "at": "2026-11-05T19:27:53.819Z"
+    },
+    {
+      "runId": "baseline:development:unseen-page",
+      "reservedUsd": 0.019191,
+      "at": "2026-11-05T19:27:55.256Z"
+    },
+    {
+      "runId": "baseline:development:hindi-missing",
+      "reservedUsd": 0.021834,
+      "at": "2026-11-05T19:27:56.645Z"
+    },
+    {
+      "runId": "baseline:development:hindi-opposite",
+      "reservedUsd": 0.021798,
+      "at": "2026-11-05T19:27:58.433Z"
+    },
+    {
+      "runId": "baseline:development:signature-unknown",
+      "reservedUsd": 0.019218,
+      "at": "2026-11-05T19:28:00.374Z"
+    },
+    {
+      "runId": "baseline:development:current-danger",
+      "reservedUsd": 0.0211665,
+      "at": "2026-11-05T19:28:02.020Z"
+    },
+    {
+      "runId": "baseline:development:historical-safety",
+      "reservedUsd": 0.0211845,
+      "at": "2026-11-05T19:28:03.177Z"
+    },
+    {
+      "runId": "baseline:development:foreign-law",
+      "reservedUsd": 0.020631,
+      "at": "2026-11-05T19:28:04.474Z"
+    },
+    {
+      "runId": "baseline:development:nch-boundary",
+      "reservedUsd": 0.018759,
+      "at": "2026-11-05T19:28:05.951Z"
+    },
+    {
+      "runId": "baseline:development:unknown-law",
+      "reservedUsd": 0.020949,
+      "at": "2026-11-05T19:28:07.241Z"
+    },
+    {
+      "runId": "baseline:development:all-states",
+      "reservedUsd": 0.0188025,
+      "at": "2026-11-05T19:28:08.469Z"
+    },
+    {
+      "runId": "baseline:development:safe-evidence",
+      "reservedUsd": 0.021183,
+      "at": "2026-11-05T19:28:09.699Z"
+    },
+    {
+      "runId": "current:development:timing-unfixed",
+      "reservedUsd": 0.021618,
+      "at": "2026-11-05T19:36:56.303Z"
+    },
+    {
+      "runId": "current:development:timing-denied",
+      "reservedUsd": 0.021588,
+      "at": "2026-11-05T19:36:58.338Z"
+    },
+    {
+      "runId": "current:development:timing-positive",
+      "reservedUsd": 0.021606,
+      "at": "2026-11-05T19:36:59.707Z"
+    },
+    {
+      "runId": "current:development:missing-price",
+      "reservedUsd": 0.0216045,
+      "at": "2026-11-05T19:37:01.286Z"
+    },
+    {
+      "runId": "current:development:price-opposite",
+      "reservedUsd": 0.021564,
+      "at": "2026-11-05T19:37:02.995Z"
+    },
+    {
+      "runId": "current:development:conditional-duty",
+      "reservedUsd": 0.0233805,
+      "at": "2026-11-05T19:37:04.976Z"
+    },
+    {
+      "runId": "current:development:conditional-overstatement",
+      "reservedUsd": 0.023319,
+      "at": "2026-11-05T19:37:06.861Z"
+    },
+    {
+      "runId": "current:development:definition-chain",
+      "reservedUsd": 0.021693,
+      "at": "2026-11-05T19:37:13.774Z"
+    },
+    {
+      "runId": "current:development:missing-reference",
+      "reservedUsd": 0.0216285,
+      "at": "2026-11-05T19:37:15.710Z"
+    },
+    {
+      "runId": "current:development:quotation-injection",
+      "reservedUsd": 0.026967,
+      "at": "2026-11-05T19:37:17.867Z"
+    },
+    {
+      "runId": "current:development:page-citation",
+      "reservedUsd": 0.0233445,
+      "at": "2026-11-05T19:37:19.245Z"
+    },
+    {
+      "runId": "current:development:conflicting-dates",
+      "reservedUsd": 0.021735,
+      "at": "2026-11-05T19:37:20.726Z"
+    },
+    {
+      "runId": "current:development:unseen-page",
+      "reservedUsd": 0.021636,
+      "at": "2026-11-05T19:37:22.474Z"
+    },
+    {
+      "runId": "current:development:hindi-missing",
+      "reservedUsd": 0.025551,
+      "at": "2026-11-05T19:37:24.422Z"
+    },
+    {
+      "runId": "current:development:hindi-opposite",
+      "reservedUsd": 0.025515,
+      "at": "2026-11-05T19:37:26.183Z"
+    },
+    {
+      "runId": "current:development:signature-unknown",
+      "reservedUsd": 0.021663,
+      "at": "2026-11-05T19:37:27.901Z"
+    },
+    {
+      "runId": "current:development:current-danger",
+      "reservedUsd": 0.0234825,
+      "at": "2026-11-05T19:37:29.432Z"
+    },
+    {
+      "runId": "current:development:historical-safety",
+      "reservedUsd": 0.0235005,
+      "at": "2026-11-05T19:37:30.661Z"
+    },
+    {
+      "runId": "current:development:nch-boundary",
+      "reservedUsd": 0.0265905,
+      "at": "2026-11-05T19:37:32.022Z"
+    },
+    {
+      "runId": "current:development:unknown-law",
+      "reservedUsd": 0.026637,
+      "at": "2026-11-05T19:37:33.319Z"
+    },
+    {
+      "runId": "current:development:all-states",
+      "reservedUsd": 0.0211185,
+      "at": "2026-11-05T19:37:35.265Z"
+    },
+    {
+      "runId": "current:development:safe-evidence",
+      "reservedUsd": 0.023499,
+      "at": "2026-11-05T19:37:36.703Z"
+    },
+    {
+      "runId": "current:focused:development:timing-unfixed",
+      "reservedUsd": 0.014628,
+      "at": "2026-11-05T19:39:14.226Z"
+    },
+    {
+      "runId": "current:focused:development:timing-denied",
+      "reservedUsd": 0.014598,
+      "at": "2026-11-05T19:39:16.136Z"
+    },
+    {
+      "runId": "current:focused:development:timing-positive",
+      "reservedUsd": 0.014616,
+      "at": "2026-11-05T19:39:17.343Z"
+    },
+    {
+      "runId": "current:focused:development:missing-price",
+      "reservedUsd": 0.0146145,
+      "at": "2026-11-05T19:39:18.569Z"
+    },
+    {
+      "runId": "current:focused:development:price-opposite",
+      "reservedUsd": 0.014574,
+      "at": "2026-11-05T19:39:19.696Z"
+    },
+    {
+      "runId": "current:focused:development:conditional-duty",
+      "reservedUsd": 0.0163905,
+      "at": "2026-11-05T19:39:21.545Z"
+    },
+    {
+      "runId": "current:focused:development:conditional-overstatement",
+      "reservedUsd": 0.016329,
+      "at": "2026-11-05T19:39:22.766Z"
+    },
+    {
+      "runId": "current:focused:development:definition-chain",
+      "reservedUsd": 0.014703,
+      "at": "2026-11-05T19:39:23.963Z"
+    },
+    {
+      "runId": "current:focused:development:missing-reference",
+      "reservedUsd": 0.0146385,
+      "at": "2026-11-05T19:39:25.317Z"
+    },
+    {
+      "runId": "current:focused:development:quotation-injection",
+      "reservedUsd": 0.019977,
+      "at": "2026-11-05T19:39:26.980Z"
+    },
+    {
+      "runId": "current:focused:development:page-citation",
+      "reservedUsd": 0.0163545,
+      "at": "2026-11-05T19:39:28.293Z"
+    },
+    {
+      "runId": "current:focused:development:conflicting-dates",
+      "reservedUsd": 0.014745,
+      "at": "2026-11-05T19:39:29.421Z"
+    },
+    {
+      "runId": "current:focused:development:unseen-page",
+      "reservedUsd": 0.014646,
+      "at": "2026-11-05T19:39:31.468Z"
+    },
+    {
+      "runId": "current:focused:development:hindi-missing",
+      "reservedUsd": 0.018549,
+      "at": "2026-11-05T19:39:33.110Z"
+    },
+    {
+      "runId": "current:focused:development:hindi-opposite",
+      "reservedUsd": 0.018513,
+      "at": "2026-11-05T19:39:34.335Z"
+    },
+    {
+      "runId": "current:focused:development:signature-unknown",
+      "reservedUsd": 0.014673,
+      "at": "2026-11-05T19:39:35.769Z"
+    },
+    {
+      "runId": "current:focused:development:current-danger",
+      "reservedUsd": 0.0234825,
+      "at": "2026-11-05T19:39:37.204Z"
+    },
+    {
+      "runId": "current:focused:development:historical-safety",
+      "reservedUsd": 0.0235005,
+      "at": "2026-11-05T19:39:38.796Z"
+    },
+    {
+      "runId": "current:focused:development:nch-boundary",
+      "reservedUsd": 0.0265905,
+      "at": "2026-11-05T19:39:42.746Z"
+    },
+    {
+      "runId": "current:focused:development:unknown-law",
+      "reservedUsd": 0.026637,
+      "at": "2026-11-05T19:39:44.060Z"
+    },
+    {
+      "runId": "current:focused:development:all-states",
+      "reservedUsd": 0.0211185,
+      "at": "2026-11-05T19:39:45.209Z"
+    },
+    {
+      "runId": "current:focused:development:safe-evidence",
+      "reservedUsd": 0.023499,
+      "at": "2026-11-05T19:39:46.330Z"
+    },
+    {
+      "runId": "current::public:public-row-7",
+      "reservedUsd": 0.0221895,
+      "at": "2026-11-05T19:41:07.803Z"
+    },
+    {
+      "runId": "current::public:public-row-11",
+      "reservedUsd": 0.022038,
+      "at": "2026-11-05T19:41:10.302Z"
+    },
+    {
+      "runId": "current::public:public-row-14",
+      "reservedUsd": 0.0225915,
+      "at": "2026-11-05T19:41:11.930Z"
+    },
+    {
+      "runId": "current::public:public-row-17",
+      "reservedUsd": 0.0230865,
+      "at": "2026-11-05T19:41:13.762Z"
+    },
+    {
+      "runId": "current::public:public-row-34",
+      "reservedUsd": 0.0226305,
+      "at": "2026-11-05T19:41:15.506Z"
+    },
+    {
+      "runId": "current::public:public-row-38",
+      "reservedUsd": 0.0239415,
+      "at": "2026-11-05T19:41:17.163Z"
+    },
+    {
+      "runId": "current::public:public-row-41",
+      "reservedUsd": 0.022473,
+      "at": "2026-11-05T19:41:18.944Z"
+    },
+    {
+      "runId": "current::public:public-row-45",
+      "reservedUsd": 0.022089,
+      "at": "2026-11-05T19:41:20.517Z"
+    },
+    {
+      "runId": "current::public:public-row-50",
+      "reservedUsd": 0.022992,
+      "at": "2026-11-05T19:41:22.164Z"
+    },
+    {
+      "runId": "current::public:public-row-55",
+      "reservedUsd": 0.02232,
+      "at": "2026-11-05T19:41:23.696Z"
+    },
+    {
+      "runId": "current::public:public-row-75",
+      "reservedUsd": 0.022077,
+      "at": "2026-11-05T19:41:25.665Z"
+    },
+    {
+      "runId": "current::public:public-row-77",
+      "reservedUsd": 0.02226,
+      "at": "2026-11-05T19:41:27.586Z"
+    },
+    {
+      "runId": "current::final:final-payment-unspecified",
+      "reservedUsd": 0.014631,
+      "at": "2026-11-05T19:44:42.898Z"
+    },
+    {
+      "runId": "current::final:final-fee-denied",
+      "reservedUsd": 0.014562,
+      "at": "2026-11-05T19:44:45.161Z"
+    },
+    {
+      "runId": "current::final:final-fee-positive",
+      "reservedUsd": 0.0146145,
+      "at": "2026-11-05T19:44:55.522Z"
+    },
+    {
+      "runId": "current::final:final-period-unspecified",
+      "reservedUsd": 0.018282,
+      "at": "2026-11-05T19:44:56.613Z"
+    },
+    {
+      "runId": "current::final:final-prohibition",
+      "reservedUsd": 0.014712,
+      "at": "2026-11-05T19:44:58.028Z"
+    },
+    {
+      "runId": "current::final:final-definition",
+      "reservedUsd": 0.0147375,
+      "at": "2026-11-05T19:44:59.358Z"
+    },
+    {
+      "runId": "current::final:final-condition",
+      "reservedUsd": 0.016278,
+      "at": "2026-11-05T19:45:00.889Z"
+    },
+    {
+      "runId": "current::final:final-references",
+      "reservedUsd": 0.014661,
+      "at": "2026-11-05T19:45:02.148Z"
+    },
+    {
+      "runId": "current::final:final-page",
+      "reservedUsd": 0.014655,
+      "at": "2026-11-05T19:45:04.037Z"
+    },
+    {
+      "runId": "current::final:final-conflict",
+      "reservedUsd": 0.0146865,
+      "at": "2026-11-05T19:45:05.370Z"
+    },
+    {
+      "runId": "current::final:final-injection",
+      "reservedUsd": 0.0146295,
+      "at": "2026-11-05T19:45:07.117Z"
+    },
+    {
+      "runId": "current::final:final-hindi",
+      "reservedUsd": 0.0202395,
+      "at": "2026-11-05T19:45:08.539Z"
+    },
+    {
+      "runId": "current::final:final-danger",
+      "reservedUsd": 0.0213045,
+      "at": "2026-11-05T19:45:10.287Z"
+    },
+    {
+      "runId": "current::final:final-state-boundary",
+      "reservedUsd": 0.0229995,
+      "at": "2026-11-05T19:45:11.412Z"
+    },
+    {
+      "runId": "current::final:final-employment-boundary",
+      "reservedUsd": 0.024978,
+      "at": "2026-11-05T19:45:13.063Z"
+    }
+  ]
+}

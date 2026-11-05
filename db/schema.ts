@@ -1,4 +1,8 @@
-// Intentionally empty by default.
-// Add Drizzle tables here when the site actually needs a database.
-// See examples/d1/db/schema.ts for an opt-in example.
-export {};
+import {sqliteTable,text,integer} from 'drizzle-orm/sqlite-core';
+// Aggregate counters only: no messages, documents, identifiers or case facts.
+export const aiBudget=sqliteTable('ai_budget',{
+ day:text('day').primaryKey(),
+ reservedMicros:integer('reserved_micros').notNull().default(0),
+ attempts:integer('attempts').notNull().default(0),
+ failures:integer('failures').notNull().default(0),
+});
