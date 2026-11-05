@@ -12,8 +12,9 @@
     "start": "node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js dev --config dist/server/wrangler.json --local --persist-to .wrangler/state --ip 127.0.0.1 --inspector-port 0",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
-    "test": "node tests/legal.test.mjs && node tests/assistant.test.mjs",
-    "typecheck": "tsc --noEmit"
+    "test": "node tests/legal.test.mjs && node tests/assistant.test.mjs && node tests/benchmark-v3.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "benchmark:offline": "node benchmarks/run-behaviour.mjs all benchmarks/results/regression-all.json && node benchmarks/run-guards.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

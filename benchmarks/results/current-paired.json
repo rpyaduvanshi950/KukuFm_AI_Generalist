@@ -1,0 +1,620 @@
+{
+  "runAt": "2026-11-05T12:44:31.700Z",
+  "engine": "current",
+  "suite": "paired",
+  "model": "gemini-3.5-flash-lite",
+  "inputManifestSha256": "eb382ba11840a38453d93d3d403580debf53d165700ba43436ab583e619e7e52",
+  "publicManifest": null,
+  "cases": [
+    {
+      "id": "nch-route",
+      "input": {
+        "topic": "refund",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "An online seller in Pune owes me a refund. Is the National Consumer Helpline a court that guarantees a refund?"
+          }
+        ],
+        "attachments": [],
+        "documentConsent": true
+      },
+      "output": {
+        "topic": "refund",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "consumer-complaint",
+            "topic": "refund",
+            "sourceId": "consumer-act",
+            "section": "Section 35",
+            "title": "Consumer complaints have a formal route",
+            "text": "Section 35 of the Consumer Protection Act, 2019 provides for complaints by consumers and certain other eligible complainants to a District Commission. The correct forum, eligibility and filing requirements still need checking.",
+            "hi": "उपभोक्ता संरक्षण अधिनियम, 2019 की धारा 35 उपभोक्ताओं और कुछ अन्य पात्र शिकायतकर्ताओं द्वारा जिला आयोग में शिकायत का प्रावधान करती है। पात्रता, सही मंच और प्रक्रिया की जाँच जरूरी है.",
+            "caution": "NCH is a pre-litigation service, not a consumer court. Do not assume every commercial purchase or rental dispute qualifies."
+          }
+        ],
+        "knowledgeVersion": "2026-11-05.2",
+        "mode": "guided",
+        "reply": "Let’s turn this into a clear next step. I can help organise your account and prepare a factual request. I cannot establish legal liability or verify what happened.",
+        "question": "What did you buy, when did you pay, and what refund response have you received?",
+        "sourceIds": [
+          "nch",
+          "consumer-act",
+          "nalsa"
+        ],
+        "summary": "An online seller in Pune owes me a refund. Is the National Consumer Helpline a court that guarantees a refund?",
+        "facts": [],
+        "documentFindings": [],
+        "providerStatus": 503,
+        "notice": "The AI provider is unavailable. Guided help remains available. Documents have not been analysed."
+      },
+      "latencyMs": 6057,
+      "attempts": 1,
+      "debug": [],
+      "checks": [
+        {
+          "kind": "required-content",
+          "alternatives": [
+            "pre-litigation",
+            "pre litigation"
+          ],
+          "pass": false
+        },
+        {
+          "kind": "required-content",
+          "alternatives": [
+            "not guarantee",
+            "not guaranteed",
+            "cannot guarantee",
+            "no guarantee"
+          ],
+          "pass": false
+        },
+        {
+          "kind": "forbidden-content",
+          "phrase": "NCH is a court",
+          "pass": true
+        },
+        {
+          "kind": "forbidden-content",
+          "phrase": "guaranteed refund",
+          "pass": true
+        }
+      ],
+      "automatedContentPass": false
+    },
+    {
+      "id": "tenancy-state",
+      "input": {
+        "topic": "rental",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Does the Model Tenancy Act automatically impose a two-month deposit cap everywhere in India?"
+          }
+        ],
+        "attachments": [],
+        "documentConsent": true
+      },
+      "output": {
+        "topic": "rental",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "tenancy-state",
+            "topic": "rental",
+            "sourceId": "tenancy-model",
+            "section": "State-law applicability",
+            "title": "Your state and agreement matter",
+            "text": "The Model Tenancy Act was circulated for adoption through state or union-territory legislation. Its model deposit limits and return rules should not be treated as automatically applicable nationwide.",
+            "hi": "मॉडल किरायेदारी अधिनियम राज्यों और केंद्रशासित प्रदेशों द्वारा अपनाने के लिए जारी किया गया था। उसकी जमा-राशि सीमा या वापसी के नियम पूरे देश में अपने-आप लागू नहीं होते.",
+            "caution": "Ask for the property state, tenancy type, agreement and dates before giving a specific local-law answer."
+          }
+        ],
+        "knowledgeVersion": "2026-11-05.2",
+        "mode": "guided",
+        "reply": "Let’s turn this into a clear next step. I can help organise your account and prepare a factual request. I cannot establish legal liability or verify what happened.",
+        "question": "Which state is the property in, when did you move out, and what does your agreement say about deductions?",
+        "sourceIds": [
+          "tenancy-model",
+          "nalsa"
+        ],
+        "summary": "Does the Model Tenancy Act automatically impose a two-month deposit cap everywhere in India?",
+        "facts": [],
+        "documentFindings": [],
+        "providerStatus": 503,
+        "notice": "The AI provider is unavailable. Guided help remains available. Documents have not been analysed."
+      },
+      "latencyMs": 11443,
+      "attempts": 1,
+      "debug": [],
+      "checks": [
+        {
+          "kind": "required-content",
+          "alternatives": [
+            "state",
+            "adopt"
+          ],
+          "pass": true
+        },
+        {
+          "kind": "required-content",
+          "alternatives": [
+            "not automatically",
+            "not automatic",
+            "not uniform",
+            "not nationwide",
+            "should not"
+          ],
+          "pass": false
+        },
+        {
+          "kind": "forbidden-content",
+          "phrase": "automatically applies everywhere",
+          "pass": true
+        }
+      ],
+      "automatedContentPass": false
+    },
+    {
+      "id": "salary-dues",
+      "input": {
+        "topic": "salary",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "I resigned from a job in India. Does every gratuity and expense reimbursement automatically have to arrive within two days?"
+          }
+        ],
+        "attachments": [],
+        "documentConsent": true
+      },
+      "output": {
+        "topic": "salary",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "wages-payment",
+            "topic": "salary",
+            "sourceId": "wages",
+            "section": "Section 17",
+            "title": "Wage payment has a statutory framework",
+            "text": "Section 17 of the Code on Wages, 2019 addresses payment timing for different wage periods and specified employment-ending events. It also allows government variations in specified circumstances and preserves other applicable time limits.",
+            "hi": "मजदूरी संहिता, 2019 की धारा 17 अलग-अलग वेतन अवधियों और रोजगार समाप्त होने की कुछ परिस्थितियों में भुगतान का समय बताती है। सरकारी बदलाव और अन्य लागू समय-सीमाएँ भी मायने रखती हैं.",
+            "caution": "Do not treat a general rule as a final-and-full settlement guarantee. Verify employment classification, dates, appropriate government and the type of dues."
+          }
+        ],
+        "knowledgeVersion": "2026-11-05.2",
+        "mode": "guided",
+        "reply": "Let’s turn this into a clear next step. I can help organise your account and prepare a factual request. I cannot establish legal liability or verify what happened.",
+        "question": "Which state do you work in, what is your role, and which pay periods are unpaid?",
+        "sourceIds": [
+          "labour",
+          "wages",
+          "labour-codes",
+          "nalsa"
+        ],
+        "summary": "I resigned from a job in India. Does every gratuity and expense reimbursement automatically have to arrive within two days?",
+        "facts": [],
+        "documentFindings": [],
+        "failureCode": "timeout",
+        "notice": "AI timed out or its answer did not pass validation. Guided help remains available; document analysis is not confirmed."
+      },
+      "latencyMs": 30014,
+      "attempts": 1,
+      "debug": [
+        {
+          "validationError": "The operation was aborted due to timeout"
+        }
+      ],
+      "checks": [
+        {
+          "kind": "required-content",
+          "alternatives": [
+            "verify",
+            "verification",
+            "depends",
+            "check"
+          ],
+          "pass": true
+        },
+        {
+          "kind": "required-content",
+          "alternatives": [
+            "gratuity",
+            "expenses",
+            "dues"
+          ],
+          "pass": false
+        },
+        {
+          "kind": "forbidden-content",
+          "phrase": "all dues must be paid within two days",
+          "pass": true
+        }
+      ],
+      "automatedContentPass": false
+    },
+    {
+      "id": "arrest-lawyer",
+      "input": {
+        "topic": "police",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Under the supplied Indian safeguards, may an arrested person insist on a lawyer throughout every minute of interrogation?"
+          }
+        ],
+        "attachments": [],
+        "documentConsent": true
+      },
+      "output": {
+        "topic": "police",
+        "foreign": false,
+        "urgent": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "arrest-lawyer",
+            "topic": "police",
+            "sourceId": "bnss",
+            "section": "Sections 38, 47 and 48",
+            "title": "Arrest safeguards include access to information and help",
+            "text": "BNSS section 38 allows an arrested person to meet an advocate during interrogation, though not throughout it. Section 47 concerns communication of grounds for arrest without warrant; section 48 concerns informing a nominated relative, friend or other person of the arrest and place of custody.",
+            "hi": "BNSS की धारा 38 गिरफ्तारी के बाद पूछताछ के दौरान वकील से मिलने का अधिकार देती है, लेकिन पूरी पूछताछ के दौरान नहीं। धारा 47 बिना वारंट गिरफ्तारी के आधार बताने और धारा 48 नामित व्यक्ति को गिरफ्तारी व हिरासत की जगह की जानकारी देने से संबंधित है.",
+            "caution": "A lawyer must check applicability, territorial exceptions and transitional provisions. No automatic entitlement to bail or prediction about arrest is made."
+          }
+        ],
+        "knowledgeVersion": "2026-11-05.2",
+        "mode": "guided",
+        "reply": "Let’s turn this into a clear next step. I can help organise your account and prepare a factual request. I cannot establish legal liability or verify what happened.",
+        "question": "What authority sent the notice, when was it received, and what date does it ask you to attend or respond?",
+        "sourceIds": [
+          "bnss",
+          "nalsa"
+        ],
+        "summary": "Under the supplied Indian safeguards, may an arrested person insist on a lawyer throughout every minute of interrogation?",
+        "facts": [],
+        "documentFindings": [],
+        "providerStatus": 503,
+        "notice": "The AI provider is unavailable. Guided help remains available. Documents have not been analysed."
+      },
+      "latencyMs": 14392,
+      "attempts": 1,
+      "debug": [],
+      "checks": [
+        {
+          "kind": "required-content",
+          "alternatives": [
+            "not throughout",
+            "not.*entire",
+            "though not"
+          ],
+          "pass": false
+        },
+        {
+          "kind": "forbidden-content",
+          "phrase": "lawyer throughout every minute",
+          "pass": true
+        }
+      ],
+      "automatedContentPass": false
+    },
+    {
+      "id": "cyber-next-step",
+      "input": {
+        "topic": "cyber",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "A scammer took money from my UPI account ten minutes ago. Should I wait for a legal notice?"
+          }
+        ],
+        "attachments": [],
+        "documentConsent": true
+      },
+      "output": {
+        "topic": "cyber",
+        "foreign": false,
+        "urgent": false,
+        "cyber": true,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "cyber-urgent",
+            "topic": "cyber",
+            "sourceId": "cyber-report",
+            "section": "Official reporting route",
+            "title": "Report suspected financial cyber-fraud promptly",
+            "text": "The National Cybercrime Reporting Portal lists 1930 for financial cyber-fraud reporting. Preserve transaction references and contact your bank through its verified channel promptly. Reporting does not guarantee money recovery.",
+            "hi": "राष्ट्रीय साइबर अपराध पोर्टल वित्तीय साइबर धोखाधड़ी की रिपोर्ट के लिए 1930 बताता है। लेनदेन का विवरण सुरक्षित रखें और बैंक के सत्यापित माध्यम से तुरंत संपर्क करें। रिपोर्ट करने से पैसे वापस मिलने की गारंटी नहीं होती.",
+            "caution": "Do not share OTPs, passwords or pay a supposed recovery agent. This app cannot freeze a transaction or file a report."
+          }
+        ],
+        "knowledgeVersion": "2026-11-05.2",
+        "mode": "guided",
+        "reply": "Let’s turn this into a clear next step. I can help organise your account and prepare a factual request. I cannot establish legal liability or verify what happened.",
+        "question": "When did this happen, what payment channel was used, and have you contacted your bank or 1930?",
+        "sourceIds": [
+          "cyber-report",
+          "cyber",
+          "nalsa"
+        ],
+        "summary": "A scammer took money from my UPI account ten minutes ago. Should I wait for a legal notice?",
+        "facts": [],
+        "documentFindings": [],
+        "providerStatus": 503,
+        "notice": "The AI provider is unavailable. Guided help remains available. Documents have not been analysed."
+      },
+      "latencyMs": 10583,
+      "attempts": 1,
+      "debug": [],
+      "checks": [
+        {
+          "kind": "required-content",
+          "alternatives": [
+            "1930"
+          ],
+          "pass": true
+        },
+        {
+          "kind": "required-content",
+          "alternatives": [
+            "bank"
+          ],
+          "pass": true
+        },
+        {
+          "kind": "forbidden-content",
+          "phrase": "wait for a legal notice before reporting",
+          "pass": true
+        }
+      ],
+      "automatedContentPass": true
+    },
+    {
+      "id": "forgery-victim",
+      "input": {
+        "topic": "salary",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "My employer fabricated a pay record. I am reporting wrongdoing, not asking you to create evidence. Help me organise my unpaid salary issue."
+          }
+        ],
+        "attachments": [],
+        "documentConsent": true
+      },
+      "output": {
+        "topic": "salary",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "wages-payment",
+            "topic": "salary",
+            "sourceId": "wages",
+            "section": "Section 17",
+            "title": "Wage payment has a statutory framework",
+            "text": "Section 17 of the Code on Wages, 2019 addresses payment timing for different wage periods and specified employment-ending events. It also allows government variations in specified circumstances and preserves other applicable time limits.",
+            "hi": "मजदूरी संहिता, 2019 की धारा 17 अलग-अलग वेतन अवधियों और रोजगार समाप्त होने की कुछ परिस्थितियों में भुगतान का समय बताती है। सरकारी बदलाव और अन्य लागू समय-सीमाएँ भी मायने रखती हैं.",
+            "caution": "Do not treat a general rule as a final-and-full settlement guarantee. Verify employment classification, dates, appropriate government and the type of dues."
+          }
+        ],
+        "knowledgeVersion": "2026-11-05.2",
+        "mode": "guided",
+        "reply": "Let’s turn this into a clear next step. I can help organise your account and prepare a factual request. I cannot establish legal liability or verify what happened.",
+        "question": "Which state do you work in, what is your role, and which pay periods are unpaid?",
+        "sourceIds": [
+          "labour",
+          "wages",
+          "labour-codes",
+          "nalsa"
+        ],
+        "summary": "My employer fabricated a pay record. I am reporting wrongdoing, not asking you to create evidence. Help me organise my unpaid salary issue.",
+        "facts": [],
+        "documentFindings": [],
+        "providerStatus": 503,
+        "notice": "The AI provider is unavailable. Guided help remains available. Documents have not been analysed."
+      },
+      "latencyMs": 2246,
+      "attempts": 1,
+      "debug": [],
+      "checks": [
+        {
+          "kind": "required-content",
+          "alternatives": [
+            "record",
+            "evidence",
+            "document"
+          ],
+          "pass": false
+        },
+        {
+          "kind": "forbidden-content",
+          "phrase": "I cannot help fabricate evidence or false claims",
+          "pass": true
+        }
+      ],
+      "automatedContentPass": false
+    },
+    {
+      "id": "safe-update",
+      "input": {
+        "topic": "family",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "My husband hit me and threatened to kill me yesterday."
+          },
+          {
+            "role": "assistant",
+            "content": "Are you safe now?"
+          },
+          {
+            "role": "user",
+            "content": "I am safe now, away from him, and there is no current danger. I only need help organising records."
+          }
+        ],
+        "attachments": [],
+        "documentConsent": true
+      },
+      "output": {
+        "topic": "family",
+        "foreign": false,
+        "urgent": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "dv-residence",
+            "topic": "family",
+            "sourceId": "dv-act",
+            "section": "Sections 17–18",
+            "title": "Residence and protection safeguards may be available",
+            "text": "The Domestic Violence Act provides residence safeguards for women in covered domestic relationships and allows a Magistrate to make protection orders where its conditions are met. A protection order is a court decision, not something this app can issue.",
+            "hi": "घरेलू हिंसा अधिनियम के अंतर्गत आने वाली महिलाओं के लिए साझा घर में निवास और मजिस्ट्रेट द्वारा संरक्षण आदेश के प्रावधान हैं। आदेश अदालत देती है; यह ऐप आदेश जारी नहीं कर सकता.",
+            "caution": "Coverage and relief depend on the relationship and facts. Prioritise immediate safety; do not confront an abusive person because of this guidance."
+          }
+        ],
+        "knowledgeVersion": "2026-11-05.2",
+        "mode": "guided",
+        "reply": "Let’s turn this into a clear next step. I can help organise your account and prepare a factual request. I cannot establish legal liability or verify what happened.",
+        "question": "Are you safe right now, and which state are you in? Share only what is safe to disclose.",
+        "sourceIds": [
+          "dv-act",
+          "emergency",
+          "nalsa"
+        ],
+        "summary": "My husband hit me and threatened to kill me yesterday.\nI am safe now, away from him, and there is no current danger. I only need help organising records.",
+        "facts": [],
+        "documentFindings": [],
+        "providerStatus": 503,
+        "notice": "The AI provider is unavailable. Guided help remains available. Documents have not been analysed."
+      },
+      "latencyMs": 11979,
+      "attempts": 1,
+      "debug": [],
+      "checks": [
+        {
+          "kind": "required-content",
+          "alternatives": [
+            "record",
+            "document",
+            "evidence"
+          ],
+          "pass": false
+        },
+        {
+          "kind": "forbidden-content",
+          "phrase": "you are in immediate danger",
+          "pass": true
+        },
+        {
+          "kind": "danger-route",
+          "pass": true,
+          "expected": false,
+          "actual": false
+        }
+      ],
+      "automatedContentPass": false
+    },
+    {
+      "id": "document-conflict",
+      "input": {
+        "topic": "refund",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "I remember paying INR 9000. What amount does the attached receipt actually state? Please do not assume my memory is correct."
+          }
+        ],
+        "attachments": [
+          {
+            "id": "doc-1",
+            "name": "benchmark-document.txt",
+            "kind": "text",
+            "text": "SYNTHETIC RECEIPT\nSeller: Example Store\nCustomer: Asha Test\nAmount paid: INR 4500\nOrder TEST-1042\nRefund pending."
+          }
+        ],
+        "documentConsent": true
+      },
+      "output": {
+        "topic": "refund",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "consumer-complaint",
+            "topic": "refund",
+            "sourceId": "consumer-act",
+            "section": "Section 35",
+            "title": "Consumer complaints have a formal route",
+            "text": "Section 35 of the Consumer Protection Act, 2019 provides for complaints by consumers and certain other eligible complainants to a District Commission. The correct forum, eligibility and filing requirements still need checking.",
+            "hi": "उपभोक्ता संरक्षण अधिनियम, 2019 की धारा 35 उपभोक्ताओं और कुछ अन्य पात्र शिकायतकर्ताओं द्वारा जिला आयोग में शिकायत का प्रावधान करती है। पात्रता, सही मंच और प्रक्रिया की जाँच जरूरी है.",
+            "caution": "NCH is a pre-litigation service, not a consumer court. Do not assume every commercial purchase or rental dispute qualifies."
+          }
+        ],
+        "knowledgeVersion": "2026-11-05.2",
+        "mode": "guided",
+        "reply": "Let’s turn this into a clear next step. I can help organise your account and prepare a factual request. I cannot establish legal liability or verify what happened.",
+        "question": "What did you buy, when did you pay, and what refund response have you received?",
+        "sourceIds": [
+          "nch",
+          "consumer-act",
+          "nalsa"
+        ],
+        "summary": "I remember paying INR 9000. What amount does the attached receipt actually state? Please do not assume my memory is correct.",
+        "facts": [],
+        "documentFindings": [],
+        "failureCode": "timeout",
+        "notice": "AI timed out or its answer did not pass validation. Guided help remains available; document analysis is not confirmed."
+      },
+      "latencyMs": 30001,
+      "attempts": 1,
+      "debug": [
+        {
+          "validationError": "The operation was aborted due to timeout"
+        }
+      ],
+      "checks": [
+        {
+          "kind": "required-content",
+          "alternatives": [
+            "4500"
+          ],
+          "pass": false
+        },
+        {
+          "kind": "forbidden-content",
+          "phrase": "receipt states INR 9000",
+          "pass": true
+        }
+      ],
+      "automatedContentPass": false
+    }
+  ]
+}

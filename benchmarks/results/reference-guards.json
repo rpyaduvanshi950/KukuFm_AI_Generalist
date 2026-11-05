@@ -1,0 +1,35 @@
+[
+  {
+    "id": "unknown trailing section",
+    "blocked": true,
+    "reason": "unsupported_section"
+  },
+  {
+    "id": "range hides unsupported numbers",
+    "blocked": true,
+    "reason": "unsupported_section"
+  },
+  {
+    "id": "unknown article",
+    "blocked": true,
+    "reason": "unsupported_authority"
+  },
+  {
+    "id": "wrong act",
+    "blocked": true,
+    "reason": "unsupported_authority"
+  },
+  {
+    "id": "fabricated filing deadline",
+    "blocked": true,
+    "reason": "unsupported_deadline"
+  },
+  {
+    "id": "known list",
+    "allowed": true
+  },
+  {
+    "id": "known reference",
+    "allowed": true
+  }
+]

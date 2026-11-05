@@ -29,9 +29,9 @@
           "caution": "NCH is a pre-litigation service, not a consumer court. Do not assume every commercial purchase or rental dispute qualifies."
         }
       ],
-      "knowledgeVersion": "2026-11-05.1",
+      "knowledgeVersion": "2026-11-05.2",
       "mode": "guided",
-      "reply": "Let’s turn this into a clear next step. I can help organise your account and prepare a factual request. I cannot establish legal liability or verify what happened.",
+      "reply": "For a delayed refund, preserve the order, payment and seller messages. Write to the seller with the resolution you want. The National Consumer Helpline provides pre-litigation help; it is not a consumer court and does not guarantee a refund.",
       "question": "What did you buy, when did you pay, and what refund response have you received?",
       "sourceIds": [
         "nch",
@@ -71,9 +71,9 @@
           "caution": "Ask for the property state, tenancy type, agreement and dates before giving a specific local-law answer."
         }
       ],
-      "knowledgeVersion": "2026-11-05.1",
+      "knowledgeVersion": "2026-11-05.2",
       "mode": "guided",
-      "reply": "Let’s turn this into a clear next step. I can help organise your account and prepare a factual request. I cannot establish legal liability or verify what happened.",
+      "reply": "Rental rights depend on the property state, agreement and dates. The Model Tenancy Act is a model for state adoption; its deposit rules do not automatically apply nationwide. Gather the agreement and ask for itemised deductions before a local-law review.",
       "question": "Which state is the property in, when did you move out, and what does your agreement say about deductions?",
       "sourceIds": [
         "tenancy-model",
@@ -112,9 +112,9 @@
           "caution": "Do not treat a general rule as a final-and-full settlement guarantee. Verify employment classification, dates, appropriate government and the type of dues."
         }
       ],
-      "knowledgeVersion": "2026-11-05.1",
+      "knowledgeVersion": "2026-11-05.2",
       "mode": "guided",
-      "reply": "Let’s turn this into a clear next step. I can help organise your account and prepare a factual request. I cannot establish legal liability or verify what happened.",
+      "reply": "Separate unpaid salary or wages from gratuity and expense reimbursements; they are not automatically governed by one payment rule. Preserve payslips and work records, request an itemised payment breakdown from the employer, and check the applicable authority and rules with qualified help.",
       "question": "Which state do you work in, what is your role, and which pay periods are unpaid?",
       "sourceIds": [
         "labour",
@@ -155,9 +155,9 @@
           "caution": "Ask for the property state, tenancy type, agreement and dates before giving a specific local-law answer."
         }
       ],
-      "knowledgeVersion": "2026-11-05.1",
+      "knowledgeVersion": "2026-11-05.2",
       "mode": "guided",
-      "reply": "मैं आपकी बात को व्यवस्थित करने में मदद कर सकता हूँ। यह कानूनी राय नहीं है। नीचे तथ्य जोड़ें और संबंधित आधिकारिक स्रोत देखें।",
+      "reply": "किराये के अधिकार संपत्ति के राज्य, समझौते और तारीखों पर निर्भर करते हैं। मॉडल किरायेदारी अधिनियम के जमा-राशि नियम पूरे देश में अपने-आप लागू नहीं होते। समझौता सुरक्षित रखें और कटौती का मदवार विवरण माँगें।",
       "question": "मकान किस राज्य में है, आपने कब खाली किया और समझौते में कटौती के बारे में क्या लिखा है?",
       "sourceIds": [
         "tenancy-model",
@@ -185,7 +185,7 @@
       "cyber": false,
       "danger": false,
       "lawCards": [],
-      "knowledgeVersion": "2026-11-05.1",
+      "knowledgeVersion": "2026-11-05.2",
       "mode": "guided",
       "reply": "Let’s turn this into a clear next step. I can help organise your account and prepare a factual request. I cannot establish legal liability or verify what happened.",
       "question": "Tell me what happened, your state, and whether you have a notice or a deadline.",
@@ -225,9 +225,9 @@
           "caution": "A lawyer must check applicability, territorial exceptions and transitional provisions. No automatic entitlement to bail or prediction about arrest is made."
         }
       ],
-      "knowledgeVersion": "2026-11-05.1",
+      "knowledgeVersion": "2026-11-05.2",
       "mode": "guided",
-      "reply": "Let’s turn this into a clear next step. I can help organise your account and prepare a factual request. I cannot establish legal liability or verify what happened.",
+      "reply": "For a police or court notice, hearing or arrest, contact a qualified lawyer promptly and preserve the complete notice and delivery details. Arrest safeguards can include meeting an advocate during, though not throughout, interrogation; applicability and procedure need individual review.",
       "question": "What authority sent the notice, when was it received, and what date does it ask you to attend or respond?",
       "sourceIds": [
         "bnss",
@@ -266,7 +266,7 @@
           "caution": "Ask for the property state, tenancy type, agreement and dates before giving a specific local-law answer."
         }
       ],
-      "knowledgeVersion": "2026-11-05.1",
+      "knowledgeVersion": "2026-11-05.2",
       "mode": "guided",
       "reply": "If you are in immediate danger, call 112 and move to a safer place if you can. Do not confront someone to gather evidence. This app cannot contact emergency services.",
       "question": "Which state is the property in, when did you move out, and what does your agreement say about deductions?",
@@ -308,9 +308,9 @@
           "caution": "Do not share OTPs, passwords or pay a supposed recovery agent. This app cannot freeze a transaction or file a report."
         }
       ],
-      "knowledgeVersion": "2026-11-05.1",
+      "knowledgeVersion": "2026-11-05.2",
       "mode": "guided",
-      "reply": "Let’s turn this into a clear next step. I can help organise your account and prepare a factual request. I cannot establish legal liability or verify what happened.",
+      "reply": "Contact your bank through its verified channel promptly and report suspected financial cyber-fraud on 1930 or the official cybercrime portal. Do not wait for a legal notice, share OTPs or pay a recovery agent. Reporting does not guarantee recovery.",
       "question": "When did this happen, what payment channel was used, and have you contacted your bank or 1930?",
       "sourceIds": [
         "cyber-report",
@@ -350,9 +350,9 @@
           "caution": "NCH is a pre-litigation service, not a consumer court. Do not assume every commercial purchase or rental dispute qualifies."
         }
       ],
-      "knowledgeVersion": "2026-11-05.1",
+      "knowledgeVersion": "2026-11-05.2",
       "mode": "guided",
-      "reply": "Let’s turn this into a clear next step. I can help organise your account and prepare a factual request. I cannot establish legal liability or verify what happened.",
+      "reply": "For a delayed refund, preserve the order, payment and seller messages. Write to the seller with the resolution you want. The National Consumer Helpline provides pre-litigation help; it is not a consumer court and does not guarantee a refund.",
       "question": "What did you buy, when did you pay, and what refund response have you received?",
       "sourceIds": [
         "nch",
@@ -392,7 +392,7 @@
           "caution": "NCH is a pre-litigation service, not a consumer court. Do not assume every commercial purchase or rental dispute qualifies."
         }
       ],
-      "knowledgeVersion": "2026-11-05.1",
+      "knowledgeVersion": "2026-11-05.2",
       "mode": "guided",
       "reply": "I cannot help fabricate evidence or false claims. I can help organise truthful facts and identify missing records.",
       "question": "What did you buy, when did you pay, and what refund response have you received?",

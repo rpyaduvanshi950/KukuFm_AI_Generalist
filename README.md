@@ -82,3 +82,11 @@ See **BENCHMARKS.md** for measured results. These are custom application tests, 
 Conversation and attachments stay in browser memory until sent to the server/provider. Facts-only local saving is opt-in and unencrypted. Clearing a case removes that browser record. No application database, analytics or case-content logging is implemented; infrastructure/provider metadata and retention policies still apply. Avoid sensitive identifiers. Test diagnostics are used only on synthetic benchmark data.
 
 The hosted Site is owner-private. Change sharing deliberately before evaluation; do not publish this as an unrestricted legal service without expert review, authentication, durable quotas and a data-handling policy. The confidential Kuku input pack is outside this app directory and is not published.
+
+## Evaluation v3 changes
+
+Current-safety updates, intent-aware fabrication refusal and jurisdiction handling are improved. The app now distinguishes supported, contradicted, not-established and unclear document answers, with checked source quotations. Reviewed fallback guidance and explicit labelled text fields remain available during provider outages.
+
+See [benchmarks/REPORT.md](benchmarks/REPORT.md) for frozen cases, external labels, failures and uncertainty. The latest live evaluation was substantially less reliable than the earlier 12-case run; do not quote the older availability result as current performance.
+
+Optional `AI_TRANSPORT=gemini-native` uses the official native endpoint with the same configured Gemini model/key. It has no retries or automatic model switching and is not the default; the small transport probe did not establish a reliable advantage.

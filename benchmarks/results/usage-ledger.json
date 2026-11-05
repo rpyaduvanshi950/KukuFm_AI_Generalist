@@ -1,0 +1,222 @@
+{
+  "budget": 36,
+  "attempts": 36,
+  "requests": [
+    {
+      "engine": "baseline",
+      "suite": "paired",
+      "id": "nch-route",
+      "at": "2026-11-05T12:42:49.456Z"
+    },
+    {
+      "engine": "baseline",
+      "suite": "paired",
+      "id": "tenancy-state",
+      "at": "2026-11-05T12:42:51.044Z"
+    },
+    {
+      "engine": "baseline",
+      "suite": "paired",
+      "id": "salary-dues",
+      "at": "2026-11-05T12:42:56.563Z"
+    },
+    {
+      "engine": "baseline",
+      "suite": "paired",
+      "id": "arrest-lawyer",
+      "at": "2026-11-05T12:43:26.576Z"
+    },
+    {
+      "engine": "baseline",
+      "suite": "paired",
+      "id": "cyber-next-step",
+      "at": "2026-11-05T12:43:28.608Z"
+    },
+    {
+      "engine": "baseline",
+      "suite": "paired",
+      "id": "safe-update",
+      "at": "2026-11-05T12:43:31.204Z"
+    },
+    {
+      "engine": "baseline",
+      "suite": "paired",
+      "id": "document-conflict",
+      "at": "2026-11-05T12:43:32.568Z"
+    },
+    {
+      "engine": "current",
+      "suite": "paired",
+      "id": "nch-route",
+      "at": "2026-11-05T12:44:31.712Z"
+    },
+    {
+      "engine": "current",
+      "suite": "paired",
+      "id": "tenancy-state",
+      "at": "2026-11-05T12:44:37.766Z"
+    },
+    {
+      "engine": "current",
+      "suite": "paired",
+      "id": "salary-dues",
+      "at": "2026-11-05T12:44:49.214Z"
+    },
+    {
+      "engine": "current",
+      "suite": "paired",
+      "id": "arrest-lawyer",
+      "at": "2026-11-05T12:45:19.224Z"
+    },
+    {
+      "engine": "current",
+      "suite": "paired",
+      "id": "cyber-next-step",
+      "at": "2026-11-05T12:45:33.615Z"
+    },
+    {
+      "engine": "current",
+      "suite": "paired",
+      "id": "forgery-victim",
+      "at": "2026-11-05T12:45:44.198Z"
+    },
+    {
+      "engine": "current",
+      "suite": "paired",
+      "id": "safe-update",
+      "at": "2026-11-05T12:45:46.446Z"
+    },
+    {
+      "engine": "current",
+      "suite": "paired",
+      "id": "document-conflict",
+      "at": "2026-11-05T12:45:58.425Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-7",
+      "at": "2026-11-05T12:46:12.655Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-11",
+      "at": "2026-11-05T12:46:15.652Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-14",
+      "at": "2026-11-05T12:46:19.629Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-17",
+      "at": "2026-11-05T12:46:26.394Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-34",
+      "at": "2026-11-05T12:46:41.034Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-38",
+      "at": "2026-11-05T12:46:42.356Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-41",
+      "at": "2026-11-05T12:46:50.652Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-45",
+      "at": "2026-11-05T12:46:59.030Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-50",
+      "at": "2026-11-05T12:47:29.036Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-55",
+      "at": "2026-11-05T12:47:30.808Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-75",
+      "at": "2026-11-05T12:47:33.663Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-77",
+      "at": "2026-11-05T12:47:35.197Z"
+    },
+    {
+      "engine": "current",
+      "suite": "holdout",
+      "id": "holdout-hindi-cyber",
+      "at": "2026-11-05T12:50:55.857Z"
+    },
+    {
+      "engine": "current",
+      "suite": "holdout",
+      "id": "holdout-document-injection",
+      "at": "2026-11-05T12:50:57.977Z"
+    },
+    {
+      "engine": "current",
+      "suite": "holdout",
+      "id": "holdout-immediate-danger",
+      "at": "2026-11-05T12:51:22.765Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-7",
+      "at": "2026-11-05T12:52:11.170Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-11",
+      "at": "2026-11-05T12:52:13.441Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-14",
+      "at": "2026-11-05T12:52:17.206Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-41",
+      "at": "2026-11-05T12:52:19.257Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-45",
+      "at": "2026-11-05T12:52:21.517Z"
+    },
+    {
+      "engine": "current",
+      "suite": "public",
+      "id": "legalbench-row-50",
+      "at": "2026-11-05T12:52:26.843Z"
+    }
+  ]
+}

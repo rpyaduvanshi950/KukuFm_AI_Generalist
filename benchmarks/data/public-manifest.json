@@ -1,0 +1,31 @@
+{
+  "task": "contract_nli_confidentiality_of_agreement",
+  "dataset": "nguha/legalbench",
+  "revision": "daec8237410aa23e3faf4bc41ad8b3a7e1696826",
+  "url": "https://huggingface.co/datasets/nguha/legalbench/resolve/daec8237410aa23e3faf4bc41ad8b3a7e1696826/data/contract_nli_confidentiality_of_agreement/test.tsv",
+  "sha256": "d0179f33614bffd5c70ca473b71ccc03cb2e4f6bf45df3435cfe0e5daac67857",
+  "rows": 82,
+  "selected_rows": [
+    7,
+    11,
+    14,
+    17,
+    34,
+    38,
+    41,
+    45,
+    50,
+    55,
+    75,
+    77
+  ],
+  "sample_size": 12,
+  "selection": "First 6 per label sorted by SHA-256(source text); independent of model responses.",
+  "license": "CC BY 4.0",
+  "task_page": "https://hazyresearch.stanford.edu/legalbench/tasks/contract_nli_confidentiality_of_agreement.html",
+  "attribution": [
+    "Guha et al., LegalBench (2023), arXiv:2308.11462",
+    "Koreeda and Manning, ContractNLI (2021), arXiv:2110.01799"
+  ],
+  "scope": "Document entailment only; not a measure of Indian legal advice correctness."
+}

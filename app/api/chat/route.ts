@@ -15,6 +15,6 @@ export async function POST(req:Request){
  if(bucket.count>=40)return Response.json({error:'The hourly request budget is reached. Please return later or use the case workspace.'},{status:429,headers:{'Retry-After':'3600'}});
  if(buckets.size>500&&!buckets.has(identity))return Response.json({error:'The service is busy. Please try later.'},{status:503});
  bucket.count++;buckets.set(identity,bucket);
- const result=await respond(input,{base:process.env.AI_BASE_URL,model:process.env.AI_MODEL,key:process.env.AI_API_KEY});
+ const result=await respond(input,{base:process.env.AI_BASE_URL,model:process.env.AI_MODEL,key:process.env.AI_API_KEY,transport:process.env.AI_TRANSPORT});
  return Response.json(result,{headers:{'Cache-Control':'no-store'}});
 }

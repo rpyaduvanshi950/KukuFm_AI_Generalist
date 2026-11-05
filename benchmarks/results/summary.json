@@ -1,0 +1,183 @@
+{
+  "version": "nyaya-eval-v3",
+  "generatedAt": "2026-11-05T13:05:36.815Z",
+  "custom": {
+    "baselineDevelopment": {
+      "passed": 29,
+      "total": 43
+    },
+    "fixedDevelopment": {
+      "passed": 43,
+      "total": 43
+    },
+    "firstHoldout": {
+      "passed": 12,
+      "total": 13
+    },
+    "postHoldoutRegression": {
+      "passed": 13,
+      "total": 13
+    },
+    "disclosure": "The holdout was executed once after development fixes. Its one failure was then fixed and reclassified as a regression; 13/13 is not an untouched holdout result."
+  },
+  "public": {
+    "attempted": 12,
+    "answered": 3,
+    "abstainedOrUnavailable": 9,
+    "correct": 2,
+    "endToEndAccuracy": 0.16666666666666666,
+    "balancedAccuracy": 0.16666666666666666,
+    "accuracyWhenAnswered": 0.6666666666666666,
+    "wilson95ForEndToEnd": [
+      0.047,
+      0.448
+    ],
+    "wilson95WhenAnswered": [
+      0.2077,
+      0.9385
+    ],
+    "note": "Abstentions and provider failures count as wrong in end-to-end accuracy. This is an adapted sample, not an official LegalBench score."
+  },
+  "nativeProbe": {
+    "attempted": 6,
+    "answered": 2,
+    "abstainedOrUnavailable": 4,
+    "correct": 2,
+    "endToEndAccuracy": 0.3333333333333333,
+    "balancedAccuracy": 0.3333333333333333,
+    "accuracyWhenAnswered": 1,
+    "wilson95ForEndToEnd": [
+      0.0968,
+      0.7
+    ],
+    "wilson95WhenAnswered": [
+      0.3424,
+      1
+    ],
+    "note": "Abstentions and provider failures count as wrong in end-to-end accuracy. This is an adapted sample, not an official LegalBench score."
+  },
+  "runs": [
+    {
+      "file": "baseline-paired.json",
+      "suite": "paired",
+      "engine": "baseline",
+      "transport": "openai-compatible",
+      "logicalCases": 8,
+      "requests": 7,
+      "AIResponses": 2,
+      "provider503": 4,
+      "timeouts": 1,
+      "automatedContentPass": 2,
+      "reportedTokens": 2508,
+      "latencies": [
+        1591,
+        5519,
+        30011,
+        2031,
+        2591,
+        0,
+        1362,
+        14275
+      ]
+    },
+    {
+      "file": "current-paired.json",
+      "suite": "paired",
+      "engine": "current",
+      "transport": "openai-compatible",
+      "logicalCases": 8,
+      "requests": 8,
+      "AIResponses": 0,
+      "provider503": 6,
+      "timeouts": 2,
+      "automatedContentPass": 1,
+      "reportedTokens": 0,
+      "latencies": [
+        6057,
+        11443,
+        30014,
+        14392,
+        10583,
+        2246,
+        11979,
+        30001
+      ]
+    },
+    {
+      "file": "current-holdout.json",
+      "suite": "holdout",
+      "engine": "current",
+      "transport": "openai-compatible",
+      "logicalCases": 4,
+      "requests": 3,
+      "AIResponses": 1,
+      "provider503": 2,
+      "timeouts": 0,
+      "automatedContentPass": 3,
+      "reportedTokens": 1536,
+      "latencies": [
+        2123,
+        24788,
+        1816,
+        4
+      ]
+    },
+    {
+      "file": "current-public.json",
+      "suite": "public",
+      "engine": "current",
+      "transport": "openai-compatible",
+      "logicalCases": 12,
+      "requests": 12,
+      "AIResponses": 3,
+      "provider503": 8,
+      "timeouts": 1,
+      "automatedContentPass": null,
+      "reportedTokens": 4826,
+      "latencies": [
+        3006,
+        3977,
+        6756,
+        14646,
+        1323,
+        8295,
+        8377,
+        30005,
+        1771,
+        2854,
+        1533,
+        1429
+      ]
+    },
+    {
+      "file": "current-public-native.json",
+      "suite": "public",
+      "engine": "current",
+      "transport": "gemini-native",
+      "logicalCases": 6,
+      "requests": 6,
+      "AIResponses": 2,
+      "provider503": 4,
+      "timeouts": 0,
+      "automatedContentPass": null,
+      "reportedTokens": 3193,
+      "latencies": [
+        2307,
+        3765,
+        2051,
+        2253,
+        5328,
+        22603
+      ]
+    }
+  ],
+  "totalGenerationRequests": 36,
+  "capturedProviderReportedTokens": 12063,
+  "limitations": [
+    "Custom cases were authored by the same agent, not independent legal experts.",
+    "Required-content checks are keyword proxies, not expert semantic grading.",
+    "No LLM judge was used to inflate correctness. Public labels were not passed to the assistant.",
+    "36 requests were used, no retries or key rotation. Timeouts may consume unreported provider tokens.",
+    "No conclusion of market superiority, comprehensive Indian-law accuracy or production readiness is warranted."
+  ]
+}

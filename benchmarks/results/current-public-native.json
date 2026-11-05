@@ -1,0 +1,409 @@
+{
+  "runAt": "2026-11-05T12:52:11.129Z",
+  "engine": "current",
+  "suite": "public",
+  "transport": "gemini-native",
+  "caseIds": [
+    "legalbench-row-7",
+    "legalbench-row-11",
+    "legalbench-row-14",
+    "legalbench-row-41",
+    "legalbench-row-45",
+    "legalbench-row-50"
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "inputManifestSha256": "eb382ba11840a38453d93d3d403580debf53d165700ba43436ab583e619e7e52",
+  "publicManifest": {
+    "task": "contract_nli_confidentiality_of_agreement",
+    "dataset": "nguha/legalbench",
+    "revision": "daec8237410aa23e3faf4bc41ad8b3a7e1696826",
+    "url": "https://huggingface.co/datasets/nguha/legalbench/resolve/daec8237410aa23e3faf4bc41ad8b3a7e1696826/data/contract_nli_confidentiality_of_agreement/test.tsv",
+    "sha256": "d0179f33614bffd5c70ca473b71ccc03cb2e4f6bf45df3435cfe0e5daac67857",
+    "rows": 82,
+    "selected_rows": [
+      7,
+      11,
+      14,
+      17,
+      34,
+      38,
+      41,
+      45,
+      50,
+      55,
+      75,
+      77
+    ],
+    "sample_size": 12,
+    "selection": "First 6 per label sorted by SHA-256(source text); independent of model responses.",
+    "license": "CC BY 4.0",
+    "task_page": "https://hazyresearch.stanford.edu/legalbench/tasks/contract_nli_confidentiality_of_agreement.html",
+    "attribution": [
+      "Guha et al., LegalBench (2023), arXiv:2308.11462",
+      "Koreeda and Manning, ContractNLI (2021), arXiv:2110.01799"
+    ],
+    "scope": "Document entailment only; not a measure of Indian legal advice correctness."
+  },
+  "cases": [
+    {
+      "id": "legalbench-row-7",
+      "input": {
+        "topic": "property",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability."
+          }
+        ],
+        "attachments": [
+          {
+            "id": "doc-1",
+            "name": "benchmark-document.txt",
+            "kind": "text",
+            "text": "10. The execution, existence and performance of this Agreement shall be kept confidential by the Parties hereto and shall not be disclosed by either Party without the prior written consent of the other. "
+          }
+        ],
+        "documentConsent": true
+      },
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-05.2",
+        "mode": "ai",
+        "reply": "The attached document excerpt supports the proposition that the execution, existence, and performance of the Agreement must be kept confidential by the parties and not disclosed without prior written consent. This is a document-reading observation and not an opinion on its legal enforceability. As a next step, organise the agreement and relevant records without assuming they conclusively prove ownership or liability, and ask a local lawyer to check the applicable property, contract, and registration requirements.",
+        "question": "Are there any specific notices or other clauses related to confidentiality in the complete agreement that you need assistance reviewing?",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [
+          {
+            "attachmentId": "doc-1",
+            "quote": "10. The execution, existence and performance of this Agreement shall be kept confidential by the Parties hereto and shall not be disclosed by either Party without the prior written consent of the other.",
+            "comment": "This clause states that the execution, existence, and performance of the agreement must be kept confidential and not disclosed without prior written consent.",
+            "name": "benchmark-document.txt",
+            "verification": "Quote matched to extracted text"
+          }
+        ],
+        "documentAnswer": {
+          "verdict": "supported",
+          "answer": "The text explicitly states that the execution, existence, and performance of the agreement shall be kept confidential and not disclosed by either party without prior written consent, which supports the proposition.",
+          "evidence": [
+            {
+              "attachmentId": "doc-1",
+              "name": "benchmark-document.txt",
+              "quote": "The execution, existence and performance of this Agreement shall be kept confidential by the Parties hereto and shall not be disclosed by either Party without the prior written consent of the other."
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "usage": {
+          "inputTokens": 1201,
+          "outputTokens": 373,
+          "totalTokens": 1574
+        },
+        "providerModel": "gemini-3.5-flash-lite"
+      },
+      "latencyMs": 2307,
+      "attempts": 1,
+      "debug": [
+        {
+          "raw": "{\n  \"reply\": \"The attached document excerpt supports the proposition that the execution, existence, and performance of the Agreement must be kept confidential by the parties and not disclosed without prior written consent. This is a document-reading observation and not an opinion on its legal enforceability. As a next step, organise the agreement and relevant records without assuming they conclusively prove ownership or liability, and ask a local lawyer to check the applicable property, contract, and registration requirements.\",\n  \"question\": \"Are there any specific notices or other clauses related to confidentiality in the complete agreement that you need assistance reviewing?\",\n  \"sourceIds\": [\n    \"nalsa\"\n  ],\n  \"facts\": [],\n  \"documentFindings\": [\n    {\n      \"attachmentId\": \"doc-1\",\n      \"quote\": \"10. The execution, existence and performance of this Agreement shall be kept confidential by the Parties hereto and shall not be disclosed by either Party without the prior written consent of the other.\",\n      \"comment\": \"This clause states that the execution, existence, and performance of the agreement must be kept confidential and not disclosed without prior written consent.\"\n    }\n  ],\n  \"documentAnswer\": {\n    \"verdict\": \"supported\",\n    \"answer\": \"The text explicitly states that the execution, existence, and performance of the agreement shall be kept confidential and not disclosed by either party without prior written consent, which supports the proposition.\",\n    \"evidence\": [\n      {\n        \"attachmentId\": \"doc-1\",\n        \"quote\": \"The execution, existence and performance of this Agreement shall be kept confidential by the Parties hereto and shall not be disclosed by either Party without the prior written consent of the other.\"\n      }\n    ]\n  }\n}",
+          "usage": {
+            "prompt_tokens": 1201,
+            "completion_tokens": 373,
+            "total_tokens": 1574
+          }
+        }
+      ],
+      "checks": [],
+      "automatedContentPass": true,
+      "expectedLabel": "Yes",
+      "predictedLabel": "Yes",
+      "correct": true
+    },
+    {
+      "id": "legalbench-row-11",
+      "input": {
+        "topic": "property",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability."
+          }
+        ],
+        "attachments": [
+          {
+            "id": "doc-1",
+            "name": "benchmark-document.txt",
+            "kind": "text",
+            "text": "2.1 Confidential Information shall mean: ii) information relating to the existence of this Agreement; "
+          }
+        ],
+        "documentConsent": true
+      },
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-05.2",
+        "mode": "guided",
+        "reply": "I can help organise or quote an uploaded agreement, but cannot establish title, enforceability or a legal outcome. Preserve the complete agreement, payment records and relevant dates for a qualified local review.",
+        "question": "Which state is involved, what agreement or ownership record exists, and what outcome do you want?",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [],
+        "providerStatus": 503,
+        "notice": "The AI provider is unavailable. Guided help remains available. AI document interpretation is not confirmed; only explicit labelled text fields may be extracted."
+      },
+      "latencyMs": 3765,
+      "attempts": 1,
+      "debug": [],
+      "checks": [],
+      "automatedContentPass": true,
+      "expectedLabel": "Yes",
+      "predictedLabel": null,
+      "correct": false
+    },
+    {
+      "id": "legalbench-row-14",
+      "input": {
+        "topic": "property",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability."
+          }
+        ],
+        "attachments": [
+          {
+            "id": "doc-1",
+            "name": "benchmark-document.txt",
+            "kind": "text",
+            "text": "xiii) required to be disclosed pursuant to a governmental or legal requirement provided that the disclosing party gives to the other party written notice of such requirement prior to any such disclosure. No media releases, public announcements or public disclosure by either party relating to this Agreement, its subject matter or the Information, including but not limited to promotional or marketing, shall be made without the prior written consent of the other party. "
+          }
+        ],
+        "documentConsent": true
+      },
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-05.2",
+        "mode": "guided",
+        "reply": "I can help organise or quote an uploaded agreement, but cannot establish title, enforceability or a legal outcome. Preserve the complete agreement, payment records and relevant dates for a qualified local review.",
+        "question": "Which state is involved, what agreement or ownership record exists, and what outcome do you want?",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [],
+        "providerStatus": 503,
+        "notice": "The AI provider is unavailable. Guided help remains available. AI document interpretation is not confirmed; only explicit labelled text fields may be extracted."
+      },
+      "latencyMs": 2051,
+      "attempts": 1,
+      "debug": [],
+      "checks": [],
+      "automatedContentPass": true,
+      "expectedLabel": "Yes",
+      "predictedLabel": null,
+      "correct": false
+    },
+    {
+      "id": "legalbench-row-41",
+      "input": {
+        "topic": "property",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability."
+          }
+        ],
+        "attachments": [
+          {
+            "id": "doc-1",
+            "name": "benchmark-document.txt",
+            "kind": "text",
+            "text": "7. The Parties agree and understand that, notwithstanding any pending or future disputes between them or any claims relating to or arising from such disputes, the provision of the Information is not intended to and should not be construed as a waiver of any confidentiality or privilege over such material for any other purpose and such confidentiality and privileges are expressly reserved. "
+          }
+        ],
+        "documentConsent": true
+      },
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-05.2",
+        "mode": "guided",
+        "reply": "I can help organise or quote an uploaded agreement, but cannot establish title, enforceability or a legal outcome. Preserve the complete agreement, payment records and relevant dates for a qualified local review.",
+        "question": "Which state is involved, what agreement or ownership record exists, and what outcome do you want?",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [],
+        "providerStatus": 503,
+        "notice": "The AI provider is unavailable. Guided help remains available. AI document interpretation is not confirmed; only explicit labelled text fields may be extracted."
+      },
+      "latencyMs": 2253,
+      "attempts": 1,
+      "debug": [],
+      "checks": [],
+      "automatedContentPass": true,
+      "expectedLabel": "No",
+      "predictedLabel": null,
+      "correct": false
+    },
+    {
+      "id": "legalbench-row-45",
+      "input": {
+        "topic": "property",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability."
+          }
+        ],
+        "attachments": [
+          {
+            "id": "doc-1",
+            "name": "benchmark-document.txt",
+            "kind": "text",
+            "text": "We will not use any to the Evaluation Materials for any purpose other than the exclusive purpose of evaluating a Possible Transaction.  "
+          }
+        ],
+        "documentConsent": true
+      },
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-05.2",
+        "mode": "guided",
+        "reply": "I can help organise or quote an uploaded agreement, but cannot establish title, enforceability or a legal outcome. Preserve the complete agreement, payment records and relevant dates for a qualified local review.",
+        "question": "Which state is involved, what agreement or ownership record exists, and what outcome do you want?",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [],
+        "providerStatus": 503,
+        "notice": "The AI provider is unavailable. Guided help remains available. AI document interpretation is not confirmed; only explicit labelled text fields may be extracted."
+      },
+      "latencyMs": 5328,
+      "attempts": 1,
+      "debug": [],
+      "checks": [],
+      "automatedContentPass": true,
+      "expectedLabel": "No",
+      "predictedLabel": null,
+      "correct": false
+    },
+    {
+      "id": "legalbench-row-50",
+      "input": {
+        "topic": "property",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability."
+          }
+        ],
+        "attachments": [
+          {
+            "id": "doc-1",
+            "name": "benchmark-document.txt",
+            "kind": "text",
+            "text": "Each undersigned party (the “Receiving Party”) and their respective directors, officers, employees, agents, or advisors (including, without limitation, legal advisors, accountants, consultants, bankers, and financial advisors) and potential sources of financing (collectively, “Representatives”) understands that during these discussions the other party (the “Disclosing Party’’) may disclose Proprietary Information (as defined herein) relating to the Disclosing Party’s business. 2. The Receiving Party agrees  (b) not to divulge any such Proprietary Information or any information derived therefrom to any third person without prior written permission of the Disclosing Party, excluding disclosure to Representatives,  "
+          }
+        ],
+        "documentConsent": true
+      },
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-05.2",
+        "mode": "ai",
+        "reply": "Based on the provided document excerpt, it establishes that the Receiving Party agrees not to divulge Proprietary Information or any information derived therefrom to any third person without prior written permission, with exclusions for Representatives. However, the specific proposition of whether the Receiving Party is prohibited from disclosing the fact that the Agreement was agreed or negotiated is not found in the supplied text. The excerpt does not mention negotiation or the existence of the agreement itself in relation to disclosure restrictions. Please consult a qualified local help or a lawyer to verify the full agreement and applicable contract rules.",
+        "question": "Does the full agreement contain any other clauses regarding the confidentiality of the negotiations or the existence of the agreement?",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Based only on the attached clause, does it provide that the Receiving Party shall not disclose the fact that the Agreement was agreed or negotiated? Distinguish what is supported from what is not stated. This is a document-reading question, not an opinion on enforceability.",
+        "facts": [],
+        "documentFindings": [
+          {
+            "attachmentId": "doc-1",
+            "quote": "not to divulge any such Proprietary Information or any information derived therefrom to any third person without prior written permission",
+            "comment": "The text states that the Receiving Party must not divulge Proprietary Information or derived information to third parties without written permission.",
+            "name": "benchmark-document.txt",
+            "verification": "Quote matched to extracted text"
+          }
+        ],
+        "documentAnswer": {
+          "verdict": "not_found",
+          "answer": "The provided excerpt does not establish whether the Receiving Party is required to keep confidential the fact that the Agreement was agreed or negotiated. It only restricts the disclosure of Proprietary Information and derived information.",
+          "evidence": [],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "usage": {
+          "inputTokens": 1298,
+          "outputTokens": 321,
+          "totalTokens": 1619
+        },
+        "providerModel": "gemini-3.5-flash-lite"
+      },
+      "latencyMs": 22603,
+      "attempts": 1,
+      "debug": [
+        {
+          "raw": "{\n  \"reply\": \"Based on the provided document excerpt, it establishes that the Receiving Party agrees not to divulge Proprietary Information or any information derived therefrom to any third person without prior written permission, with exclusions for Representatives. However, the specific proposition of whether the Receiving Party is prohibited from disclosing the fact that the Agreement was agreed or negotiated is not found in the supplied text. The excerpt does not mention negotiation or the existence of the agreement itself in relation to disclosure restrictions. Please consult a qualified local help or a lawyer to verify the full agreement and applicable contract rules.\",\n  \"question\": \"Does the full agreement contain any other clauses regarding the confidentiality of the negotiations or the existence of the agreement?\",\n  \"sourceIds\": [\n    \"nalsa\"\n  ],\n  \"facts\": [],\n  \"documentFindings\": [\n    {\n    \"attachmentId\": \"doc-1\",\n    \"quote\": \"not to divulge any such Proprietary Information or any information derived therefrom to any third person without prior written permission\",\n    \"comment\": \"The text states that the Receiving Party must not divulge Proprietary Information or derived information to third parties without written permission.\"\n    }\n  ],\n  \"documentAnswer\": {\n    \"verdict\": \"not_found\",\n    \"answer\": \"The provided excerpt does not establish whether the Receiving Party is required to keep confidential the fact that the Agreement was agreed or negotiated. It only restricts the disclosure of Proprietary Information and derived information.\",\n    \"evidence\": []\n  }\n}",
+          "usage": {
+            "prompt_tokens": 1298,
+            "completion_tokens": 321,
+            "total_tokens": 1619
+          }
+        }
+      ],
+      "checks": [],
+      "automatedContentPass": true,
+      "expectedLabel": "No",
+      "predictedLabel": "No",
+      "correct": true
+    }
+  ]
+}

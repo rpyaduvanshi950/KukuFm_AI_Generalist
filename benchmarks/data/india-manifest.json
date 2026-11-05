@@ -1,0 +1,10 @@
+{
+  "version": "nyaya-eval-v3",
+  "frozenAt": "2026-11-05T12:37:41.660Z",
+  "sha256": "739c72fc2f288c9ce5d07b6b9eee2abd5d82698029bbb40ded34eca0cb3c0a3a",
+  "cases": 56,
+  "development": 43,
+  "holdout": 13,
+  "baselineCommit": "04413070163e7410c0b9d2e84b0097148a008bec",
+  "disclosure": "Custom authored cases; holdout is withheld from development execution, not independently authored or legally certified."
+}
