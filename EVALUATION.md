@@ -24,3 +24,6 @@ A small per-topic curated knowledge pack is cheap to serve. Review sources with 
 
 ## AI tools used
 Codex for research, coding, tests and UI verification; Gemini for three synthetic conversational-intake tests. All app decisions, boundaries and outputs remain inspectable in source. The user must understand and adapt this work before submitting under the assignment's integrity requirements.
+
+## Expanded release
+The earlier section describes the initial prototype. The current feature scope, measurements, failed runs and known limitations are documented in README.md and BENCHMARKS.md. The final live suite had 11/12 AI completions and one retained provider 503; it is not a perfect-accuracy claim.

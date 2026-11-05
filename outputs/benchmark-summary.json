@@ -1,0 +1,18 @@
+{
+  "suite": "Nyaya custom synthetic application evaluation v2",
+  "not_external_benchmark": true,
+  "cases": 12,
+  "ai_responses": 11,
+  "provider_failures": 1,
+  "recorded_success_tokens": 16529,
+  "median_latency_ms": 4041.5,
+  "maximum_latency_ms": 16910,
+  "legal_regression_tests": 15,
+  "assistant_regression_tests": 59,
+  "notes": [
+    "No independent lawyer review; these are not LegalBench or IL-TUR scores.",
+    "A provider 503 was retained; the safety fallback was strengthened afterward.",
+    "Document extraction quoted spans were matched to extracted text; image interpretation remains unverified.",
+    "Six known-reference validation failures from the earlier run are retained and documented."
+  ]
+}

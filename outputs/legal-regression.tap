@@ -1,0 +1,100 @@
+TAP version 13
+# Subtest: refund
+ok 1 - refund
+  ---
+  duration_ms: 4.647315
+  type: 'test'
+  ...
+# Subtest: tenancy
+ok 2 - tenancy
+  ---
+  duration_ms: 1.880536
+  type: 'test'
+  ...
+# Subtest: salary
+ok 3 - salary
+  ---
+  duration_ms: 0.553623
+  type: 'test'
+  ...
+# Subtest: hindi
+ok 4 - hindi
+  ---
+  duration_ms: 1.625932
+  type: 'test'
+  ...
+# Subtest: unknown
+ok 5 - unknown
+  ---
+  duration_ms: 0.62771
+  type: 'test'
+  ...
+# Subtest: court
+ok 6 - court
+  ---
+  duration_ms: 0.215708
+  type: 'test'
+  ...
+# Subtest: danger
+ok 7 - danger
+  ---
+  duration_ms: 0.32999
+  type: 'test'
+  ...
+# Subtest: cyber
+ok 8 - cyber
+  ---
+  duration_ms: 0.269312
+  type: 'test'
+  ...
+# Subtest: injection
+ok 9 - injection
+  ---
+  duration_ms: 0.693798
+  type: 'test'
+  ...
+# Subtest: fabrication
+ok 10 - fabrication
+  ---
+  duration_ms: 2.385601
+  type: 'test'
+  ...
+# Subtest: validation rejects invalid and excessive payloads
+ok 11 - validation rejects invalid and excessive payloads
+  ---
+  duration_ms: 0.682075
+  type: 'test'
+  ...
+# Subtest: draft preserves unknowns, has no invented deadline and is not a legal notice
+ok 12 - draft preserves unknowns, has no invented deadline and is not a legal notice
+  ---
+  duration_ms: 0.613021
+  type: 'test'
+  ...
+# Subtest: Hindi draft and out-of-scope refusal
+ok 13 - Hindi draft and out-of-scope refusal
+  ---
+  duration_ms: 0.197904
+  type: 'test'
+  ...
+# Subtest: false evidence blocked in draft
+ok 14 - false evidence blocked in draft
+  ---
+  duration_ms: 0.10551
+  type: 'test'
+  ...
+# Subtest: rental route does not assume consumer jurisdiction
+ok 15 - rental route does not assume consumer jurisdiction
+  ---
+  duration_ms: 0.088936
+  type: 'test'
+  ...
+1..15
+# tests 15
+# suites 0
+# pass 15
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 40.280859

@@ -1,0 +1,364 @@
+TAP version 13
+# Subtest: input protection: consent absent
+ok 1 - input protection: consent absent
+  ---
+  duration_ms: 2.371358
+  type: 'test'
+  ...
+# Subtest: input protection: too many files
+ok 2 - input protection: too many files
+  ---
+  duration_ms: 0.395117
+  type: 'test'
+  ...
+# Subtest: input protection: duplicate IDs
+ok 3 - input protection: duplicate IDs
+  ---
+  duration_ms: 0.225247
+  type: 'test'
+  ...
+# Subtest: input protection: oversize text
+ok 4 - input protection: oversize text
+  ---
+  duration_ms: 0.194896
+  type: 'test'
+  ...
+# Subtest: input protection: remote image
+ok 5 - input protection: remote image
+  ---
+  duration_ms: 0.324293
+  type: 'test'
+  ...
+# Subtest: input protection: SVG image
+ok 6 - input protection: SVG image
+  ---
+  duration_ms: 0.297182
+  type: 'test'
+  ...
+# Subtest: input protection: empty text
+ok 7 - input protection: empty text
+  ---
+  duration_ms: 0.278024
+  type: 'test'
+  ...
+# Subtest: input protection: bad language
+ok 8 - input protection: bad language
+  ---
+  duration_ms: 0.151203
+  type: 'test'
+  ...
+# Subtest: input protection: assistant last
+ok 9 - input protection: assistant last
+  ---
+  duration_ms: 0.584741
+  type: 'test'
+  ...
+# Subtest: input protection: empty user
+ok 10 - input protection: empty user
+  ---
+  duration_ms: 0.653269
+  type: 'test'
+  ...
+# Subtest: input protection: too many messages
+ok 11 - input protection: too many messages
+  ---
+  duration_ms: 0.293831
+  type: 'test'
+  ...
+# Subtest: valid attachment accepted
+ok 12 - valid attachment accepted
+  ---
+  duration_ms: 0.223397
+  type: 'test'
+  ...
+# Subtest: combined text limit enforced
+ok 13 - combined text limit enforced
+  ---
+  duration_ms: 0.266202
+  type: 'test'
+  ...
+# Subtest: unknown source rejected
+ok 14 - unknown source rejected
+  ---
+  duration_ms: 3.846837
+  type: 'test'
+  ...
+# Subtest: invented statute rejected
+ok 15 - invented statute rejected
+  ---
+  duration_ms: 2.246334
+  type: 'test'
+  ...
+# Subtest: invented URL rejected
+ok 16 - invented URL rejected
+  ---
+  duration_ms: 0.45884
+  type: 'test'
+  ...
+# Subtest: missing reply rejected
+ok 17 - missing reply rejected
+  ---
+  duration_ms: 1.436634
+  type: 'test'
+  ...
+# Subtest: fabricated extracted amount is removed
+ok 18 - fabricated extracted amount is removed
+  ---
+  duration_ms: 1.562576
+  type: 'test'
+  ...
+# Subtest: assistant-authored facts are not evidence
+ok 19 - assistant-authored facts are not evidence
+  ---
+  duration_ms: 0.375024
+  type: 'test'
+  ...
+# Subtest: exact evidence extraction accepted
+ok 20 - exact evidence extraction accepted
+  ---
+  duration_ms: 0.474728
+  type: 'test'
+  ...
+# Subtest: invented document quote removed
+ok 21 - invented document quote removed
+  ---
+  duration_ms: 0.605268
+  type: 'test'
+  ...
+# Subtest: real document quote retained with provenance
+ok 22 - real document quote retained with provenance
+  ---
+  duration_ms: 0.335309
+  type: 'test'
+  ...
+# Subtest: images remain unverified
+ok 23 - images remain unverified
+  ---
+  duration_ms: 0.410756
+  type: 'test'
+  ...
+# Subtest: AI outage preserves usable guided mode
+ok 24 - AI outage preserves usable guided mode
+  ---
+  duration_ms: 1.536502
+  type: 'test'
+  ...
+# Subtest: 429 stops without automatic retries
+ok 25 - 429 stops without automatic retries
+  ---
+  duration_ms: 0.597132
+  type: 'test'
+  ...
+# Subtest: provider output validated on real path
+ok 26 - provider output validated on real path
+  ---
+  duration_ms: 1.121535
+  type: 'test'
+  ...
+# Subtest: fabrication does not call provider
+ok 27 - fabrication does not call provider
+  ---
+  duration_ms: 0.342963
+  type: 'test'
+  ...
+# Subtest: attachments do not silently get analysis without AI
+ok 28 - attachments do not silently get analysis without AI
+  ---
+  duration_ms: 0.288919
+  type: 'test'
+  ...
+# Subtest: remote HTTP provider rejected
+ok 29 - remote HTTP provider rejected
+  ---
+  duration_ms: 0.430956
+  type: 'test'
+  ...
+# Subtest: routing: Seller refuses to refund my purchase.
+ok 30 - routing: Seller refuses to refund my purchase.
+  ---
+  duration_ms: 0.133249
+  type: 'test'
+  ...
+# Subtest: routing: My tenant has not paid rent.
+ok 31 - routing: My tenant has not paid rent.
+  ---
+  duration_ms: 0.083469
+  type: 'test'
+  ...
+# Subtest: routing: My employer owes wages.
+ok 32 - routing: My employer owes wages.
+  ---
+  duration_ms: 0.067214
+  type: 'test'
+  ...
+# Subtest: routing: An online scam took my money.
+ok 33 - routing: An online scam took my money.
+  ---
+  duration_ms: 0.06203
+  type: 'test'
+  ...
+# Subtest: routing: My husband hit me.
+ok 34 - routing: My husband hit me.
+  ---
+  duration_ms: 0.061915
+  type: 'test'
+  ...
+# Subtest: routing: I received a court summons.
+ok 35 - routing: I received a court summons.
+  ---
+  duration_ms: 0.060741
+  type: 'test'
+  ...
+# Subtest: routing: I have a land dispute.
+ok 36 - routing: I have a land dispute.
+  ---
+  duration_ms: 0.065079
+  type: 'test'
+  ...
+# Subtest: routing: I need immigration advice.
+ok 37 - routing: I need immigration advice.
+  ---
+  duration_ms: 0.062816
+  type: 'test'
+  ...
+# Subtest: routing: मेरे पति मुझे मारते हैं
+ok 38 - routing: मेरे पति मुझे मारते हैं
+  ---
+  duration_ms: 0.295486
+  type: 'test'
+  ...
+# Subtest: routing: ऑनलाइन ठगी हुई
+ok 39 - routing: ऑनलाइन ठगी हुई
+  ---
+  duration_ms: 0.246705
+  type: 'test'
+  ...
+# Subtest: routing: मेरी गिरफ्तारी हुई
+ok 40 - routing: मेरी गिरफ्तारी हुई
+  ---
+  duration_ms: 0.259081
+  type: 'test'
+  ...
+# Subtest: routing: kiraya deposit wapas nahi mila
+ok 41 - routing: kiraya deposit wapas nahi mila
+  ---
+  duration_ms: 0.073266
+  type: 'test'
+  ...
+# Subtest: routing: मेरी तनख्वाह नहीं मिली
+ok 42 - routing: मेरी तनख्वाह नहीं मिली
+  ---
+  duration_ms: 0.239039
+  type: 'test'
+  ...
+# Subtest: routing: रिफंड नहीं आया
+ok 43 - routing: रिफंड नहीं आया
+  ---
+  duration_ms: 0.198864
+  type: 'test'
+  ...
+# Subtest: source coverage: refund
+ok 44 - source coverage: refund
+  ---
+  duration_ms: 0.387798
+  type: 'test'
+  ...
+# Subtest: source coverage: rental
+ok 45 - source coverage: rental
+  ---
+  duration_ms: 0.094861
+  type: 'test'
+  ...
+# Subtest: source coverage: salary
+ok 46 - source coverage: salary
+  ---
+  duration_ms: 0.079352
+  type: 'test'
+  ...
+# Subtest: source coverage: cyber
+ok 47 - source coverage: cyber
+  ---
+  duration_ms: 0.49863
+  type: 'test'
+  ...
+# Subtest: source coverage: family
+ok 48 - source coverage: family
+  ---
+  duration_ms: 0.12868
+  type: 'test'
+  ...
+# Subtest: source coverage: police
+ok 49 - source coverage: police
+  ---
+  duration_ms: 0.094813
+  type: 'test'
+  ...
+# Subtest: source coverage: property
+ok 50 - source coverage: property
+  ---
+  duration_ms: 0.091074
+  type: 'test'
+  ...
+# Subtest: source coverage: other
+ok 51 - source coverage: other
+  ---
+  duration_ms: 0.087937
+  type: 'test'
+  ...
+# Subtest: reviewed law-card alias resolves to official source
+ok 52 - reviewed law-card alias resolves to official source
+  ---
+  duration_ms: 0.47896
+  type: 'test'
+  ...
+# Subtest: document IDs never become legal authorities
+ok 53 - document IDs never become legal authorities
+  ---
+  duration_ms: 0.278462
+  type: 'test'
+  ...
+# Subtest: unrelated card IDs are not silently accepted
+ok 54 - unrelated card IDs are not silently accepted
+  ---
+  duration_ms: 0.228017
+  type: 'test'
+  ...
+# Subtest: foreign legal advice is declined without Indian authorities
+ok 55 - foreign legal advice is declined without Indian authorities
+  ---
+  duration_ms: 0.518948
+  type: 'test'
+  ...
+# Subtest: immediate danger survives an AI provider outage
+ok 56 - immediate danger survives an AI provider outage
+  ---
+  duration_ms: 0.545318
+  type: 'test'
+  ...
+# Subtest: bank deposit is not automatically a rental dispute
+ok 57 - bank deposit is not automatically a rental dispute
+  ---
+  duration_ms: 0.128564
+  type: 'test'
+  ...
+# Subtest: unsupported legal claim in document comment rejected
+ok 58 - unsupported legal claim in document comment rejected
+  ---
+  duration_ms: 0.287693
+  type: 'test'
+  ...
+# Subtest: document status is not treated as the requested outcome
+ok 59 - document status is not treated as the requested outcome
+  ---
+  duration_ms: 0.216658
+  type: 'test'
+  ...
+1..59
+# tests 59
+# suites 0
+# pass 59
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 81.712395

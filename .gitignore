@@ -50,3 +50,12 @@ yarn-error.log*
 /outputs/*
 !/outputs/raw-guided-cases.json
 !/outputs/raw-gemini-cases.json
+!/outputs/final-live-results.json
+!/outputs/expanded-live-results.json
+!/outputs/diagnostic-live-results.json
+!/outputs/diagnostic-recheck.json
+!/outputs/benchmark-summary.json
+!/outputs/legal-regression.tap
+!/outputs/assistant-regression.tap
+!/outputs/http-smoke.json
+!/outputs/http-refund-smoke.json

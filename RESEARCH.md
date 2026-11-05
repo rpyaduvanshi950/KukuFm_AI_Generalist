@@ -77,3 +77,24 @@ Verified through web research on 2026-11-04. This is a deliberately narrow infor
 
 ## Architecture implication
 Retrieve only curated source IDs and their supported propositions. Let a model organise facts, ask focused questions, and draft factual requests. Attach sources in application code from an allowlist, never trust generated URLs or case citations. Grounding lowers hallucination risk but does not guarantee legal correctness. Maintain a visible knowledge review date and state/local-law limits.
+
+## Expanded reference pack — reviewed 5 November 2026
+
+The versioned registry in `lib/knowledge.mjs` adds narrowly scoped source summaries:
+
+- Consumer Protection Act 2019, section 35: eligible complaints to a District Commission, subject to appropriate jurisdiction and eligibility. India Code: https://www.indiacode.nic.in/bitstream/123456789/15256/5/A2019-35.pdf
+- Model Tenancy Act: state adoption, not automatic nationwide application. PIB: https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=1779681&lang=2&reg=48
+- Code on Wages 2019, section 17: payment timing framework and exceptions; avoid treating all final-settlement dues as wages. Gazette via Labour Ministry: https://labour.gov.in/sites/default/files/the_code_on_wages_2019_no._29_of_2019.pdf
+- Domestic Violence Act 2005, sections 17–18: covered residence and protection safeguards; court orders are conditional and app cannot issue them. India Code: https://www.indiacode.nic.in/bitstream/123456789/14741/1/domestic_voilence_act.pdf
+- BNSS sections 38, 47, 48: advocate access during (not throughout) interrogation, communication of grounds of warrantless arrest, and nominated-person notification. NCRB official text: https://www.ncrb.mha.gov.in/uploads/SankalanPortal/ChaptersBNSS.html
+- Financial cyberfraud reporting 1930: https://cybercrime.gov.in/webform/Crime_NodalGrivanceList.aspx
+
+Some India Code full-PDF fetches timed out in the research tool; official indexed passages and alternative government publications were used. The app does not claim a comprehensive current-law corpus. State amendments, territorial exceptions, transitional rules, case law and later amendments need professional review. The property/contract category supports document explanation and fact organisation, not title opinions or statutory remedies.
+
+## Model and benchmark research
+
+- LegalBench comprises multiple distinct reasoning tasks; passing a small application suite is not a LegalBench score: https://hazyresearch.stanford.edu/legalbench/tasks/
+- IL-TUR is India-specific but includes document understanding tasks that are different from end-user legal advice: https://aclanthology.org/2024.acl-long.618/
+- Cloudflare Workers have a 128 MB isolate memory limit: https://developers.cloudflare.com/workers/platform/limits/
+
+A local specialist model was not downloaded: the laptop's NVIDIA driver was unavailable, available memory was limited, and the hosted Worker cannot run large model weights. The provider adapter remains swappable. A model labelled “legal” is not evidence of up-to-date Indian advice accuracy.

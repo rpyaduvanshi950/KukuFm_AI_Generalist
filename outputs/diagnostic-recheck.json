@@ -1,0 +1,149 @@
+[
+  {
+    "id": "hindi-salary",
+    "pass": true,
+    "validated": {
+      "reply": "नमस्ते, मैं न्याय हूँ। मैं कोई वकील नहीं हूँ। आपके दस्तावेज़ के अनुसार, सितंबर और अक्टूबर 2026 का कुल 50,000 रुपये का वेतन नहीं मिला है। मजदूरी संहिता, 2019 की धारा 17 के तहत वेतन भुगतान का एक वैधानिक ढांचा है, लेकिन यह नियम आपकी रोजगार श्रेणी, तारीखों और संबंधित सरकार पर निर्भर करता है। तत्काल अगला कदम यह है कि आप अपने काम के रिकॉर्ड सुरक्षित रखें और एचआर या नियोक्ता को भुगतान का विवरण मांगते हुए एक लिखित अनुरोध भेजें। यदि आवश्यकता हो, तो किसी योग्य स्थानीय वकील या सक्षम श्रम प्राधिकारी से संपर्क करें। क्या आपके पास नियोक्ता को भेजे गए किसी लिखित अनुरोध की प्रति है?",
+      "question": "क्या आपने इस वेतन भुगतान न होने के संबंध में अपने नियोक्ता या एचआर को पहले कोई लिखित अनुरोध भेजा है?",
+      "sourceIds": [
+        "wages"
+      ],
+      "facts": [
+        {
+          "field": "name",
+          "value": "सीमा टेस्ट",
+          "sourceId": "doc-1",
+          "quote": "कर्मचारी: सीमा टेस्ट"
+        },
+        {
+          "field": "location",
+          "value": "जयपुर, राजस्थान",
+          "sourceId": "doc-1",
+          "quote": "स्थान: जयपुर, राजस्थान"
+        },
+        {
+          "field": "dates",
+          "value": "सितंबर 2026",
+          "sourceId": "doc-1",
+          "quote": "सितंबर 2026 का वेतन"
+        },
+        {
+          "field": "dates",
+          "value": "अक्टूबर 2026",
+          "sourceId": "doc-1",
+          "quote": "अक्टूबर 2026 का वेतन"
+        },
+        {
+          "field": "amount",
+          "value": "25000",
+          "sourceId": "doc-1",
+          "quote": "रुपये 25000"
+        }
+      ],
+      "documentFindings": [
+        {
+          "attachmentId": "doc-1",
+          "quote": "सितंबर 2026 का वेतन: रुपये 25000\nअक्टूबर 2026 का वेतन: रुपये 25000\nदोनों महीनों का भुगतान नहीं मिला है।",
+          "comment": "यह दस्तावेज़ सितंबर और अक्टूबर 2026 के 25,000-25,000 रुपये के अवैतनिक वेतन का उल्लेख करता है।",
+          "name": "hindi-record.txt",
+          "verification": "Quote matched to extracted text"
+        }
+      ]
+    }
+  },
+  {
+    "id": "tenancy-local",
+    "pass": true,
+    "validated": {
+      "reply": "I am Nyaya, an Indian legal information and case-preparation assistant. I am not a lawyer. The Model Tenancy Act was circulated for adoption through state or union-territory legislation, and its model deposit limits and return rules should not be treated as automatically applicable nationwide. Rental rules differ by state and agreement, and no nationwide deposit cap, return deadline, or automatic consumer-forum eligibility is assumed. As a next step, gather the agreement, payment record, handover details, and any written explanation of deductions, then ask the landlord for an itemised explanation and return of the amount you dispute while keeping the request factual, and consult a local lawyer or legal services authority to identify the applicable state law and correct forum.",
+      "question": "What is the exact property state and what does your written rental agreement specify regarding security deposits?",
+      "sourceIds": [
+        "tenancy-model"
+      ],
+      "facts": [
+        {
+          "field": "location",
+          "value": "Bengaluru",
+          "sourceId": "message-0",
+          "quote": "Bengaluru"
+        }
+      ],
+      "documentFindings": []
+    }
+  },
+  {
+    "id": "salary-settlement",
+    "pass": true,
+    "validated": {
+      "reply": "I am Nyaya, a legal information assistant. I am not a lawyer. Regarding your question about receiving all gratuity and expenses within two days after resigning: I cannot guarantee recovery, timing, or outcomes. The statutory framework under the Code on Wages addresses wage payment timing and specified employment-ending events, but applicability depends on your employment classification, dates, appropriate government, and type of dues. Do not treat a general rule as a final-and-full settlement guarantee. Please note that not all employment dues are wages, and rules require verification with qualified local help. As an immediate next step, list your unpaid pay periods and amounts, preserve records of work performed, and consider sending a factual written request to HR or your employer for a payment breakdown.",
+      "question": "What specific types of dues (such as salary, gratuity, or specific expenses) are currently unpaid, and what was your exact resignation date?",
+      "sourceIds": [
+        "wages"
+      ],
+      "facts": [],
+      "documentFindings": []
+    }
+  },
+  {
+    "id": "cyber-urgent",
+    "pass": true,
+    "validated": {
+      "reply": "As Nyaya, an Indian legal information and case-preparation assistant, I note that you mentioned losing money in a UPI scam. I am not a lawyer. Based on the provided rules, financial cyber-fraud needs prompt reporting. You should contact your bank through its verified channel promptly and report the matter on 1930 or the official cybercrime portal. You do not need to wait for a legal notice. Please preserve your transaction references and messages. Note that reporting does not guarantee money recovery, and bank liability or time limits require case-specific review. Do not share OTPs, passwords, or pay any recovery agent.",
+      "question": "Have you already contacted your bank's verified channel or the 1930 helpline about this transaction?",
+      "sourceIds": [
+        "cyber-report",
+        "cyber"
+      ],
+      "facts": [
+        {
+          "field": "amount",
+          "value": "Rs 12000",
+          "sourceId": "message-0",
+          "quote": "I lost Rs 12000 in a UPI scam"
+        },
+        {
+          "field": "dates",
+          "value": "ten minutes ago",
+          "sourceId": "message-0",
+          "quote": "ten minutes ago"
+        }
+      ],
+      "documentFindings": []
+    }
+  },
+  {
+    "id": "domestic-safety",
+    "pass": true,
+    "validated": {
+      "reply": "I am Nyaya, an Indian legal information assistant, not a lawyer. If you face immediate danger, please call 112 right away. Do not confront an abusive person or put yourself at risk to gather evidence. Under the Protection of Women from Domestic Violence Act, residence safeguards and protection orders may be available in covered domestic relationships, though coverage and relief depend on specific facts. You should consult a local lawyer, Protection Officer, or legal services authority for guidance on applicable remedies.",
+      "question": "Are you currently in a safe location away from immediate harm?",
+      "sourceIds": [
+        "dv-act",
+        "emergency"
+      ],
+      "facts": [],
+      "documentFindings": []
+    }
+  },
+  {
+    "id": "arrest-safeguard",
+    "pass": true,
+    "validated": {
+      "reply": "I am Nyaya, an Indian legal information and case-preparation assistant, and I am not a lawyer. Regarding your brother's arrest, according to the available rules, an arrested person is allowed to meet an advocate during interrogation under BNSS section 38, though not throughout the entire duration of it. Additionally, under sections 47 and 48, the grounds for arrest must be communicated without a warrant, and a nominated relative, friend, or other person must be informed of the arrest and the place of custody. Please note that a lawyer must check applicability, territorial exceptions, and transitional provisions, and no automatic entitlement to bail or prediction about arrest is made. Since this involves an arrest, you should contact a qualified lawyer promptly to review the procedure, dates, and available legal aid, and you can also check eligibility for legal aid through legal services authorities.",
+      "question": "Has your brother been informed of the specific grounds for his arrest, and has a nominated relative or friend been notified of his place of custody?",
+      "sourceIds": [
+        "bnss",
+        "nalsa"
+      ],
+      "facts": [
+        {
+          "field": "dates",
+          "value": "today",
+          "sourceId": "message-0",
+          "quote": "My brother was arrested today."
+        }
+      ],
+      "documentFindings": []
+    }
+  }
+]

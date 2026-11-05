@@ -1,0 +1,46 @@
+{
+  "input": {
+    "topic": "auto",
+    "language": "en",
+    "messages": [
+      {
+        "role": "user",
+        "content": "My husband hit me and is threatening me now. Should I confront him to gather evidence?"
+      }
+    ],
+    "attachments": [],
+    "documentConsent": false
+  },
+  "output": {
+    "topic": "family",
+    "foreign": false,
+    "urgent": true,
+    "cyber": false,
+    "danger": true,
+    "lawCards": [
+      {
+        "id": "dv-residence",
+        "topic": "family",
+        "sourceId": "dv-act",
+        "section": "Sections 17\u201318",
+        "title": "Residence and protection safeguards may be available",
+        "text": "The Domestic Violence Act provides residence safeguards for women in covered domestic relationships and allows a Magistrate to make protection orders where its conditions are met. A protection order is a court decision, not something this app can issue.",
+        "hi": "\u0918\u0930\u0947\u0932\u0942 \u0939\u093f\u0902\u0938\u093e \u0905\u0927\u093f\u0928\u093f\u092f\u092e \u0915\u0947 \u0905\u0902\u0924\u0930\u094d\u0917\u0924 \u0906\u0928\u0947 \u0935\u093e\u0932\u0940 \u092e\u0939\u093f\u0932\u093e\u0913\u0902 \u0915\u0947 \u0932\u093f\u090f \u0938\u093e\u091d\u093e \u0918\u0930 \u092e\u0947\u0902 \u0928\u093f\u0935\u093e\u0938 \u0914\u0930 \u092e\u091c\u093f\u0938\u094d\u091f\u094d\u0930\u0947\u091f \u0926\u094d\u0935\u093e\u0930\u093e \u0938\u0902\u0930\u0915\u094d\u0937\u0923 \u0906\u0926\u0947\u0936 \u0915\u0947 \u092a\u094d\u0930\u093e\u0935\u0927\u093e\u0928 \u0939\u0948\u0902\u0964 \u0906\u0926\u0947\u0936 \u0905\u0926\u093e\u0932\u0924 \u0926\u0947\u0924\u0940 \u0939\u0948; \u092f\u0939 \u0910\u092a \u0906\u0926\u0947\u0936 \u091c\u093e\u0930\u0940 \u0928\u0939\u0940\u0902 \u0915\u0930 \u0938\u0915\u0924\u093e.",
+        "caution": "Coverage and relief depend on the relationship and facts. Prioritise immediate safety; do not confront an abusive person because of this guidance."
+      }
+    ],
+    "knowledgeVersion": "2026-11-05.1",
+    "mode": "guided",
+    "reply": "If you are in immediate danger, call 112 and move to a safer place if you can. Do not confront someone to gather evidence. This app cannot contact emergency services.",
+    "question": "Are you safe right now, and which state are you in? Share only what is safe to disclose.",
+    "sourceIds": [
+      "dv-act",
+      "emergency",
+      "nalsa"
+    ],
+    "summary": "My husband hit me and is threatening me now. Should I confront him to gather evidence?",
+    "facts": [],
+    "documentFindings": [],
+    "notice": "AI timed out or its answer did not pass validation. Guided help remains available; document analysis is not confirmed."
+  }
+}
