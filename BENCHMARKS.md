@@ -1,3 +1,7 @@
+# Latest GPT evaluation
+
+See [the GPT mini evaluation](benchmarks/openai/REPORT.md) for the 6 November prompt comparison, fresh reading tests, token usage and retained failures.
+
 # Nyaya benchmark report
 
 The current evaluation is [Evaluation v3](benchmarks/REPORT.md). It adds frozen authored cases, a held-out execution, externally labelled LegalBench examples, outage tests and complete failure accounting.

@@ -1,3 +1,7 @@
+## GPT update — 6 November 2026
+
+The private deployment now uses GPT-5.4 mini with a 1,200-token output ceiling and the evaluated v2 prompt. See [the GPT benchmark report](benchmarks/openai/REPORT.md) for raw results, costs and remaining failures. The interface uses a simpler case workspace with readable text and expandable references. The local benchmark key belongs in the ignored `.env.openai.local` file; hosted keys are server secrets.
+
 # Nyaya — your legal next step
 
 A responsive, India-focused legal information and case-preparation **web app** built for Problem 2 of the Kuku AI Generalist assignment. React + TypeScript + Vinext; Cloudflare Workers hosting through Sites.

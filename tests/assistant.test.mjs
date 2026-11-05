@@ -5,6 +5,18 @@ import {respond,validateModelOutput,makePrompt} from '../lib/assistant.mjs';
 const base={language:'en',topic:'auto',messages:[{role:'user',content:'I paid INR 4500 to Example Store in Pune, Maharashtra.'}]};
 const doc={id:'doc-1',name:'receipt.txt',kind:'text',text:'Order TEST-1042. Amount paid: INR 4500. Refund pending.'};
 const good={reply:'Your account says a payment was made. The available records need review.',question:'What outcome do you want?',sourceIds:['nalsa'],facts:[],documentFindings:[]};
+test('GPT mini request caps output, disables storage and validates the returned answer',async()=>{
+ let request;
+ const result=await respond(base,{base:'https://api.openai.com/v1',model:'gpt-5.4-mini-2026-03-17',key:'test-only'},async(url,options)=>{
+  assert.equal(url,'https://api.openai.com/v1/chat/completions');request=JSON.parse(options.body);
+  return {ok:true,json:async()=>({choices:[{message:{content:JSON.stringify(good)}}]})};
+ });
+ assert.equal(result.mode,'ai');assert.equal(request.max_completion_tokens,1200);
+ assert.equal(request.reasoning_effort,'none');assert.equal(request.store,false);
+ assert.equal(request.max_tokens,undefined);assert.equal(request.temperature,undefined);
+ assert.match(request.messages[0].content,/Assess meaning rather than identical wording/);
+ assert.match(request.messages[0].content,/max 900 characters/);
+});
 for(const [name,mutate] of [
  ['consent absent',v=>({...v,attachments:[doc]})],
  ['too many files',v=>({...v,attachments:[doc,doc,doc,doc],documentConsent:true})],

@@ -1,0 +1,68 @@
+{
+  "checks": {
+    "aiAnswer": true,
+    "correctModel": true,
+    "supported": true,
+    "quoteMatched": true,
+    "withinOutputLimit": true
+  },
+  "output": {
+    "topic": "refund",
+    "foreign": false,
+    "urgent": false,
+    "cyber": false,
+    "danger": false,
+    "lawCards": [
+      {
+        "id": "consumer-complaint",
+        "topic": "refund",
+        "sourceId": "consumer-act",
+        "section": "Section 35",
+        "title": "Consumer complaints have a formal route",
+        "text": "Section 35 of the Consumer Protection Act, 2019 provides for complaints by consumers and certain other eligible complainants to a District Commission. The correct forum, eligibility and filing requirements still need checking.",
+        "hi": "उपभोक्ता संरक्षण अधिनियम, 2019 की धारा 35 उपभोक्ताओं और कुछ अन्य पात्र शिकायतकर्ताओं द्वारा जिला आयोग में शिकायत का प्रावधान करती है। पात्रता, सही मंच और प्रक्रिया की जाँच जरूरी है.",
+        "caution": "NCH is a pre-litigation service, not a consumer court. Do not assume every commercial purchase or rental dispute qualifies."
+      }
+    ],
+    "knowledgeVersion": "2026-11-05.2",
+    "mode": "ai",
+    "reply": "Yes. The attached receipt text states “Amount paid: INR 1800,” so it records that amount as paid. This is a document-reading answer only, not proof of payment beyond the text itself.",
+    "question": "",
+    "sourceIds": [
+      "nch",
+      "consumer-act",
+      "nalsa"
+    ],
+    "summary": "Does this receipt record INR 1800 paid?",
+    "facts": [],
+    "documentFindings": [
+      {
+        "attachmentId": "smoke-receipt",
+        "quote": "Amount paid: INR 1800",
+        "comment": "The document explicitly says this amount was paid. Vision is unverified; this is based on the provided text.",
+        "name": "synthetic-receipt.txt",
+        "verification": "Quote matched to extracted text"
+      }
+    ],
+    "documentAnswer": {
+      "verdict": "supported",
+      "answer": "Yes. The receipt text expressly states that the amount paid is INR 1800.",
+      "evidence": [
+        {
+          "attachmentId": "smoke-receipt",
+          "name": "synthetic-receipt.txt",
+          "quote": "Amount paid: INR 1800"
+        }
+      ],
+      "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+    },
+    "usage": {
+      "inputTokens": 1549,
+      "outputTokens": 161,
+      "totalTokens": 1710
+    },
+    "providerModel": "gpt-5.4-mini-2026-03-17"
+  },
+  "generationCalls": 1,
+  "note": "Verified GPT through the actual app endpoint after restarting the preview. Earlier browser/HTTP checks used cached Gemini settings, retained in ui-smoke-before-restart.json. None are benchmark score cases."
+}

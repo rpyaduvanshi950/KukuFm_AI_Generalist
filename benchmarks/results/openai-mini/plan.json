@@ -1,0 +1,20 @@
+{
+  "model": "gpt-5.4-mini-2026-03-17",
+  "maxRequests": 48,
+  "maxUsd": 0.5,
+  "rates": {
+    "input": 0.75,
+    "output": 4.5
+  },
+  "candidateVersion": "question-evidence-check-v1",
+  "sourceHash": "8f91cc5049c0e91a74319af13b473b7caa1d138ad00be1fc6181c78d0767130b",
+  "customInputHash": "eb382ba11840a38453d93d3d403580debf53d165700ba43436ab583e619e7e52",
+  "publicInputHash": "84d982590ef2ed3ae8b78719056a3341106bea7eeabc40b04c424b7b4f4d2510",
+  "logicalCases": 24,
+  "variants": [
+    "original",
+    "candidate"
+  ],
+  "disclosure": "Same current application and inputs for both variants. Public sample and custom holdout have been inspected in prior work; neither is a new blind test. Keyword checks are proxies, not lawyer grading. No retries, no external tools, text-only synthetic/public inputs.",
+  "planHash": "39251cb821804c8dd6cece75a6ccc8aaedc7e88003571a81673d717059d805dc"
+}

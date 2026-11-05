@@ -1,0 +1,78 @@
+{
+  "browserCheck": {
+    "syntheticRefundAnswer": true,
+    "applyFact": true,
+    "caseWorkspace": true,
+    "editableDraft": true,
+    "generationCalls": 1,
+    "usageNotCaptured": true
+  },
+  "httpAttachmentCheck": {
+    "checks": {
+      "aiAnswer": true,
+      "correctModel": false,
+      "supported": true,
+      "quoteMatched": true,
+      "withinOutputLimit": true
+    },
+    "output": {
+      "topic": "refund",
+      "foreign": false,
+      "urgent": false,
+      "cyber": false,
+      "danger": false,
+      "lawCards": [
+        {
+          "id": "consumer-complaint",
+          "topic": "refund",
+          "sourceId": "consumer-act",
+          "section": "Section 35",
+          "title": "Consumer complaints have a formal route",
+          "text": "Section 35 of the Consumer Protection Act, 2019 provides for complaints by consumers and certain other eligible complainants to a District Commission. The correct forum, eligibility and filing requirements still need checking.",
+          "hi": "उपभोक्ता संरक्षण अधिनियम, 2019 की धारा 35 उपभोक्ताओं और कुछ अन्य पात्र शिकायतकर्ताओं द्वारा जिला आयोग में शिकायत का प्रावधान करती है। पात्रता, सही मंच और प्रक्रिया की जाँच जरूरी है.",
+          "caution": "NCH is a pre-litigation service, not a consumer court. Do not assume every commercial purchase or rental dispute qualifies."
+        }
+      ],
+      "knowledgeVersion": "2026-11-05.2",
+      "mode": "ai",
+      "reply": "Yes, the attached receipt records an amount paid of INR 1800. For an unresolved refund, you may consider contacting the National Consumer Helpline for pre-litigation assistance, though a resolution is not guaranteed.",
+      "question": "",
+      "sourceIds": [
+        "nch",
+        "consumer-act",
+        "nalsa"
+      ],
+      "summary": "Does this receipt record INR 1800 paid?",
+      "facts": [],
+      "documentFindings": [
+        {
+          "attachmentId": "smoke-receipt",
+          "quote": "Amount paid: INR 1800.",
+          "comment": "Shows the stated payment amount on the receipt.",
+          "name": "synthetic-receipt.txt",
+          "verification": "Quote matched to extracted text"
+        }
+      ],
+      "documentAnswer": {
+        "verdict": "supported",
+        "answer": "The attached receipt explicitly records that INR 1800 was paid.",
+        "evidence": [
+          {
+            "attachmentId": "smoke-receipt",
+            "name": "synthetic-receipt.txt",
+            "quote": "Amount paid: INR 1800."
+          }
+        ],
+        "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+      },
+      "usage": {
+        "inputTokens": 1568,
+        "outputTokens": 228,
+        "totalTokens": 1796
+      },
+      "providerModel": "gemini-3.5-flash-lite"
+    },
+    "generationCalls": 1
+  },
+  "note": "Separate release checks; excluded from benchmark scores. Two generation calls total. Browser usage not captured; reserve $0.04 for that call in conservative accounting."
+}

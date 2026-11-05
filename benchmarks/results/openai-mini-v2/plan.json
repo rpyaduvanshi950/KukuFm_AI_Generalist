@@ -1,0 +1,22 @@
+{
+  "model": "gpt-5.4-mini-2026-03-17",
+  "maxRequests": 96,
+  "maxUsd": 0.5,
+  "rates": {
+    "input": 0.75,
+    "output": 4.5
+  },
+  "candidateVersion": "semantic-evidence-v2",
+  "sourceHash": "849c081b83fba1fab8a274b3e1be6007d25426305a7b3c2ff7c128fbc473e8e9",
+  "customInputHash": "eb382ba11840a38453d93d3d403580debf53d165700ba43436ab583e619e7e52",
+  "publicInputHash": "84d982590ef2ed3ae8b78719056a3341106bea7eeabc40b04c424b7b4f4d2510",
+  "freshInputHash": "1001c9e61856f4f734c8cb0b071ec02278ea9a6b9679cc8c3c76f074d15e6205",
+  "logicalCases": 36,
+  "plannedGenerationCeiling": 48,
+  "variants": [
+    "original",
+    "candidate"
+  ],
+  "disclosure": "Same current application and inputs for both variants. Public sample and custom holdout have been inspected in prior work; neither is a new blind test. Keyword checks are proxies, not lawyer grading. V2 informed by round-one errors on the public sample: public results are development results. Fresh synthetic reading cases were frozen before v2 calls; same author wrote the app and cases. No retries, no external tools, text-only synthetic/public inputs.",
+  "planHash": "01ed97368dbfdfb61507e10e3aae8c8531768bb00b90ce883be892e72379d1ff"
+}
