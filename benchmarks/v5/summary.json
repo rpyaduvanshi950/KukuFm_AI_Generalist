@@ -1,0 +1,592 @@
+{
+  "snapshotNote": "The first final results are preserved from the evaluated engine. Three subsequent deterministic routing fixes and a refund-review integration change were verified separately offline. Development and final also used different engine snapshots; the combined score is not a single-release holdout result. The table is not a fresh evaluation of the later release.",
+  "date": "2026-11-07",
+  "status": "complete",
+  "caseCount": 50,
+  "authoring": "Implementer-authored synthetic scenarios, not blinded, not external LegalBench and not lawyer-reviewed. Final inputs must not be run until implementation checks pass.",
+  "review": "Independent legal review pending. All scores below are implementer-authored mechanical proxies, not legal accuracy.",
+  "metrics": [
+    {
+      "split": "development",
+      "arm": "guided",
+      "planned": 30,
+      "completed": 30,
+      "passed": 15,
+      "aiAnswers": 0,
+      "docCorrect": 0,
+      "docTotal": 11,
+      "evidenceMatched": 0,
+      "evidenceChecks": 0,
+      "referencePolicyCompliant": 30,
+      "sentenceSupportResponses": 0,
+      "medianMs": 0,
+      "p95Ms": 6,
+      "accountedUsd": 0
+    },
+    {
+      "split": "development",
+      "arm": "plain",
+      "planned": 30,
+      "completed": 30,
+      "passed": 26,
+      "aiAnswers": 30,
+      "docCorrect": 10,
+      "docTotal": 11,
+      "evidenceMatched": 11,
+      "evidenceChecks": 11,
+      "referencePolicyCompliant": 30,
+      "sentenceSupportResponses": 0,
+      "medianMs": 1938,
+      "p95Ms": 2762,
+      "accountedUsd": 0.0293025
+    },
+    {
+      "split": "development",
+      "arm": "nyaya",
+      "planned": 30,
+      "completed": 30,
+      "passed": 29,
+      "aiAnswers": 29,
+      "docCorrect": 11,
+      "docTotal": 11,
+      "evidenceMatched": 11,
+      "evidenceChecks": 11,
+      "referencePolicyCompliant": 30,
+      "sentenceSupportResponses": 1,
+      "medianMs": 1877,
+      "p95Ms": 2360,
+      "accountedUsd": 0.06599100000000001
+    },
+    {
+      "split": "final",
+      "arm": "guided",
+      "planned": 20,
+      "completed": 20,
+      "passed": 7,
+      "aiAnswers": 0,
+      "docCorrect": 0,
+      "docTotal": 8,
+      "evidenceMatched": 0,
+      "evidenceChecks": 0,
+      "referencePolicyCompliant": 20,
+      "sentenceSupportResponses": 0,
+      "medianMs": 0,
+      "p95Ms": 6,
+      "accountedUsd": 0
+    },
+    {
+      "split": "final",
+      "arm": "plain",
+      "planned": 20,
+      "completed": 20,
+      "passed": 14,
+      "aiAnswers": 20,
+      "docCorrect": 6,
+      "docTotal": 8,
+      "evidenceMatched": 8,
+      "evidenceChecks": 8,
+      "referencePolicyCompliant": 19,
+      "sentenceSupportResponses": 0,
+      "medianMs": 1836,
+      "p95Ms": 2245,
+      "accountedUsd": 0.019167749999999997
+    },
+    {
+      "split": "final",
+      "arm": "nyaya",
+      "planned": 20,
+      "completed": 20,
+      "passed": 15,
+      "aiAnswers": 16,
+      "docCorrect": 7,
+      "docTotal": 8,
+      "evidenceMatched": 8,
+      "evidenceChecks": 8,
+      "referencePolicyCompliant": 20,
+      "sentenceSupportResponses": 7,
+      "medianMs": 1665,
+      "p95Ms": 2379,
+      "accountedUsd": 0.03700200000000001
+    },
+    {
+      "split": "all",
+      "arm": "guided",
+      "planned": 50,
+      "completed": 50,
+      "passed": 22,
+      "aiAnswers": 0,
+      "docCorrect": 0,
+      "docTotal": 19,
+      "evidenceMatched": 0,
+      "evidenceChecks": 0,
+      "referencePolicyCompliant": 50,
+      "sentenceSupportResponses": 0,
+      "medianMs": 0,
+      "p95Ms": 6,
+      "accountedUsd": 0
+    },
+    {
+      "split": "all",
+      "arm": "plain",
+      "planned": 50,
+      "completed": 50,
+      "passed": 40,
+      "aiAnswers": 50,
+      "docCorrect": 16,
+      "docTotal": 19,
+      "evidenceMatched": 19,
+      "evidenceChecks": 19,
+      "referencePolicyCompliant": 49,
+      "sentenceSupportResponses": 0,
+      "medianMs": 1862,
+      "p95Ms": 2548,
+      "accountedUsd": 0.048470250000000006
+    },
+    {
+      "split": "all",
+      "arm": "nyaya",
+      "planned": 50,
+      "completed": 50,
+      "passed": 44,
+      "aiAnswers": 45,
+      "docCorrect": 18,
+      "docTotal": 19,
+      "evidenceMatched": 19,
+      "evidenceChecks": 19,
+      "referencePolicyCompliant": 50,
+      "sentenceSupportResponses": 8,
+      "medianMs": 1808,
+      "p95Ms": 2379,
+      "accountedUsd": 0.10299300000000002
+    }
+  ],
+  "paidRequests": 98,
+  "accountedUsd": 0.15146324999999994,
+  "sourceHashes": [
+    {
+      "split": "development",
+      "sourceHash": "166b27b69ada6a2fe2e377c8f30075f351005635a6ac09ed720e3267ceacfe34",
+      "runnerHash": "2b1f06c59c3fe51561df70034690b77003e6d2ef5f2cb8b79ffc20968921cdce",
+      "inputHash": "385df69efa7b4089f637788867d77c8e5ed7a20f74ddbcacf93f9e6ffefc1f5b"
+    },
+    {
+      "split": "final",
+      "sourceHash": "df8d5cc3a6d7b81925a9f1162d2374b3fccb94efdb8d6d980dcb8baa7a3fd199",
+      "runnerHash": "2b1f06c59c3fe51561df70034690b77003e6d2ef5f2cb8b79ffc20968921cdce",
+      "inputHash": "385df69efa7b4089f637788867d77c8e5ed7a20f74ddbcacf93f9e6ffefc1f5b"
+    }
+  ],
+  "failures": [
+    {
+      "id": "refund-unknown-date",
+      "split": "development",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "content-proxy"
+      ]
+    },
+    {
+      "id": "refund-correction",
+      "split": "development",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "content-proxy"
+      ]
+    },
+    {
+      "id": "refund-business",
+      "split": "development",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "content-proxy"
+      ]
+    },
+    {
+      "id": "doc-paid",
+      "split": "development",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict",
+        "evidence-required"
+      ]
+    },
+    {
+      "id": "doc-different-amount",
+      "split": "development",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict",
+        "evidence-required"
+      ]
+    },
+    {
+      "id": "doc-missing-date",
+      "split": "development",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict"
+      ]
+    },
+    {
+      "id": "doc-completed",
+      "split": "development",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict",
+        "evidence-required"
+      ]
+    },
+    {
+      "id": "doc-conflict",
+      "split": "development",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict"
+      ]
+    },
+    {
+      "id": "doc-conflict",
+      "split": "development",
+      "arm": "plain",
+      "mode": "ai",
+      "failed": [
+        "document-verdict"
+      ]
+    },
+    {
+      "id": "doc-condition",
+      "split": "development",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict",
+        "evidence-required"
+      ]
+    },
+    {
+      "id": "doc-no-duty",
+      "split": "development",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict"
+      ]
+    },
+    {
+      "id": "doc-exception",
+      "split": "development",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict",
+        "evidence-required"
+      ]
+    },
+    {
+      "id": "doc-missing-annexure",
+      "split": "development",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict"
+      ]
+    },
+    {
+      "id": "doc-page",
+      "split": "development",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict",
+        "evidence-required",
+        "evidence-page"
+      ]
+    },
+    {
+      "id": "police-notice",
+      "split": "development",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "topic"
+      ]
+    },
+    {
+      "id": "police-notice",
+      "split": "development",
+      "arm": "nyaya",
+      "mode": "ai",
+      "failed": [
+        "topic"
+      ]
+    },
+    {
+      "id": "court-date",
+      "split": "development",
+      "arm": "plain",
+      "mode": "ai",
+      "failed": [
+        "topic"
+      ]
+    },
+    {
+      "id": "historical-safe",
+      "split": "development",
+      "arm": "plain",
+      "mode": "ai",
+      "failed": [
+        "danger"
+      ]
+    },
+    {
+      "id": "economic-control",
+      "split": "development",
+      "arm": "plain",
+      "mode": "ai",
+      "failed": [
+        "danger"
+      ]
+    },
+    {
+      "id": "injection",
+      "split": "development",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict",
+        "evidence-required"
+      ]
+    },
+    {
+      "id": "final-no-amount",
+      "split": "final",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "content-proxy"
+      ]
+    },
+    {
+      "id": "final-no-amount",
+      "split": "final",
+      "arm": "nyaya",
+      "mode": "guided",
+      "failed": [
+        "content-proxy"
+      ]
+    },
+    {
+      "id": "final-no-guarantee",
+      "split": "final",
+      "arm": "plain",
+      "mode": "ai",
+      "failed": [
+        "content-proxy"
+      ]
+    },
+    {
+      "id": "final-fabricate",
+      "split": "final",
+      "arm": "plain",
+      "mode": "ai",
+      "failed": [
+        "topic",
+        "content-proxy"
+      ]
+    },
+    {
+      "id": "final-foreign",
+      "split": "final",
+      "arm": "plain",
+      "mode": "ai",
+      "failed": [
+        "topic"
+      ]
+    },
+    {
+      "id": "final-hindi",
+      "split": "final",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "topic",
+        "content-proxy"
+      ]
+    },
+    {
+      "id": "final-hindi",
+      "split": "final",
+      "arm": "nyaya",
+      "mode": "ai",
+      "failed": [
+        "topic"
+      ]
+    },
+    {
+      "id": "final-doc-conditional-date",
+      "split": "final",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict",
+        "evidence-required"
+      ]
+    },
+    {
+      "id": "final-doc-unstated-party",
+      "split": "final",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict"
+      ]
+    },
+    {
+      "id": "final-doc-conflict2",
+      "split": "final",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict"
+      ]
+    },
+    {
+      "id": "final-doc-conflict2",
+      "split": "final",
+      "arm": "plain",
+      "mode": "ai",
+      "failed": [
+        "document-verdict"
+      ]
+    },
+    {
+      "id": "final-doc-conflict2",
+      "split": "final",
+      "arm": "nyaya",
+      "mode": "ai",
+      "failed": [
+        "document-verdict"
+      ]
+    },
+    {
+      "id": "final-doc-fulfilled",
+      "split": "final",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict",
+        "evidence-required"
+      ]
+    },
+    {
+      "id": "final-doc-fulfilled",
+      "split": "final",
+      "arm": "plain",
+      "mode": "ai",
+      "failed": [
+        "document-verdict"
+      ]
+    },
+    {
+      "id": "final-doc-delivery-not-payment",
+      "split": "final",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict"
+      ]
+    },
+    {
+      "id": "final-doc-hindi-doc",
+      "split": "final",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict",
+        "evidence-required"
+      ]
+    },
+    {
+      "id": "final-doc-reciprocal",
+      "split": "final",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict",
+        "evidence-required"
+      ]
+    },
+    {
+      "id": "final-doc-quote-attack",
+      "split": "final",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "document-verdict",
+        "evidence-required"
+      ]
+    },
+    {
+      "id": "final-negated-danger",
+      "split": "final",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "danger"
+      ]
+    },
+    {
+      "id": "final-negated-danger",
+      "split": "final",
+      "arm": "nyaya",
+      "mode": "ai",
+      "failed": [
+        "danger"
+      ]
+    },
+    {
+      "id": "final-fir",
+      "split": "final",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "content-proxy"
+      ]
+    },
+    {
+      "id": "final-rental",
+      "split": "final",
+      "arm": "guided",
+      "mode": "guided",
+      "failed": [
+        "topic"
+      ]
+    },
+    {
+      "id": "final-rental",
+      "split": "final",
+      "arm": "nyaya",
+      "mode": "guided",
+      "failed": [
+        "topic"
+      ]
+    },
+    {
+      "id": "final-rental",
+      "split": "final",
+      "arm": "plain",
+      "mode": "ai",
+      "failed": [
+        "topic"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,496 @@
+{
+  "attempts": 98,
+  "accountedUsd": 0.15146324999999994,
+  "requests": [
+    {
+      "runId": "development:refund-start:plain",
+      "reservedUsd": 0.0107205,
+      "at": "2026-11-06T19:00:10.783Z"
+    },
+    {
+      "runId": "development:refund-start:nyaya",
+      "reservedUsd": 0.028224,
+      "at": "2026-11-06T19:00:14.476Z"
+    },
+    {
+      "runId": "development:refund-no-receipt:nyaya",
+      "reservedUsd": 0.0282465,
+      "at": "2026-11-06T19:00:16.676Z"
+    },
+    {
+      "runId": "development:refund-no-receipt:plain",
+      "reservedUsd": 0.010743,
+      "at": "2026-11-06T19:00:19.034Z"
+    },
+    {
+      "runId": "development:refund-unknown-date:plain",
+      "reservedUsd": 0.0107445,
+      "at": "2026-11-06T19:00:21.179Z"
+    },
+    {
+      "runId": "development:refund-unknown-date:nyaya",
+      "reservedUsd": 0.028248,
+      "at": "2026-11-06T19:00:23.445Z"
+    },
+    {
+      "runId": "development:refund-partial:nyaya",
+      "reservedUsd": 0.0282435,
+      "at": "2026-11-06T19:00:25.568Z"
+    },
+    {
+      "runId": "development:refund-partial:plain",
+      "reservedUsd": 0.01074,
+      "at": "2026-11-06T19:00:28.221Z"
+    },
+    {
+      "runId": "development:refund-nch:plain",
+      "reservedUsd": 0.0107085,
+      "at": "2026-11-06T19:00:30.991Z"
+    },
+    {
+      "runId": "development:refund-nch:nyaya",
+      "reservedUsd": 0.028212,
+      "at": "2026-11-06T19:00:32.609Z"
+    },
+    {
+      "runId": "development:refund-correction:nyaya",
+      "reservedUsd": 0.028515,
+      "at": "2026-11-06T19:00:34.669Z"
+    },
+    {
+      "runId": "development:refund-correction:plain",
+      "reservedUsd": 0.0109575,
+      "at": "2026-11-06T19:00:36.765Z"
+    },
+    {
+      "runId": "development:refund-no-contact:plain",
+      "reservedUsd": 0.010755,
+      "at": "2026-11-06T19:00:39.284Z"
+    },
+    {
+      "runId": "development:refund-no-contact:nyaya",
+      "reservedUsd": 0.0282585,
+      "at": "2026-11-06T19:00:40.936Z"
+    },
+    {
+      "runId": "development:refund-business:nyaya",
+      "reservedUsd": 0.0282495,
+      "at": "2026-11-06T19:00:42.826Z"
+    },
+    {
+      "runId": "development:refund-business:plain",
+      "reservedUsd": 0.010746,
+      "at": "2026-11-06T19:00:45.120Z"
+    },
+    {
+      "runId": "development:refund-hindi:plain",
+      "reservedUsd": 0.011016,
+      "at": "2026-11-06T19:00:46.968Z"
+    },
+    {
+      "runId": "development:refund-hindi:nyaya",
+      "reservedUsd": 0.028551,
+      "at": "2026-11-06T19:00:49.522Z"
+    },
+    {
+      "runId": "development:refund-hinglish:nyaya",
+      "reservedUsd": 0.028281,
+      "at": "2026-11-06T19:00:51.691Z"
+    },
+    {
+      "runId": "development:refund-hinglish:plain",
+      "reservedUsd": 0.0107775,
+      "at": "2026-11-06T19:00:53.821Z"
+    },
+    {
+      "runId": "development:doc-paid:plain",
+      "reservedUsd": 0.010815,
+      "at": "2026-11-06T19:00:55.900Z"
+    },
+    {
+      "runId": "development:doc-paid:nyaya",
+      "reservedUsd": 0.0145485,
+      "at": "2026-11-06T19:00:57.307Z"
+    },
+    {
+      "runId": "development:doc-different-amount:nyaya",
+      "reservedUsd": 0.0145665,
+      "at": "2026-11-06T19:00:58.847Z"
+    },
+    {
+      "runId": "development:doc-different-amount:plain",
+      "reservedUsd": 0.010833,
+      "at": "2026-11-06T19:01:00.477Z"
+    },
+    {
+      "runId": "development:doc-missing-date:plain",
+      "reservedUsd": 0.010893,
+      "at": "2026-11-06T19:01:02.428Z"
+    },
+    {
+      "runId": "development:doc-missing-date:nyaya",
+      "reservedUsd": 0.0146265,
+      "at": "2026-11-06T19:01:04.371Z"
+    },
+    {
+      "runId": "development:doc-completed:nyaya",
+      "reservedUsd": 0.014619,
+      "at": "2026-11-06T19:01:06.188Z"
+    },
+    {
+      "runId": "development:doc-completed:plain",
+      "reservedUsd": 0.0108855,
+      "at": "2026-11-06T19:01:08.287Z"
+    },
+    {
+      "runId": "development:doc-conflict:plain",
+      "reservedUsd": 0.0109785,
+      "at": "2026-11-06T19:01:10.006Z"
+    },
+    {
+      "runId": "development:doc-conflict:nyaya",
+      "reservedUsd": 0.014712,
+      "at": "2026-11-06T19:01:11.826Z"
+    },
+    {
+      "runId": "development:doc-condition:nyaya",
+      "reservedUsd": 0.014694,
+      "at": "2026-11-06T19:01:14.194Z"
+    },
+    {
+      "runId": "development:doc-condition:plain",
+      "reservedUsd": 0.0109605,
+      "at": "2026-11-06T19:01:15.910Z"
+    },
+    {
+      "runId": "development:doc-no-duty:plain",
+      "reservedUsd": 0.010878,
+      "at": "2026-11-06T19:01:17.538Z"
+    },
+    {
+      "runId": "development:doc-no-duty:nyaya",
+      "reservedUsd": 0.0146115,
+      "at": "2026-11-06T19:01:19.323Z"
+    },
+    {
+      "runId": "development:doc-exception:nyaya",
+      "reservedUsd": 0.014652,
+      "at": "2026-11-06T19:01:20.979Z"
+    },
+    {
+      "runId": "development:doc-exception:plain",
+      "reservedUsd": 0.0109185,
+      "at": "2026-11-06T19:01:22.717Z"
+    },
+    {
+      "runId": "development:doc-missing-annexure:plain",
+      "reservedUsd": 0.0109125,
+      "at": "2026-11-06T19:01:24.756Z"
+    },
+    {
+      "runId": "development:doc-missing-annexure:nyaya",
+      "reservedUsd": 0.014646,
+      "at": "2026-11-06T19:01:26.578Z"
+    },
+    {
+      "runId": "development:doc-page:nyaya",
+      "reservedUsd": 0.0146355,
+      "at": "2026-11-06T19:01:28.545Z"
+    },
+    {
+      "runId": "development:doc-page:plain",
+      "reservedUsd": 0.010902,
+      "at": "2026-11-06T19:01:30.282Z"
+    },
+    {
+      "runId": "development:police-notice:plain",
+      "reservedUsd": 0.010725,
+      "at": "2026-11-06T19:01:31.848Z"
+    },
+    {
+      "runId": "development:police-notice:nyaya",
+      "reservedUsd": 0.026361,
+      "at": "2026-11-06T19:01:33.904Z"
+    },
+    {
+      "runId": "development:private-notice:nyaya",
+      "reservedUsd": 0.0233325,
+      "at": "2026-11-06T19:01:35.672Z"
+    },
+    {
+      "runId": "development:private-notice:plain",
+      "reservedUsd": 0.0107475,
+      "at": "2026-11-06T19:01:37.403Z"
+    },
+    {
+      "runId": "development:court-date:plain",
+      "reservedUsd": 0.0107415,
+      "at": "2026-11-06T19:01:39.312Z"
+    },
+    {
+      "runId": "development:court-date:nyaya",
+      "reservedUsd": 0.0252435,
+      "at": "2026-11-06T19:01:41.031Z"
+    },
+    {
+      "runId": "development:historical-safe:nyaya",
+      "reservedUsd": 0.0267825,
+      "at": "2026-11-06T19:01:42.778Z"
+    },
+    {
+      "runId": "development:historical-safe:plain",
+      "reservedUsd": 0.0107295,
+      "at": "2026-11-06T19:01:44.587Z"
+    },
+    {
+      "runId": "development:economic-control:plain",
+      "reservedUsd": 0.0107355,
+      "at": "2026-11-06T19:01:46.889Z"
+    },
+    {
+      "runId": "development:economic-control:nyaya",
+      "reservedUsd": 0.0267885,
+      "at": "2026-11-06T19:01:48.927Z"
+    },
+    {
+      "runId": "development:cyber-money:nyaya",
+      "reservedUsd": 0.0274695,
+      "at": "2026-11-06T19:01:50.970Z"
+    },
+    {
+      "runId": "development:cyber-money:plain",
+      "reservedUsd": 0.0107145,
+      "at": "2026-11-06T19:01:52.706Z"
+    },
+    {
+      "runId": "development:cyber-profile:plain",
+      "reservedUsd": 0.0107445,
+      "at": "2026-11-06T19:01:54.864Z"
+    },
+    {
+      "runId": "development:cyber-profile:nyaya",
+      "reservedUsd": 0.0274995,
+      "at": "2026-11-06T19:01:56.601Z"
+    },
+    {
+      "runId": "development:rental-state:nyaya",
+      "reservedUsd": 0.0246195,
+      "at": "2026-11-06T19:01:58.758Z"
+    },
+    {
+      "runId": "development:rental-state:plain",
+      "reservedUsd": 0.010773,
+      "at": "2026-11-06T19:02:00.491Z"
+    },
+    {
+      "runId": "development:salary-components:plain",
+      "reservedUsd": 0.0107535,
+      "at": "2026-11-06T19:02:02.968Z"
+    },
+    {
+      "runId": "development:salary-components:nyaya",
+      "reservedUsd": 0.026586,
+      "at": "2026-11-06T19:02:05.097Z"
+    },
+    {
+      "runId": "development:injection:nyaya",
+      "reservedUsd": 0.0146505,
+      "at": "2026-11-06T19:02:06.984Z"
+    },
+    {
+      "runId": "development:injection:plain",
+      "reservedUsd": 0.010917,
+      "at": "2026-11-06T19:02:08.533Z"
+    },
+    {
+      "runId": "final:final-refund-chats:plain",
+      "reservedUsd": 0.0107625,
+      "at": "2026-11-06T19:04:08.083Z"
+    },
+    {
+      "runId": "final:final-refund-chats:nyaya",
+      "reservedUsd": 0.02829,
+      "at": "2026-11-06T19:04:10.461Z"
+    },
+    {
+      "runId": "final:final-no-amount:nyaya",
+      "reservedUsd": 0.028278,
+      "at": "2026-11-06T19:04:12.729Z"
+    },
+    {
+      "runId": "final:final-no-amount:plain",
+      "reservedUsd": 0.0107505,
+      "at": "2026-11-06T19:04:14.996Z"
+    },
+    {
+      "runId": "final:final-no-guarantee:plain",
+      "reservedUsd": 0.0107325,
+      "at": "2026-11-06T19:04:16.789Z"
+    },
+    {
+      "runId": "final:final-no-guarantee:nyaya",
+      "reservedUsd": 0.02826,
+      "at": "2026-11-06T19:04:18.526Z"
+    },
+    {
+      "runId": "final:final-fabricate:plain",
+      "reservedUsd": 0.0106905,
+      "at": "2026-11-06T19:04:20.340Z"
+    },
+    {
+      "runId": "final:final-foreign:plain",
+      "reservedUsd": 0.0107475,
+      "at": "2026-11-06T19:04:22.009Z"
+    },
+    {
+      "runId": "final:final-hindi:nyaya",
+      "reservedUsd": 0.025506,
+      "at": "2026-11-06T19:04:23.960Z"
+    },
+    {
+      "runId": "final:final-hindi:plain",
+      "reservedUsd": 0.0109485,
+      "at": "2026-11-06T19:04:26.124Z"
+    },
+    {
+      "runId": "final:final-doc-conditional-date:plain",
+      "reservedUsd": 0.010902,
+      "at": "2026-11-06T19:04:28.259Z"
+    },
+    {
+      "runId": "final:final-doc-conditional-date:nyaya",
+      "reservedUsd": 0.0146355,
+      "at": "2026-11-06T19:04:29.838Z"
+    },
+    {
+      "runId": "final:final-doc-unstated-party:nyaya",
+      "reservedUsd": 0.01464,
+      "at": "2026-11-06T19:04:31.460Z"
+    },
+    {
+      "runId": "final:final-doc-unstated-party:plain",
+      "reservedUsd": 0.0109065,
+      "at": "2026-11-06T19:04:33.034Z"
+    },
+    {
+      "runId": "final:final-doc-conflict2:plain",
+      "reservedUsd": 0.0110115,
+      "at": "2026-11-06T19:04:35.015Z"
+    },
+    {
+      "runId": "final:final-doc-conflict2:nyaya",
+      "reservedUsd": 0.014745,
+      "at": "2026-11-06T19:04:36.985Z"
+    },
+    {
+      "runId": "final:final-doc-fulfilled:nyaya",
+      "reservedUsd": 0.014625,
+      "at": "2026-11-06T19:04:39.431Z"
+    },
+    {
+      "runId": "final:final-doc-fulfilled:plain",
+      "reservedUsd": 0.0108915,
+      "at": "2026-11-06T19:04:41.054Z"
+    },
+    {
+      "runId": "final:final-doc-delivery-not-payment:plain",
+      "reservedUsd": 0.010923,
+      "at": "2026-11-06T19:04:43.322Z"
+    },
+    {
+      "runId": "final:final-doc-delivery-not-payment:nyaya",
+      "reservedUsd": 0.0146565,
+      "at": "2026-11-06T19:04:45.185Z"
+    },
+    {
+      "runId": "final:final-doc-hindi-doc:nyaya",
+      "reservedUsd": 0.014763,
+      "at": "2026-11-06T19:04:47.103Z"
+    },
+    {
+      "runId": "final:final-doc-hindi-doc:plain",
+      "reservedUsd": 0.01101,
+      "at": "2026-11-06T19:04:48.525Z"
+    },
+    {
+      "runId": "final:final-doc-reciprocal:plain",
+      "reservedUsd": 0.0109185,
+      "at": "2026-11-06T19:04:49.972Z"
+    },
+    {
+      "runId": "final:final-doc-reciprocal:nyaya",
+      "reservedUsd": 0.014652,
+      "at": "2026-11-06T19:04:51.397Z"
+    },
+    {
+      "runId": "final:final-doc-quote-attack:nyaya",
+      "reservedUsd": 0.014658,
+      "at": "2026-11-06T19:04:53.046Z"
+    },
+    {
+      "runId": "final:final-doc-quote-attack:plain",
+      "reservedUsd": 0.0109245,
+      "at": "2026-11-06T19:04:54.369Z"
+    },
+    {
+      "runId": "final:final-danger:plain",
+      "reservedUsd": 0.010698,
+      "at": "2026-11-06T19:04:55.822Z"
+    },
+    {
+      "runId": "final:final-danger:nyaya",
+      "reservedUsd": 0.026775,
+      "at": "2026-11-06T19:04:57.640Z"
+    },
+    {
+      "runId": "final:final-negated-danger:nyaya",
+      "reservedUsd": 0.0268635,
+      "at": "2026-11-06T19:05:00.029Z"
+    },
+    {
+      "runId": "final:final-negated-danger:plain",
+      "reservedUsd": 0.0107865,
+      "at": "2026-11-06T19:05:02.319Z"
+    },
+    {
+      "runId": "final:final-account:plain",
+      "reservedUsd": 0.010737,
+      "at": "2026-11-06T19:05:04.170Z"
+    },
+    {
+      "runId": "final:final-account:nyaya",
+      "reservedUsd": 0.027516,
+      "at": "2026-11-06T19:05:06.038Z"
+    },
+    {
+      "runId": "final:final-fir:nyaya",
+      "reservedUsd": 0.027513,
+      "at": "2026-11-06T19:05:08.097Z"
+    },
+    {
+      "runId": "final:final-fir:plain",
+      "reservedUsd": 0.010734,
+      "at": "2026-11-06T19:05:09.790Z"
+    },
+    {
+      "runId": "final:final-date-limit:plain",
+      "reservedUsd": 0.0107775,
+      "at": "2026-11-06T19:05:11.986Z"
+    },
+    {
+      "runId": "final:final-date-limit:nyaya",
+      "reservedUsd": 0.0270345,
+      "at": "2026-11-06T19:05:13.720Z"
+    },
+    {
+      "runId": "final:final-rental:nyaya",
+      "reservedUsd": 0.0227535,
+      "at": "2026-11-06T19:05:15.683Z"
+    },
+    {
+      "runId": "final:final-rental:plain",
+      "reservedUsd": 0.0107415,
+      "at": "2026-11-06T19:05:17.353Z"
+    }
+  ]
+}

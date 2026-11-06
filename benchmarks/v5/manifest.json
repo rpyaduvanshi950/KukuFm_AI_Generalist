@@ -1,0 +1,17 @@
+{
+  "version": "v5",
+  "date": "2026-11-07",
+  "sha256": "385df69efa7b4089f637788867d77c8e5ed7a20f74ddbcacf93f9e6ffefc1f5b",
+  "cases": 50,
+  "development": 30,
+  "final": 20,
+  "maxPaidRequests": 102,
+  "maxUsd": 0.5,
+  "authoring": "Implementer-authored synthetic scenarios, not blinded, not external LegalBench and not lawyer-reviewed. Final inputs must not be run until implementation checks pass.",
+  "arms": [
+    "guided",
+    "plain",
+    "nyaya"
+  ],
+  "finalizationNote": "Document-only inputs explicitly select property/contract reading to hold classification constant. Finalized before any generation."
+}

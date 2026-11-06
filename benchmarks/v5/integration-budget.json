@@ -1,0 +1,13 @@
+{
+  "scoredPaidRequests": 98,
+  "browserRequestsAlreadySent": 2,
+  "diagnosticRequests": 1,
+  "finalBrowserRequestReserved": 1,
+  "maxTotalRequests": 102,
+  "scoredTokenCostUsd": 0.15146324999999994,
+  "diagnosticTokenCostUsd": 0.0047535,
+  "browserCostReservationUsd": 0.18,
+  "combinedConservativeAccountingUsd": 0.33621674999999995,
+  "limitUsd": 0.5,
+  "note": "Browser usage is unknown; reserve $0.06 for each of the three synthetic browser requests. The final request is reserved before sending. This is local accounting, not a provider billing limit."
+}

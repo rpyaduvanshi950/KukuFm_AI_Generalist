@@ -1,0 +1,222 @@
+{
+  "sourceHash": "ced9fac76ca7bc8f59a84d936fffd7be47450e66b73a3dd4f7d8432ae77beab7",
+  "paidRequests": 0,
+  "kind": "Post-final deterministic regression, not a new held-out score",
+  "records": [
+    {
+      "id": "consumer-hindi",
+      "input": {
+        "topic": "auto",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "राष्ट्रीय उपभोक्ता हेल्पलाइन और उपभोक्ता अदालत में क्या अंतर है?"
+          }
+        ]
+      },
+      "field": "topic",
+      "expected": "refund",
+      "before": "police",
+      "after": "refund",
+      "pass": true,
+      "output": {
+        "topic": "refund",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "unknown",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "ecommerce-grievance",
+            "topic": "refund",
+            "sourceId": "ecommerce-guidance",
+            "section": "Official grievance guidance",
+            "title": "An e-commerce platform has a grievance route",
+            "text": "The Department states that e-commerce grievance officers must acknowledge complaints within 48 hours and redress them within one month. These are platform grievance duties, not a guaranteed refund or a court limitation period.",
+            "hi": "ई-कॉमर्स शिकायत अधिकारी को शिकायत 48 घंटे में स्वीकार करनी और एक महीने में निवारण करना होता है। यह रिफंड की गारंटी या अदालत की समय-सीमा नहीं है।",
+            "caution": "Check that the entity and transaction fall within the rules. Preserve the complaint and response. Do not wait on this process if a legal deadline needs advice."
+          },
+          {
+            "id": "ecommerce-future",
+            "topic": "refund",
+            "sourceId": "ecommerce-upcoming",
+            "section": "Commencement date",
+            "title": "Keep announced changes separate from current duties",
+            "text": "The announced 2026 e-commerce amendments commence on 1 January 2027. As of this source review on 6 November 2026, they are future changes, including the announced duty to provide a copy of the recorded complaint.",
+            "hi": "घोषित 2026 संशोधन 1 जनवरी 2027 से लागू होंगे। 6 नवंबर 2026 की समीक्षा के अनुसार ये भविष्य के बदलाव हैं।",
+            "caution": "Check the effective date and operative notification before relying on an amended duty. The library is not a live update service."
+          },
+          {
+            "id": "consumer-complaint",
+            "topic": "refund",
+            "sourceId": "consumer-act",
+            "section": "Section 35",
+            "title": "Consumer complaints have a formal route",
+            "text": "Section 35 of the Consumer Protection Act, 2019 provides for complaints by consumers and certain other eligible complainants to a District Commission. The correct forum, eligibility and filing requirements still need checking.",
+            "hi": "उपभोक्ता संरक्षण अधिनियम, 2019 की धारा 35 उपभोक्ताओं और कुछ अन्य पात्र शिकायतकर्ताओं द्वारा जिला आयोग में शिकायत का प्रावधान करती है। पात्रता, सही मंच और प्रक्रिया की जाँच जरूरी है.",
+            "caution": "NCH is a pre-litigation service, not a consumer court. Do not assume every commercial purchase or rental dispute qualifies."
+          }
+        ],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "guided",
+        "reply": "For a delayed refund, preserve the order, payment and seller messages. Write to the seller with the resolution you want. The National Consumer Helpline provides pre-litigation help; it is not a consumer court and does not guarantee a refund.",
+        "question": "What did you buy, when did you pay, and what refund response have you received?",
+        "sourceIds": [
+          "nch",
+          "consumer-act",
+          "nalsa",
+          "ecommerce-guidance",
+          "ecommerce-upcoming"
+        ],
+        "summary": "राष्ट्रीय उपभोक्ता हेल्पलाइन और उपभोक्ता अदालत में क्या अंतर है?"
+      }
+    },
+    {
+      "id": "tenancy-name",
+      "input": {
+        "topic": "auto",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "Explain the Model Tenancy Act for a home in Jaipur."
+          }
+        ]
+      },
+      "field": "topic",
+      "expected": "rental",
+      "before": "other",
+      "after": "rental",
+      "pass": true,
+      "output": {
+        "topic": "rental",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "unknown",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "tenancy-state",
+            "topic": "rental",
+            "sourceId": "tenancy-model",
+            "section": "State-law applicability",
+            "title": "Your state and agreement matter",
+            "text": "The Model Tenancy Act was circulated for adoption through state or union-territory legislation. Its model deposit limits and return rules should not be treated as automatically applicable nationwide.",
+            "hi": "मॉडल किरायेदारी अधिनियम राज्यों और केंद्रशासित प्रदेशों द्वारा अपनाने के लिए जारी किया गया था। उसकी जमा-राशि सीमा या वापसी के नियम पूरे देश में अपने-आप लागू नहीं होते.",
+            "caution": "Ask for the property state, tenancy type, agreement and dates before giving a specific local-law answer."
+          }
+        ],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "guided",
+        "reply": "Rental rights depend on the property state, agreement and dates. The Model Tenancy Act is a model for state adoption; its deposit rules do not automatically apply nationwide. Gather the agreement and ask for itemised deductions before a local-law review.",
+        "question": "Which state is the property in, when did you move out, and what does your agreement say about deductions?",
+        "sourceIds": [
+          "tenancy-model",
+          "nalsa"
+        ],
+        "summary": "Explain the Model Tenancy Act for a home in Jaipur."
+      }
+    },
+    {
+      "id": "general-safety",
+      "input": {
+        "topic": "auto",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "This is a general question about domestic violence, not something happening to me."
+          }
+        ]
+      },
+      "field": "danger",
+      "expected": false,
+      "before": true,
+      "after": false,
+      "pass": true,
+      "output": {
+        "topic": "family",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "unknown",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "domestic-legal-aid",
+            "topic": "family",
+            "sourceId": "nalsa",
+            "section": "Official legal-aid guidance",
+            "title": "Prepare for local legal-aid support",
+            "text": "NALSA describes applications to the nearest Legal Services Institution for domestic-violence legal aid, with assistance for court cases, counselling and links to specialised support. Ask the institution about the applicable process and help available locally.",
+            "hi": "NALSA के अनुसार घरेलू हिंसा से प्रभावित महिला निकटतम विधिक सेवा संस्था में सहायता के लिए आवेदन कर सकती है। स्थानीय प्रक्रिया, परामर्श और उपलब्ध सहायता की पुष्टि संस्था से करें।",
+            "caution": "This app does not appoint counsel, contact a support service or establish entitlement to a particular order or compensation. Use only a device and records that are safe to access."
+          },
+          {
+            "id": "dv-residence",
+            "topic": "family",
+            "sourceId": "dv-act",
+            "section": "Sections 17–18",
+            "title": "Residence and protection safeguards may be available",
+            "text": "The Domestic Violence Act provides residence safeguards for women in covered domestic relationships and allows a Magistrate to make protection orders where its conditions are met. A protection order is a court decision, not something this app can issue.",
+            "hi": "घरेलू हिंसा अधिनियम के अंतर्गत आने वाली महिलाओं के लिए साझा घर में निवास और मजिस्ट्रेट द्वारा संरक्षण आदेश के प्रावधान हैं। आदेश अदालत देती है; यह ऐप आदेश जारी नहीं कर सकता.",
+            "caution": "Coverage and relief depend on the relationship and facts. Prioritise immediate safety; do not confront an abusive person because of this guidance."
+          }
+        ],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "guided",
+        "reply": "Organise records only if it is safe. Do not confront an abusive person to gather evidence. A local lawyer, Protection Officer or legal services authority can help check applicable protection and residence remedies. Court orders and legal relief depend on the facts.",
+        "question": "Are you safe right now, and which state are you in? Share only what is safe to disclose.",
+        "sourceIds": [
+          "dv-act",
+          "emergency",
+          "nalsa"
+        ],
+        "summary": "This is a general question about domestic violence, not something happening to me."
+      }
+    },
+    {
+      "id": "current-danger",
+      "input": {
+        "topic": "auto",
+        "language": "en",
+        "messages": [
+          {
+            "role": "user",
+            "content": "I have a general question, but my partner is attacking me right now."
+          }
+        ]
+      },
+      "field": "danger",
+      "expected": true,
+      "before": true,
+      "after": true,
+      "pass": true,
+      "output": {
+        "topic": "other",
+        "foreign": false,
+        "urgent": true,
+        "cyberKind": "unknown",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": true,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "guided",
+        "reply": "If you are in immediate danger, call 112 and move to a safer place if you can. Do not confront someone to gather evidence. This app cannot contact emergency services.",
+        "question": "Tell me what happened, your state, and whether you have a notice or a deadline.",
+        "sourceIds": [
+          "nalsa",
+          "emergency"
+        ],
+        "summary": "I have a general question, but my partner is attacking me right now."
+      }
+    }
+  ]
+}

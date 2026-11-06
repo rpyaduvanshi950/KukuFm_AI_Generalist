@@ -110,3 +110,14 @@ Optional `AI_TRANSPORT=gemini-native` uses the official native endpoint with the
 - **Notices:** distinct police, court and private legal-notice preparation, verbatim stated-date fields, sender verification and missing-annexure notes. No deadline calculation or court response.
 
 Specialist notes live in parent component memory, are included in case/summary exports, and are excluded from AI requests and browser-save storage. Downloads can remain on a device. See `benchmarks/expanded/REPORT.md` for the ten-case targeted live regression and its limitations. The final automated suite has 169 passing checks. Independent legal review remains pending.
+
+
+## Refund journey, evidence and v5 evaluation (7 November 2026)
+
+Open `/#refund` for the four-stage consumer-refund journey. It reuses the current case, supports English/Hindi, quotes optional local amount suggestions for confirmation, records unknowns, optionally reviews consented records, requires confirmation before generating a factual request, and offers an editable request and lawyer summary. It does not send/file anything. Refund notes stay in memory and are included in exports; browser-save does not save those additional notes.
+
+Answer support distinguishes user allegations, matched document quotations and reviewed legal-summary excerpts. URLs, review dates and jurisdiction notes are derived from the local reference library. A matched quotation does not prove semantic support or legal correctness.
+
+The `/benchmarks` page exposes all 50 synthetic v5 scenarios, expected checks, raw responses, usage and failures. The initial final results are immutable; post-final deterministic routing fixes are documented separately. `benchmarks/v5/REPORT.md` describes the three arms, 30/20 split, exact engine snapshot, measured costs, limitations and pending independent review. No claim of perfect legal accuracy is made.
+
+Release verification: 184 automated checks and TypeScript checks pass. See `benchmarks/v5/UI-VERIFICATION.md` for browser observations and retained limitations. Full integration accounting stays within 102 paid requests and the $0.50 local cap.

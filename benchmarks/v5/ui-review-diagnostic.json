@@ -1,0 +1,244 @@
+{
+  "kind": "Separate synthetic integration diagnostic; not part of the frozen 50-case score",
+  "browserAttemptsBefore": 2,
+  "browserUsage": "Unknown; conservatively reserved $0.12 total for local test accounting",
+  "input": {
+    "topic": "refund",
+    "language": "en",
+    "messages": [
+      {
+        "role": "user",
+        "content": "For this refund issue, distinguish my account from the supplied records. Explain the immediate practical next step using only supported information. Ask one essential missing-fact question if needed. Do not invent a legal deadline or guarantee a refund.\n{\"story\":\"Synthetic verification: I paid INR 2400 for headphones. The seller approved a refund, but transfer is pending.\",\"recipient\":\"Corrected Demo Store\",\"amount\":\"INR 2400\",\"outcome\":\"Return the payment\",\"order\":\"SYNTHETIC-883\"}"
+      }
+    ],
+    "documentConsent": true,
+    "attachments": [
+      {
+        "id": "doc",
+        "name": "refund-journey-v5.txt",
+        "kind": "text",
+        "text": "SYNTHETIC TEST RECORD. NOT A REAL DISPUTE.\nSeller: Example Demo Store\nOrder reference: SYNTHETIC-883\nItem: Headphones\nAmount paid: INR 2400\nPayment date: Not recorded in this extract.\nSeller message: Refund approved; transfer pending.\nThis record does not state a legal deadline or prove money was returned.\n"
+      }
+    ]
+  },
+  "output": {
+    "topic": "refund",
+    "foreign": false,
+    "urgent": true,
+    "cyberKind": "financial",
+    "financialCyber": true,
+    "cyber": false,
+    "danger": false,
+    "lawCards": [
+      {
+        "id": "ecommerce-grievance",
+        "topic": "refund",
+        "sourceId": "ecommerce-guidance",
+        "section": "Official grievance guidance",
+        "title": "An e-commerce platform has a grievance route",
+        "text": "The Department states that e-commerce grievance officers must acknowledge complaints within 48 hours and redress them within one month. These are platform grievance duties, not a guaranteed refund or a court limitation period.",
+        "hi": "ई-कॉमर्स शिकायत अधिकारी को शिकायत 48 घंटे में स्वीकार करनी और एक महीने में निवारण करना होता है। यह रिफंड की गारंटी या अदालत की समय-सीमा नहीं है।",
+        "caution": "Check that the entity and transaction fall within the rules. Preserve the complaint and response. Do not wait on this process if a legal deadline needs advice."
+      },
+      {
+        "id": "ecommerce-future",
+        "topic": "refund",
+        "sourceId": "ecommerce-upcoming",
+        "section": "Commencement date",
+        "title": "Keep announced changes separate from current duties",
+        "text": "The announced 2026 e-commerce amendments commence on 1 January 2027. As of this source review on 6 November 2026, they are future changes, including the announced duty to provide a copy of the recorded complaint.",
+        "hi": "घोषित 2026 संशोधन 1 जनवरी 2027 से लागू होंगे। 6 नवंबर 2026 की समीक्षा के अनुसार ये भविष्य के बदलाव हैं।",
+        "caution": "Check the effective date and operative notification before relying on an amended duty. The library is not a live update service."
+      },
+      {
+        "id": "consumer-complaint",
+        "topic": "refund",
+        "sourceId": "consumer-act",
+        "section": "Section 35",
+        "title": "Consumer complaints have a formal route",
+        "text": "Section 35 of the Consumer Protection Act, 2019 provides for complaints by consumers and certain other eligible complainants to a District Commission. The correct forum, eligibility and filing requirements still need checking.",
+        "hi": "उपभोक्ता संरक्षण अधिनियम, 2019 की धारा 35 उपभोक्ताओं और कुछ अन्य पात्र शिकायतकर्ताओं द्वारा जिला आयोग में शिकायत का प्रावधान करती है। पात्रता, सही मंच और प्रक्रिया की जाँच जरूरी है.",
+        "caution": "NCH is a pre-litigation service, not a consumer court. Do not assume every commercial purchase or rental dispute qualifies."
+      }
+    ],
+    "knowledgeVersion": "2026-11-06.2",
+    "mode": "ai",
+    "reply": "Your supplied account says you paid INR 2400 for headphones to Corrected Demo Store and want the payment returned, while the document text is only a synthetic test record and says the refund was approved but transfer is pending. The immediate practical next step, based on the pack, is to write to the seller with the order details, payment evidence and the outcome you want, and keep a copy. If it is still unresolved, use the National Consumer Helpline for pre-litigation grievance assistance; no refund is guaranteed.",
+    "question": "Was the payment actually made to Corrected Demo Store, and do you have the seller’s refund approval message?",
+    "sourceIds": [
+      "nch",
+      "consumer-act",
+      "nalsa",
+      "ecommerce-guidance",
+      "ecommerce-upcoming"
+    ],
+    "summary": "For this refund issue, distinguish my account from the supplied records. Explain the immediate practical next step using only supported information. Ask one essential missing-fact question if needed. Do not invent a legal deadline or guarantee a refund.\n{\"story\":\"Synthetic verification: I paid INR 2400 for headphones. The seller approved a refund, but transfer is pending.\",\"recipient\":\"Corrected Demo Store\",\"amount\":\"INR 2400\",\"outcome\":\"Return the payment\",\"order\":\"SYNTHETIC-883\"}",
+    "facts": [
+      {
+        "field": "recipient",
+        "value": "Corrected Demo Store",
+        "sourceId": "message-0",
+        "quote": "\"recipient\":\"Corrected Demo Store\""
+      },
+      {
+        "field": "amount",
+        "value": "INR 2400",
+        "sourceId": "message-0",
+        "quote": "\"amount\":\"INR 2400\""
+      },
+      {
+        "field": "recipient",
+        "value": "Example Demo Store",
+        "sourceId": "doc",
+        "quote": "Seller: Example Demo Store"
+      },
+      {
+        "field": "amount",
+        "value": "INR 2400",
+        "sourceId": "doc",
+        "quote": "Amount paid: INR 2400"
+      },
+      {
+        "field": "dates",
+        "value": "Payment date: Not recorded in this extract.",
+        "sourceId": "doc",
+        "quote": "Payment date: Not recorded in this extract."
+      }
+    ],
+    "documentFindings": [
+      {
+        "attachmentId": "doc",
+        "quote": "Refund approved; transfer pending.",
+        "comment": "The extract says the seller approved a refund, but it also says the transfer is still pending.",
+        "name": "refund-journey-v5.txt",
+        "locators": [
+          {
+            "start": 200,
+            "end": 234,
+            "page": null,
+            "lineStart": 7,
+            "lineEnd": 7
+          }
+        ],
+        "verification": "Quote matched to extracted text"
+      },
+      {
+        "attachmentId": "doc",
+        "quote": "This record does not state a legal deadline or prove money was returned.",
+        "comment": "The document itself says it does not show a deadline or confirm that the money was actually refunded.",
+        "name": "refund-journey-v5.txt",
+        "locators": [
+          {
+            "start": 235,
+            "end": 307,
+            "page": null,
+            "lineStart": 8,
+            "lineEnd": 8
+          }
+        ],
+        "verification": "Quote matched to extracted text"
+      }
+    ],
+    "documentAnswer": {
+      "verdict": "supported",
+      "answer": "The excerpt supports that the seller approved a refund but the transfer is still pending; it does not show that the money was already returned.",
+      "evidence": [
+        {
+          "attachmentId": "doc",
+          "name": "refund-journey-v5.txt",
+          "quote": "Seller message: Refund approved; transfer pending.",
+          "locators": [
+            {
+              "start": 184,
+              "end": 234,
+              "page": null,
+              "lineStart": 7,
+              "lineEnd": 7
+            }
+          ]
+        },
+        {
+          "attachmentId": "doc",
+          "name": "refund-journey-v5.txt",
+          "quote": "This record does not state a legal deadline or prove money was returned.",
+          "locators": [
+            {
+              "start": 235,
+              "end": 307,
+              "page": null,
+              "lineStart": 8,
+              "lineEnd": 8
+            }
+          ]
+        }
+      ],
+      "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+    },
+    "documentIssues": [],
+    "answerSupport": [
+      {
+        "statement": "The immediate practical next step, based on the pack, is to write to the seller with the order details, payment evidence and the outcome you want, and keep a copy.",
+        "sourceId": "ecommerce-grievance",
+        "quote": "The Department states that e-commerce grievance officers must acknowledge complaints within 48 hours and redress them within one month.",
+        "kind": "legal_reference",
+        "name": "E-commerce grievance duties",
+        "url": "https://fcainfoweb.nic.in/PMS/writereaddata/2026_LS_B_361.pdf",
+        "checked": "2026-11-06",
+        "jurisdiction": "India-focused reference; individual applicability requires review",
+        "verification": "Reference quotation matched. Its application and the legal conclusion still need review."
+      },
+      {
+        "statement": "If it is still unresolved, use the National Consumer Helpline for pre-litigation grievance assistance; no refund is guaranteed.",
+        "sourceId": "nch",
+        "quote": "Pre-litigation consumer grievance assistance. A resolution is not guaranteed.",
+        "kind": "legal_reference",
+        "name": "National Consumer Helpline",
+        "url": "https://consumerhelpline.gov.in/public/about",
+        "checked": "2026-11-04",
+        "jurisdiction": "India-focused reference; individual applicability requires review",
+        "verification": "Reference quotation matched. Its application and the legal conclusion still need review."
+      }
+    ],
+    "usage": {
+      "inputTokens": 2618,
+      "outputTokens": 620,
+      "totalTokens": 3238
+    },
+    "providerModel": "gpt-5.4-mini-2026-03-17"
+  },
+  "debug": {
+    "raw": "{\"reply\":\"Your supplied account says you paid INR 2400 for headphones to Corrected Demo Store and want the payment returned, while the document text is only a synthetic test record and says the refund was approved but transfer is pending. The immediate practical next step, based on the pack, is to write to the seller with the order details, payment evidence and the outcome you want, and keep a copy. If it is still unresolved, use the National Consumer Helpline for pre-litigation grievance assistance; no refund is guaranteed.\",\"question\":\"Was the payment actually made to Corrected Demo Store, and do you have the seller’s refund approval message?\",\"sourceIds\":[\"ecommerce-grievance\",\"nch\"],\"facts\":[{\"field\":\"recipient\",\"value\":\"Corrected Demo Store\",\"sourceId\":\"message-0\",\"quote\":\"\\\"recipient\\\":\\\"Corrected Demo Store\\\"\"},{\"field\":\"amount\",\"value\":\"INR 2400\",\"sourceId\":\"message-0\",\"quote\":\"\\\"amount\\\":\\\"INR 2400\\\"\"},{\"field\":\"outcome\",\"value\":\"Return the payment\",\"sourceId\":\"message-0\",\"quote\":\"\\\"outcome\\\":\\\"Return the payment\\\"\"},{\"field\":\"recipient\",\"value\":\"Example Demo Store\",\"sourceId\":\"doc\",\"quote\":\"Seller: Example Demo Store\"},{\"field\":\"amount\",\"value\":\"INR 2400\",\"sourceId\":\"doc\",\"quote\":\"Amount paid: INR 2400\"},{\"field\":\"dates\",\"value\":\"Payment date: Not recorded in this extract.\",\"sourceId\":\"doc\",\"quote\":\"Payment date: Not recorded in this extract.\"}],\"documentFindings\":[{\"attachmentId\":\"doc\",\"quote\":\"Refund approved; transfer pending.\",\"comment\":\"The extract says the seller approved a refund, but it also says the transfer is still pending.\"},{\"attachmentId\":\"doc\",\"quote\":\"This record does not state a legal deadline or prove money was returned.\",\"comment\":\"The document itself says it does not show a deadline or confirm that the money was actually refunded.\"}],\"documentIssues\":[],\"documentAnswer\":{\"verdict\":\"supported\",\"answer\":\"The excerpt supports that the seller approved a refund but the transfer is still pending; it does not show that the money was already returned.\",\"evidence\":[{\"attachmentId\":\"doc\",\"quote\":\"Seller message: Refund approved; transfer pending.\"},{\"attachmentId\":\"doc\",\"quote\":\"This record does not state a legal deadline or prove money was returned.\"}]},\"answerSupport\":[{\"statement\":\"The immediate practical next step, based on the pack, is to write to the seller with the order details, payment evidence and the outcome you want, and keep a copy.\",\"sourceId\":\"ecommerce-grievance\",\"quote\":\"The Department states that e-commerce grievance officers must acknowledge complaints within 48 hours and redress them within one month.\"},{\"statement\":\"If it is still unresolved, use the National Consumer Helpline for pre-litigation grievance assistance; no refund is guaranteed.\",\"sourceId\":\"nch\",\"quote\":\"Pre-litigation consumer grievance assistance. A resolution is not guaranteed.\"}]}",
+    "usage": {
+      "prompt_tokens": 2618,
+      "completion_tokens": 620,
+      "total_tokens": 3238,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "audio_tokens": 0,
+        "accepted_prediction_tokens": 0,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  "usage": {
+    "prompt_tokens": 2618,
+    "completion_tokens": 620,
+    "total_tokens": 3238,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "audio_tokens": 0,
+      "accepted_prediction_tokens": 0,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "reservedUsd": 0.0296955,
+  "measuredTokenCost": 0.0047535
+}

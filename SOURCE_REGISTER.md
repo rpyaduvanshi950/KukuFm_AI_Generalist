@@ -21,3 +21,8 @@ For the next source review, verify linked editions, later amendments, commenceme
 - [NCRB BNSS official text, section 35(3)–(6)](https://www.ncrb.mha.gov.in/uploads/SankalanPortal/ChaptersBNSS.html): checked the appearance-notice process, compliance, conditional arrest safeguard and consequences of noncompliance. Added `police-appearance`, excluded from a private-notice-only matter. No absolute arrest immunity or bail promise. Territorial exceptions and transition still require counsel.
 
 New domestic-safety fields cover physical, economic, emotional and residence concerns for factual preparation only. No new substantive family-law entitlement, maintenance calculation or statutory definition was inferred from inaccessible statutory PDFs. Source summaries are implementer-checked, not independently lawyer-approved.
+
+
+## Refund journey source check: 7 November 2026
+
+Re-opened the [official NCH explanation](https://consumerhelpline.gov.in/public/about) and the [Department of Consumer Affairs e-commerce response](https://fcainfoweb.nic.in/PMS/writereaddata/2026_LS_B_361.pdf). The new journey uses the existing narrow seller-request, NCH pre-litigation and qualified-review routes. It adds no refund entitlement, legal limitation calculator or automated filing. Sentence support quotes the app’s reviewed summary, labelled accordingly, and links to the original official source; it does not mislabel the summary as statutory wording.

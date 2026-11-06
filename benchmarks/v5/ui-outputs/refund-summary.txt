@@ -1,0 +1,44 @@
+NYAYA: CASE SUMMARY FOR REVIEW
+Prepared from the user’s account; facts, authenticity and legal conclusions are unverified.
+No message has been sent and no case has been filed.
+
+Topic: Consumer refund
+
+Name: [Not supplied]
+
+Other party: Example Demo Store
+
+Location: [Not supplied]
+
+Amount: INR 2400
+
+Dates as stated: [Not supplied]
+
+Account of events: Synthetic verification: I paid INR 2400 for headphones. The seller approved a refund, but transfer is pending.
+
+Requested outcome: Return the payment
+
+Available evidence as stated: [Not supplied]
+
+TIMELINE: USER ENTERED; NO DEADLINES CALCULATED
+[No timeline events supplied]
+
+EVIDENCE CHECKED BY USER
+[None marked as gathered]
+
+DOCUMENTS AVAILABLE IN THIS SESSION
+- refund-journey-v5.txt: Completeness not established.
+
+REFERENCE LINKS: APPLICABILITY NEEDS REVIEW
+
+QUESTIONS FOR COUNSEL
+Confirm jurisdiction, applicable law and forum; verify any notice/hearing dates and limitation; inspect original documents and missing pages; advise on realistic remedies.
+This summary is not a lawyer-issued notice, pleading or legal opinion.
+
+REFUND PREPARATION: USER ACCOUNT, NOT VERIFIED
+Order reference, if known: SYNTHETIC-883
+Item or service: [Not supplied]
+Seller’s response, in their words where possible: [Not supplied]
+How you contacted the seller, if at all: [Not supplied]
+Missing or deliberately unknown details: Which payment or cancellation dates do you know?; Which city and state are involved?
+No refund entitlement, legal deadline or filing has been established.

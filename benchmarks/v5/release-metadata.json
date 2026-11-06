@@ -1,0 +1,7 @@
+{
+  "releaseEngineHash": "abe24e3b2c1878e88749e073422ea9c338f4ac08ab5807afa03f31c5c112f2cf",
+  "evaluatedFinalEngineHash": "df8d5cc3a6d7b81925a9f1162d2374b3fccb94efdb8d6d980dcb8baa7a3fd199",
+  "testCount": 184,
+  "independentLegalReview": "pending",
+  "note": "Release includes documented post-final deterministic routing and refund-review integration fixes. Published score remains the first recorded snapshot."
+}

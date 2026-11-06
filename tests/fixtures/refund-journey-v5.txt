@@ -1,0 +1,8 @@
+SYNTHETIC TEST RECORD. NOT A REAL DISPUTE.
+Seller: Example Demo Store
+Order reference: SYNTHETIC-883
+Item: Headphones
+Amount paid: INR 2400
+Payment date: Not recorded in this extract.
+Seller message: Refund approved; transfer pending.
+This record does not state a legal deadline or prove money was returned.
