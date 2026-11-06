@@ -1,0 +1,156 @@
+[
+  {
+    "id": "financial",
+    "topic": "auto",
+    "language": "en",
+    "text": "I lost INR 5000 in a UPI scam this morning in India. What should I do first?",
+    "expected": {
+      "replyAny": [
+        "1930",
+        "bank"
+      ],
+      "danger": false
+    }
+  },
+  {
+    "id": "account",
+    "topic": "auto",
+    "language": "en",
+    "text": "My Instagram account was hacked. No money was lost. Which reporting route should I use?",
+    "expected": {
+      "replyAny": [
+        "platform",
+        "recovery",
+        "Instagram"
+      ],
+      "danger": false
+    }
+  },
+  {
+    "id": "profile",
+    "topic": "cyber",
+    "language": "en",
+    "text": "A fake profile is impersonating me. Does a portal complaint automatically become an FIR?",
+    "expected": {
+      "replyAny": [
+        "not automatically",
+        "not automatic",
+        "does not automatically"
+      ],
+      "danger": false
+    }
+  },
+  {
+    "id": "economic",
+    "topic": "auto",
+    "language": "en",
+    "text": "My husband controls my money. I am safe now in India. What can I prepare for local support?",
+    "expected": {
+      "replyAny": [
+        "safe",
+        "safely"
+      ],
+      "danger": false
+    }
+  },
+  {
+    "id": "emotional",
+    "topic": "family",
+    "language": "hi",
+    "text": "मैं अभी सुरक्षित हूँ। भावनात्मक दुर्व्यवहार के लिए स्थानीय कानूनी सहायता की तैयारी कैसे करूँ?",
+    "expected": {
+      "replyAny": [
+        "सुरक्षित",
+        "सुरक्षा",
+        "सहायता"
+      ],
+      "danger": false
+    }
+  },
+  {
+    "id": "private-notice",
+    "topic": "auto",
+    "language": "en",
+    "text": "I received a private legal notice from a lawyer in India. It asks for a reply in 7 days. Does that mean I have a police summons?",
+    "expected": {
+      "replyAny": [
+        "private",
+        "distinct",
+        "not a police",
+        "different"
+      ],
+      "danger": false,
+      "replyNone": [
+        "You must appear before police"
+      ]
+    }
+  },
+  {
+    "id": "police-appearance",
+    "topic": "police",
+    "language": "en",
+    "text": "I have a police appearance notice referring to BNSS section 35. Is complying an absolute guarantee I cannot be arrested?",
+    "expected": {
+      "replyAny": [
+        "not",
+        "no guarantee",
+        "does not"
+      ],
+      "danger": false,
+      "replyNone": [
+        "guarantees you cannot be arrested"
+      ]
+    }
+  },
+  {
+    "id": "document-date",
+    "topic": "property",
+    "language": "en",
+    "text": "Does the supplied notice explicitly state attendance on 20 November 2026?",
+    "attachments": [
+      {
+        "id": "doc",
+        "name": "document-date.txt",
+        "kind": "text",
+        "text": "[Page 1]\nHearing notice. Attend on 20 November 2026 at 10:00. Annexure B is not included."
+      }
+    ],
+    "expected": {
+      "verdict": "supported"
+    }
+  },
+  {
+    "id": "missing-term",
+    "topic": "property",
+    "language": "en",
+    "text": "Does this text establish that payment is due within 7 days?",
+    "attachments": [
+      {
+        "id": "doc",
+        "name": "missing-term.txt",
+        "kind": "text",
+        "text": "[Page 1]\nPayment terms will be agreed later."
+      }
+    ],
+    "expected": {
+      "verdict": "not_found"
+    }
+  },
+  {
+    "id": "conflict",
+    "topic": "property",
+    "language": "en",
+    "text": "Does this text unambiguously establish 20 November 2026 as the only reply date?",
+    "attachments": [
+      {
+        "id": "doc",
+        "name": "conflict.txt",
+        "kind": "text",
+        "text": "[Page 1]\nClause 1: Reply on 20 November 2026.\nClause 2: Reply on 25 November 2026. No precedence clause is supplied."
+      }
+    ],
+    "expected": {
+      "verdict": "unclear"
+    }
+  }
+]

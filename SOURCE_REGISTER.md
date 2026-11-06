@@ -12,3 +12,12 @@ These are scoped summaries checked against official publications, not independen
 Delhi rent-receipt and RBI ombudsman expansions were investigated but are **not added**: the primary texts were not successfully retrieved/verified in this pass. No secondary-site summary was promoted as verified law. Other states continue to receive general tenancy boundaries and referral for local applicability checks.
 
 For the next source review, verify linked editions, later amendments, commencement and territorial/transaction coverage before changing a card. Keep announced, effective and historical rules distinct. Any newly expanded area needs its own legal review and fresh cases; a document-entailment score does not validate that law area.
+
+
+## Expanded preparation workflows — 6 November 2026
+
+- [MHA cybercrime response, 22 July 2026](https://www.pib.gov.in/PressReleasePage.aspx?PRID=2287674&lang=1&reg=1): NCRP accepts all cybercrime types; financial reporting support and subsequent State/UT FIR/action processes are distinct. Added the narrow `cyber-types` card. Portal reporting is not a recovery or FIR guarantee.
+- [NALSA FAQs 46–48](https://nalsa.gov.in/faqs/): domestic-violence legal-aid applications, assistance with cases, counselling and specialised support. Added `domestic-legal-aid`; the app neither appoints counsel nor determines an order or compensation entitlement.
+- [NCRB BNSS official text, section 35(3)–(6)](https://www.ncrb.mha.gov.in/uploads/SankalanPortal/ChaptersBNSS.html): checked the appearance-notice process, compliance, conditional arrest safeguard and consequences of noncompliance. Added `police-appearance`, excluded from a private-notice-only matter. No absolute arrest immunity or bail promise. Territorial exceptions and transition still require counsel.
+
+New domestic-safety fields cover physical, economic, emotional and residence concerns for factual preparation only. No new substantive family-law entitlement, maintenance calculation or statutory definition was inferred from inaccessible statutory PDFs. Source summaries are implementer-checked, not independently lawyer-approved.

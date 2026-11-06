@@ -100,3 +100,13 @@ Current-safety updates, intent-aware fabrication refusal and jurisdiction handli
 See [benchmarks/REPORT.md](benchmarks/REPORT.md) for frozen cases, external labels, failures and uncertainty. The latest live evaluation was substantially less reliable than the earlier 12-case run; do not quote the older availability result as current performance.
 
 Optional `AI_TRANSPORT=gemini-native` uses the official native endpoint with the same configured Gemini model/key. It has no retries or automatic model switching and is not the default; the small transport probe did not establish a reliable advantage.
+
+
+### Expanded workflows (6 November 2026)
+
+- **Cyber incidents:** preparation for financial fraud, account takeover, impersonation and online harassment; conditional reporting checklists and a local incident brief.
+- **Document assistant:** dedicated sidebar view, four focused review-question presets and text-quotation navigation. Presets prepare a question; consent and Send remain explicit.
+- **Domestic safety:** optional safety/concern/support fields, immediate guidance on a selected safety concern, device/download cautions and local support-preparation brief.
+- **Notices:** distinct police, court and private legal-notice preparation, verbatim stated-date fields, sender verification and missing-annexure notes. No deadline calculation or court response.
+
+Specialist notes live in parent component memory, are included in case/summary exports, and are excluded from AI requests and browser-save storage. Downloads can remain on a device. See `benchmarks/expanded/REPORT.md` for the ten-case targeted live regression and its limitations. The final automated suite has 169 passing checks. Independent legal review remains pending.

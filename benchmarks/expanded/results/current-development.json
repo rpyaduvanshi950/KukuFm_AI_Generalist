@@ -1,0 +1,939 @@
+{
+  "engine": "current",
+  "split": "development",
+  "sourceHash": "96345aff4735c3d17c4e605b73aacad4f5ef27ee374bbfd5c5cca4ba04529afb",
+  "inputHash": "53b18c5c06fd57e5ce6f76bfd9f84b02d4f3b202d97db1d9185af224bd4f4ef2",
+  "startedAt": "2026-11-06T04:00:41.324Z",
+  "records": [
+    {
+      "id": "financial",
+      "checks": [
+        {
+          "name": "danger",
+          "pass": true
+        },
+        {
+          "name": "content-proxy",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "cyber",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "financial",
+        "financialCyber": true,
+        "cyber": true,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "cyber-types",
+            "topic": "cyber",
+            "sourceId": "cyber-response",
+            "section": "Official reporting guidance",
+            "title": "Match the reporting route to the incident",
+            "text": "The Ministry describes the official cybercrime portal as covering all cybercrime types. The financial-fraud reporting system and 1930 support financial cyber-fraud reporting. State/UT law-enforcement agencies handle conversion of portal complaints into FIRs and subsequent action.",
+            "hi": "आधिकारिक पोर्टल सभी प्रकार के साइबर अपराध की रिपोर्ट के लिए है। वित्तीय धोखाधड़ी की रिपोर्ट के लिए 1930 का माध्यम है। पोर्टल शिकायत को FIR में बदलने और आगे की कार्रवाई का काम संबंधित राज्य/केंद्र शासित प्रदेश की पुलिस करती है।",
+            "caution": "A portal acknowledgement is not proof that an FIR has been registered. No recovery, investigation or prosecution outcome is guaranteed."
+          },
+          {
+            "id": "cyber-urgent",
+            "topic": "cyber",
+            "sourceId": "cyber-report",
+            "section": "Official reporting route",
+            "title": "Report suspected financial cyber-fraud promptly",
+            "text": "The National Cybercrime Reporting Portal lists 1930 for financial cyber-fraud reporting. Preserve transaction references and contact your bank through its verified channel promptly. Reporting does not guarantee money recovery.",
+            "hi": "राष्ट्रीय साइबर अपराध पोर्टल वित्तीय साइबर धोखाधड़ी की रिपोर्ट के लिए 1930 बताता है। लेनदेन का विवरण सुरक्षित रखें और बैंक के सत्यापित माध्यम से तुरंत संपर्क करें। रिपोर्ट करने से पैसे वापस मिलने की गारंटी नहीं होती.",
+            "caution": "Do not share OTPs, passwords or pay a supposed recovery agent. This app cannot freeze a transaction or file a report."
+          }
+        ],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "First, report it through the official financial cyber-fraud route: contact your bank through its verified channel and use 1930 or the official cybercrime portal. Keep the transaction details safe and do not share OTPs or passwords. Recovery is not guaranteed, and a portal complaint is not automatically an FIR.",
+        "question": "",
+        "sourceIds": [
+          "cyber-report",
+          "cyber",
+          "nalsa",
+          "cyber-response"
+        ],
+        "summary": "I lost INR 5000 in a UPI scam this morning in India. What should I do first?",
+        "facts": [
+          {
+            "field": "amount",
+            "value": "INR 5000",
+            "sourceId": "message-0",
+            "quote": "I lost INR 5000 in a UPI scam this morning in India."
+          }
+        ],
+        "documentFindings": [],
+        "documentAnswer": null,
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 2187,
+          "outputTokens": 141,
+          "totalTokens": 2328
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 2187,
+        "completion_tokens": 141,
+        "total_tokens": 2328,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.00227475,
+      "latencyMs": 2982,
+      "promptHash": "f7cc0b03e8911f1efefbf3416cb605fb3bc37dd6750b8c382ec16aac2e8c92fb",
+      "requestId": "req_e898037e10024e7e9e9aa00643d3fbb4"
+    },
+    {
+      "id": "account",
+      "checks": [
+        {
+          "name": "danger",
+          "pass": true
+        },
+        {
+          "name": "content-proxy",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "cyber",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "nonfinancial",
+        "financialCyber": false,
+        "cyber": true,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "cyber-types",
+            "topic": "cyber",
+            "sourceId": "cyber-response",
+            "section": "Official reporting guidance",
+            "title": "Match the reporting route to the incident",
+            "text": "The Ministry describes the official cybercrime portal as covering all cybercrime types. The financial-fraud reporting system and 1930 support financial cyber-fraud reporting. State/UT law-enforcement agencies handle conversion of portal complaints into FIRs and subsequent action.",
+            "hi": "आधिकारिक पोर्टल सभी प्रकार के साइबर अपराध की रिपोर्ट के लिए है। वित्तीय धोखाधड़ी की रिपोर्ट के लिए 1930 का माध्यम है। पोर्टल शिकायत को FIR में बदलने और आगे की कार्रवाई का काम संबंधित राज्य/केंद्र शासित प्रदेश की पुलिस करती है।",
+            "caution": "A portal acknowledgement is not proof that an FIR has been registered. No recovery, investigation or prosecution outcome is guaranteed."
+          },
+          {
+            "id": "cyber-urgent",
+            "topic": "cyber",
+            "sourceId": "cyber-report",
+            "section": "Official reporting route",
+            "title": "Report suspected financial cyber-fraud promptly",
+            "text": "The National Cybercrime Reporting Portal lists 1930 for financial cyber-fraud reporting. Preserve transaction references and contact your bank through its verified channel promptly. Reporting does not guarantee money recovery.",
+            "hi": "राष्ट्रीय साइबर अपराध पोर्टल वित्तीय साइबर धोखाधड़ी की रिपोर्ट के लिए 1930 बताता है। लेनदेन का विवरण सुरक्षित रखें और बैंक के सत्यापित माध्यम से तुरंत संपर्क करें। रिपोर्ट करने से पैसे वापस मिलने की गारंटी नहीं होती.",
+            "caution": "Do not share OTPs, passwords or pay a supposed recovery agent. This app cannot freeze a transaction or file a report."
+          }
+        ],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "Use Instagram’s official account recovery/reporting flow first, and also use the official cybercrime portal for suspected cybercrime if you want a formal complaint route. The 1930 financial-fraud helpline is for financial cyber-fraud, so based on what you said, that is not the main route here. A portal complaint is not automatically an FIR, and recovery of the account is not guaranteed.",
+        "question": "",
+        "sourceIds": [
+          "cyber-report",
+          "cyber",
+          "nalsa",
+          "cyber-response"
+        ],
+        "summary": "My Instagram account was hacked. No money was lost. Which reporting route should I use?",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": null,
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 2183,
+          "outputTokens": 127,
+          "totalTokens": 2310
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 2183,
+        "completion_tokens": 127,
+        "total_tokens": 2310,
+        "prompt_tokens_details": {
+          "cached_tokens": 2048,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.00220875,
+      "latencyMs": 1648,
+      "promptHash": "ef329e3853b71f0ff1da967536a341786b3a7af43ecd632ab661ea5503f4ea06",
+      "requestId": "req_981b6938864e478e9e994d22a746ca99"
+    },
+    {
+      "id": "profile",
+      "checks": [
+        {
+          "name": "danger",
+          "pass": true
+        },
+        {
+          "name": "content-proxy",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "cyber",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "nonfinancial",
+        "financialCyber": false,
+        "cyber": true,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "cyber-types",
+            "topic": "cyber",
+            "sourceId": "cyber-response",
+            "section": "Official reporting guidance",
+            "title": "Match the reporting route to the incident",
+            "text": "The Ministry describes the official cybercrime portal as covering all cybercrime types. The financial-fraud reporting system and 1930 support financial cyber-fraud reporting. State/UT law-enforcement agencies handle conversion of portal complaints into FIRs and subsequent action.",
+            "hi": "आधिकारिक पोर्टल सभी प्रकार के साइबर अपराध की रिपोर्ट के लिए है। वित्तीय धोखाधड़ी की रिपोर्ट के लिए 1930 का माध्यम है। पोर्टल शिकायत को FIR में बदलने और आगे की कार्रवाई का काम संबंधित राज्य/केंद्र शासित प्रदेश की पुलिस करती है।",
+            "caution": "A portal acknowledgement is not proof that an FIR has been registered. No recovery, investigation or prosecution outcome is guaranteed."
+          },
+          {
+            "id": "cyber-urgent",
+            "topic": "cyber",
+            "sourceId": "cyber-report",
+            "section": "Official reporting route",
+            "title": "Report suspected financial cyber-fraud promptly",
+            "text": "The National Cybercrime Reporting Portal lists 1930 for financial cyber-fraud reporting. Preserve transaction references and contact your bank through its verified channel promptly. Reporting does not guarantee money recovery.",
+            "hi": "राष्ट्रीय साइबर अपराध पोर्टल वित्तीय साइबर धोखाधड़ी की रिपोर्ट के लिए 1930 बताता है। लेनदेन का विवरण सुरक्षित रखें और बैंक के सत्यापित माध्यम से तुरंत संपर्क करें। रिपोर्ट करने से पैसे वापस मिलने की गारंटी नहीं होती.",
+            "caution": "Do not share OTPs, passwords or pay a supposed recovery agent. This app cannot freeze a transaction or file a report."
+          }
+        ],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "No. The pack says a portal complaint is not automatically an FIR; the cybercrime portal covers all cybercrime types, and State/UT law-enforcement handles conversion of portal complaints into FIRs and further action. For impersonation or account/profile abuse, use the official platform recovery/reporting route and the cybercrime portal as appropriate.",
+        "question": "",
+        "sourceIds": [
+          "cyber-report",
+          "cyber",
+          "nalsa",
+          "cyber-response"
+        ],
+        "summary": "A fake profile is impersonating me. Does a portal complaint automatically become an FIR?",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": null,
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 2182,
+          "outputTokens": 103,
+          "totalTokens": 2285
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 2182,
+        "completion_tokens": 103,
+        "total_tokens": 2285,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.0021,
+      "latencyMs": 1347,
+      "promptHash": "61d17ba8bff4cfd3fadef056b3856968ce3cb65cc66dce21f9f4f96b34256bb1",
+      "requestId": "req_29916bd6978b4e2fb4544c3065b21432"
+    },
+    {
+      "id": "economic",
+      "checks": [
+        {
+          "name": "danger",
+          "pass": true
+        },
+        {
+          "name": "content-proxy",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "family",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "unknown",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "domestic-legal-aid",
+            "topic": "family",
+            "sourceId": "nalsa",
+            "section": "NALSA FAQs 46–48",
+            "title": "Prepare for local legal-aid support",
+            "text": "NALSA describes applications to the nearest Legal Services Institution for domestic-violence legal aid, with assistance for court cases, counselling and links to specialised support. Ask the institution about the applicable process and help available locally.",
+            "hi": "NALSA के अनुसार घरेलू हिंसा से प्रभावित महिला निकटतम विधिक सेवा संस्था में सहायता के लिए आवेदन कर सकती है। स्थानीय प्रक्रिया, परामर्श और उपलब्ध सहायता की पुष्टि संस्था से करें।",
+            "caution": "This app does not appoint counsel, contact a support service or establish entitlement to a particular order or compensation. Use only a device and records that are safe to access."
+          },
+          {
+            "id": "dv-residence",
+            "topic": "family",
+            "sourceId": "dv-act",
+            "section": "Sections 17–18",
+            "title": "Residence and protection safeguards may be available",
+            "text": "The Domestic Violence Act provides residence safeguards for women in covered domestic relationships and allows a Magistrate to make protection orders where its conditions are met. A protection order is a court decision, not something this app can issue.",
+            "hi": "घरेलू हिंसा अधिनियम के अंतर्गत आने वाली महिलाओं के लिए साझा घर में निवास और मजिस्ट्रेट द्वारा संरक्षण आदेश के प्रावधान हैं। आदेश अदालत देती है; यह ऐप आदेश जारी नहीं कर सकता.",
+            "caution": "Coverage and relief depend on the relationship and facts. Prioritise immediate safety; do not confront an abusive person because of this guidance."
+          }
+        ],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "You can prepare to approach the nearest Legal Services Institution for domestic-violence legal aid and ask about court-case help, counselling, and specialised support. The reviewed pack also says residence safeguards and a protection order may be available under the Domestic Violence Act if the relationship and facts fit. Since you say you are safe now, use only records and a device that are safe to access, and do not confront him.",
+        "question": "Do you want help making a short list of safe documents or details to take to the Legal Services Institution?",
+        "sourceIds": [
+          "dv-act",
+          "emergency",
+          "nalsa"
+        ],
+        "summary": "My husband controls my money. I am safe now in India. What can I prepare for local support?",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": null,
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 2096,
+          "outputTokens": 177,
+          "totalTokens": 2273
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 2096,
+        "completion_tokens": 177,
+        "total_tokens": 2273,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.0023685,
+      "latencyMs": 1633,
+      "promptHash": "3820a3626e138d1a6e92dad50c4b30e7f1ebec7cb25f303a3987c0fad0c56637",
+      "requestId": "req_ca6e6966d23e40e5914a0f4d9addf514"
+    },
+    {
+      "id": "emotional",
+      "checks": [
+        {
+          "name": "danger",
+          "pass": true
+        },
+        {
+          "name": "content-proxy",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "family",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "unknown",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "domestic-legal-aid",
+            "topic": "family",
+            "sourceId": "nalsa",
+            "section": "NALSA FAQs 46–48",
+            "title": "Prepare for local legal-aid support",
+            "text": "NALSA describes applications to the nearest Legal Services Institution for domestic-violence legal aid, with assistance for court cases, counselling and links to specialised support. Ask the institution about the applicable process and help available locally.",
+            "hi": "NALSA के अनुसार घरेलू हिंसा से प्रभावित महिला निकटतम विधिक सेवा संस्था में सहायता के लिए आवेदन कर सकती है। स्थानीय प्रक्रिया, परामर्श और उपलब्ध सहायता की पुष्टि संस्था से करें।",
+            "caution": "This app does not appoint counsel, contact a support service or establish entitlement to a particular order or compensation. Use only a device and records that are safe to access."
+          },
+          {
+            "id": "dv-residence",
+            "topic": "family",
+            "sourceId": "dv-act",
+            "section": "Sections 17–18",
+            "title": "Residence and protection safeguards may be available",
+            "text": "The Domestic Violence Act provides residence safeguards for women in covered domestic relationships and allows a Magistrate to make protection orders where its conditions are met. A protection order is a court decision, not something this app can issue.",
+            "hi": "घरेलू हिंसा अधिनियम के अंतर्गत आने वाली महिलाओं के लिए साझा घर में निवास और मजिस्ट्रेट द्वारा संरक्षण आदेश के प्रावधान हैं। आदेश अदालत देती है; यह ऐप आदेश जारी नहीं कर सकता.",
+            "caution": "Coverage and relief depend on the relationship and facts. Prioritise immediate safety; do not confront an abusive person because of this guidance."
+          }
+        ],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "अगर आप अभी सुरक्षित हैं, तो इस pack के अनुसार निकटतम विधिक सेवा संस्था में आवेदन करके घरेलू हिंसा/सहायता के लिए स्थानीय कानूनी सहायता, परामर्श और ज़रूरी लिंक के बारे में पूछें। यह ऐप वकील नियुक्त नहीं करता और न ही किसी खास आदेश/मुआवज़े का हक़ तय करता है। अगर स्थिति फिर से तुरंत असुरक्षित लगे, 112 पर कॉल करें।",
+        "question": "क्या आप चाहती हैं कि मैं आपके लिए स्थानीय विधिक सेवा संस्था/कानूनी सहायता में पूछने के लिए छोटा आवेदन-ड्राफ्ट तैयार करूँ?",
+        "sourceIds": [
+          "dv-act",
+          "emergency",
+          "nalsa"
+        ],
+        "summary": "मैं अभी सुरक्षित हूँ। भावनात्मक दुर्व्यवहार के लिए स्थानीय कानूनी सहायता की तैयारी कैसे करूँ?",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": null,
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 2106,
+          "outputTokens": 173,
+          "totalTokens": 2279
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 2106,
+        "completion_tokens": 173,
+        "total_tokens": 2279,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.002358,
+      "latencyMs": 1728,
+      "promptHash": "7da263dadcd8ca215296573d9079c62f70558aa5d344aebcc27eb3c7e47e05a1",
+      "requestId": "req_a58fe43e79b6431aa4204bd840ddd15a"
+    },
+    {
+      "id": "private-notice",
+      "checks": [
+        {
+          "name": "danger",
+          "pass": true
+        },
+        {
+          "name": "content-proxy",
+          "pass": true
+        },
+        {
+          "name": "forbidden-content-proxy",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "police",
+        "foreign": false,
+        "urgent": true,
+        "cyberKind": "unknown",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "police-appearance",
+            "topic": "police",
+            "sourceId": "bnss",
+            "section": "Section 35(3)–(6)",
+            "title": "Police appearance notices have a specific procedure",
+            "text": "BNSS section 35 provides an appearance-notice process where arrest is not required under subsection (1). Compliance is required; subsection (5) conditions later arrest on recorded reasons despite continuing compliance. Noncompliance can have consequences under subsection (6).",
+            "hi": "BNSS धारा 35 में कुछ स्थितियों में पेश होने का नोटिस और उसका पालन करने का प्रावधान है। पालन करने पर भी कानून में शर्तों सहित गिरफ्तारी की स्थिति हो सकती है। वकील से लागू प्रक्रिया की जाँच कराएँ।",
+            "caution": "This is not immunity from arrest, a bail assurance or a rule for private legal notices. Territorial exceptions, transition, facts and the actual notice need qualified review."
+          },
+          {
+            "id": "arrest-lawyer",
+            "topic": "police",
+            "sourceId": "bnss",
+            "section": "Sections 38, 47 and 48",
+            "title": "Arrest safeguards include access to information and help",
+            "text": "BNSS section 38 allows an arrested person to meet an advocate during interrogation, though not throughout it. Section 47 concerns communication of grounds for arrest without warrant; section 48 concerns informing a nominated relative, friend or other person of the arrest and place of custody.",
+            "hi": "BNSS की धारा 38 गिरफ्तारी के बाद पूछताछ के दौरान वकील से मिलने का अधिकार देती है, लेकिन पूरी पूछताछ के दौरान नहीं। धारा 47 बिना वारंट गिरफ्तारी के आधार बताने और धारा 48 नामित व्यक्ति को गिरफ्तारी व हिरासत की जगह की जानकारी देने से संबंधित है.",
+            "caution": "A lawyer must check applicability, territorial exceptions and transitional provisions. No automatic entitlement to bail or prediction about arrest is made."
+          }
+        ],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "No. A private legal notice from a lawyer is not the same as a police appearance notice, police summons, or court summons. The pack says the police-notice procedure is separate, and private notices should not be treated as police process. Because authenticity and the exact document matter, have a qualified lawyer check the notice and its sender promptly.",
+        "question": "If you can share the notice text, does it name a police station or police officer, or only a private lawyer/law firm?",
+        "sourceIds": [
+          "bnss",
+          "nalsa"
+        ],
+        "summary": "I received a private legal notice from a lawyer in India. It asks for a reply in 7 days. Does that mean I have a police summons?",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": null,
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 2150,
+          "outputTokens": 133,
+          "totalTokens": 2283
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 2150,
+        "completion_tokens": 133,
+        "total_tokens": 2283,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.002211,
+      "latencyMs": 1759,
+      "promptHash": "b1b72c6a736d95c40f15f13363be7d4ea8a2f6ca9a620620e4a57b19995936e3",
+      "requestId": "req_a6b778e32d1642b98c7b002285bdedd4"
+    },
+    {
+      "id": "police-appearance",
+      "checks": [
+        {
+          "name": "danger",
+          "pass": true
+        },
+        {
+          "name": "content-proxy",
+          "pass": true
+        },
+        {
+          "name": "forbidden-content-proxy",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "police",
+        "foreign": false,
+        "urgent": true,
+        "cyberKind": "unknown",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "police-appearance",
+            "topic": "police",
+            "sourceId": "bnss",
+            "section": "Section 35(3)–(6)",
+            "title": "Police appearance notices have a specific procedure",
+            "text": "BNSS section 35 provides an appearance-notice process where arrest is not required under subsection (1). Compliance is required; subsection (5) conditions later arrest on recorded reasons despite continuing compliance. Noncompliance can have consequences under subsection (6).",
+            "hi": "BNSS धारा 35 में कुछ स्थितियों में पेश होने का नोटिस और उसका पालन करने का प्रावधान है। पालन करने पर भी कानून में शर्तों सहित गिरफ्तारी की स्थिति हो सकती है। वकील से लागू प्रक्रिया की जाँच कराएँ।",
+            "caution": "This is not immunity from arrest, a bail assurance or a rule for private legal notices. Territorial exceptions, transition, facts and the actual notice need qualified review."
+          },
+          {
+            "id": "arrest-lawyer",
+            "topic": "police",
+            "sourceId": "bnss",
+            "section": "Sections 38, 47 and 48",
+            "title": "Arrest safeguards include access to information and help",
+            "text": "BNSS section 38 allows an arrested person to meet an advocate during interrogation, though not throughout it. Section 47 concerns communication of grounds for arrest without warrant; section 48 concerns informing a nominated relative, friend or other person of the arrest and place of custody.",
+            "hi": "BNSS की धारा 38 गिरफ्तारी के बाद पूछताछ के दौरान वकील से मिलने का अधिकार देती है, लेकिन पूरी पूछताछ के दौरान नहीं। धारा 47 बिना वारंट गिरफ्तारी के आधार बताने और धारा 48 नामित व्यक्ति को गिरफ्तारी व हिरासत की जगह की जानकारी देने से संबंधित है.",
+            "caution": "A lawyer must check applicability, territorial exceptions and transitional provisions. No automatic entitlement to bail or prediction about arrest is made."
+          }
+        ],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "No. The reviewed card says BNSS section 35 is an appearance-notice process, and even with compliance, later arrest can still happen if the recorded-reasons condition is met. It is not immunity from arrest or a bail assurance. Because applicability depends on the actual notice, dates and territorial/transition issues, a qualified lawyer should review it promptly.",
+        "question": "",
+        "sourceIds": [
+          "bnss",
+          "nalsa"
+        ],
+        "summary": "I have a police appearance notice referring to BNSS section 35. Is complying an absolute guarantee I cannot be arrested?",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": null,
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 2143,
+          "outputTokens": 111,
+          "totalTokens": 2254
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 2143,
+        "completion_tokens": 111,
+        "total_tokens": 2254,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.00210675,
+      "latencyMs": 1460,
+      "promptHash": "10df381fb5c9d2e75b59e8b52171b0819caa69e5917942cea32a87016d91527b",
+      "requestId": "req_d7117795fdc049a58fa288de3a805169"
+    },
+    {
+      "id": "document-date",
+      "checks": [
+        {
+          "name": "exact-document-verdict",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "unknown",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "Yes. The notice explicitly says to attend on 20 November 2026 at 10:00.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Does the supplied notice explicitly state attendance on 20 November 2026?",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": {
+          "verdict": "supported",
+          "answer": "Yes. The supplied notice explicitly states attendance on 20 November 2026 at 10:00.",
+          "evidence": [
+            {
+              "attachmentId": "doc",
+              "name": "document-date.txt",
+              "quote": "Attend on 20 November 2026 at 10:00.",
+              "locators": [
+                {
+                  "start": 25,
+                  "end": 61,
+                  "page": 1,
+                  "lineStart": 2,
+                  "lineEnd": 2
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [
+          {
+            "kind": "missing_context",
+            "summary": "The excerpt notes that Annexure B is not included, so the file is incomplete beyond the quoted notice.",
+            "evidence": [
+              {
+                "attachmentId": "doc",
+                "name": "document-date.txt",
+                "quote": "Annexure B is not included.",
+                "locators": [
+                  {
+                    "start": 62,
+                    "end": 89,
+                    "page": 1,
+                    "lineStart": 2,
+                    "lineEnd": 2
+                  }
+                ]
+              }
+            ],
+            "verification": "Quotes matched to supplied text. Potential issue only; legal precedence and completeness are not determined."
+          }
+        ],
+        "usage": {
+          "inputTokens": 782,
+          "outputTokens": 214,
+          "totalTokens": 996
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 782,
+        "completion_tokens": 214,
+        "total_tokens": 996,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.0015495,
+      "latencyMs": 1876,
+      "promptHash": "032fb1915784b6958e756c398f46cdfdbb439dfc710e191bbf3a52836d76833e",
+      "requestId": "req_883bdf4ece51415bb118312c1884da3c"
+    },
+    {
+      "id": "missing-term",
+      "checks": [
+        {
+          "name": "exact-document-verdict",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "financial",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "No. The excerpt says payment terms are not set yet, so it does not establish a 7-day due date.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Does this text establish that payment is due within 7 days?",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": {
+          "verdict": "not_found",
+          "answer": "The supplied excerpt does not establish that payment is due within 7 days. It only says the payment terms will be agreed later, so no 7-day deadline is shown.",
+          "evidence": [
+            {
+              "attachmentId": "doc",
+              "name": "missing-term.txt",
+              "quote": "Payment terms will be agreed later.",
+              "locators": [
+                {
+                  "start": 9,
+                  "end": 44,
+                  "page": 1,
+                  "lineStart": 2,
+                  "lineEnd": 2
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [],
+        "usage": {
+          "inputTokens": 762,
+          "outputTokens": 156,
+          "totalTokens": 918
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 762,
+        "completion_tokens": 156,
+        "total_tokens": 918,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.0012735,
+      "latencyMs": 1916,
+      "promptHash": "24dd4ccded400f6a59e73f0fee41ee55e27b14ee90ffd06dcfc1c74efcb8843b",
+      "requestId": "req_0e54a8d39b4444b38cb822f7c5425a83"
+    },
+    {
+      "id": "conflict",
+      "checks": [
+        {
+          "name": "exact-document-verdict",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "unknown",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "No. The excerpt gives two different reply dates and no rule choosing between them, so it does not unambiguously establish 20 November 2026 as the only reply date.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Does this text unambiguously establish 20 November 2026 as the only reply date?",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": {
+          "verdict": "unclear",
+          "answer": "The excerpt is ambiguous. It says “Reply on 20 November 2026” and also “Reply on 25 November 2026,” and it adds that no precedence clause is supplied. Because both dates appear and nothing resolves the conflict, it does not unambiguously establish 20 November 2026 as the only reply date.",
+          "evidence": [
+            {
+              "attachmentId": "doc",
+              "name": "conflict.txt",
+              "quote": "Reply on 20 November 2026.",
+              "locators": [
+                {
+                  "start": 19,
+                  "end": 45,
+                  "page": 1,
+                  "lineStart": 2,
+                  "lineEnd": 2
+                }
+              ]
+            },
+            {
+              "attachmentId": "doc",
+              "name": "conflict.txt",
+              "quote": "Reply on 25 November 2026.",
+              "locators": [
+                {
+                  "start": 56,
+                  "end": 82,
+                  "page": 1,
+                  "lineStart": 3,
+                  "lineEnd": 3
+                }
+              ]
+            },
+            {
+              "attachmentId": "doc",
+              "name": "conflict.txt",
+              "quote": "No precedence clause is supplied.",
+              "locators": [
+                {
+                  "start": 83,
+                  "end": 116,
+                  "page": 1,
+                  "lineStart": 3,
+                  "lineEnd": 3
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [
+          {
+            "kind": "conflict",
+            "summary": "Two different reply dates are stated with no supplied rule resolving which one controls.",
+            "evidence": [
+              {
+                "attachmentId": "doc",
+                "name": "conflict.txt",
+                "quote": "Reply on 20 November 2026.",
+                "locators": [
+                  {
+                    "start": 19,
+                    "end": 45,
+                    "page": 1,
+                    "lineStart": 2,
+                    "lineEnd": 2
+                  }
+                ]
+              },
+              {
+                "attachmentId": "doc",
+                "name": "conflict.txt",
+                "quote": "Reply on 25 November 2026.",
+                "locators": [
+                  {
+                    "start": 56,
+                    "end": 82,
+                    "page": 1,
+                    "lineStart": 3,
+                    "lineEnd": 3
+                  }
+                ]
+              }
+            ],
+            "verification": "Quotes matched to supplied text. Potential issue only; legal precedence and completeness are not determined."
+          }
+        ],
+        "usage": {
+          "inputTokens": 794,
+          "outputTokens": 304,
+          "totalTokens": 1098
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "usage": {
+        "prompt_tokens": 794,
+        "completion_tokens": 304,
+        "total_tokens": 1098,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "accountedUsd": 0.0019635,
+      "latencyMs": 2582,
+      "promptHash": "dcf295a17b8a6c9c3c9514ac907009e35ef32b24b2e90d3b21c39cdfa30da1d5",
+      "requestId": "req_acebe5bfb5954448998371f9f5d99bef"
+    }
+  ],
+  "summary": {
+    "completed": 10,
+    "planned": 10,
+    "pass": 10,
+    "aiAnswers": 10,
+    "ledgerAttempts": 10,
+    "ledgerAccountedUsd": 0.020414250000000002,
+    "expertReview": "pending"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "development": {
+    "sha256": "53b18c5c06fd57e5ce6f76bfd9f84b02d4f3b202d97db1d9185af224bd4f4ef2"
+  },
+  "maxUsd": 0.25,
+  "maxAttempts": 10,
+  "note": "Synthetic targeted regression set authored by implementer, not a held-out or independent legal evaluation."
+}

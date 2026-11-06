@@ -1,0 +1,56 @@
+{
+  "attempts": 10,
+  "accountedUsd": 0.020414250000000002,
+  "requests": [
+    {
+      "runId": "current::development:financial",
+      "reservedUsd": 0.0266325,
+      "at": "2026-11-06T04:00:41.352Z"
+    },
+    {
+      "runId": "current::development:account",
+      "reservedUsd": 0.026649,
+      "at": "2026-11-06T04:00:44.313Z"
+    },
+    {
+      "runId": "current::development:profile",
+      "reservedUsd": 0.0266505,
+      "at": "2026-11-06T04:00:45.965Z"
+    },
+    {
+      "runId": "current::development:economic",
+      "reservedUsd": 0.0259395,
+      "at": "2026-11-06T04:00:47.317Z"
+    },
+    {
+      "runId": "current::development:emotional",
+      "reservedUsd": 0.026196,
+      "at": "2026-11-06T04:00:48.960Z"
+    },
+    {
+      "runId": "current::development:private-notice",
+      "reservedUsd": 0.026202,
+      "at": "2026-11-06T04:00:50.683Z"
+    },
+    {
+      "runId": "current::development:police-appearance",
+      "reservedUsd": 0.02619,
+      "at": "2026-11-06T04:00:52.443Z"
+    },
+    {
+      "runId": "current::development:document-date",
+      "reservedUsd": 0.0147105,
+      "at": "2026-11-06T04:00:53.910Z"
+    },
+    {
+      "runId": "current::development:missing-term",
+      "reservedUsd": 0.0146205,
+      "at": "2026-11-06T04:00:55.784Z"
+    },
+    {
+      "runId": "current::development:conflict",
+      "reservedUsd": 0.0147555,
+      "at": "2026-11-06T04:00:57.705Z"
+    }
+  ]
+}
