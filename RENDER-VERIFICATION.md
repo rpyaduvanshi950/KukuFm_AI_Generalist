@@ -1,4 +1,6 @@
-# Render branch verification
+# Historical Render migration verification
+
+These are migration-stage checks. For the current main submission, see [docs/VERIFICATION.md](docs/VERIFICATION.md).
 
 Verified against the standard Node/Next.js production build, without deploying a Render service or calling a paid AI provider.
 

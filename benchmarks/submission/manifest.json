@@ -1,0 +1,6 @@
+{
+  "date": "2026-11-07",
+  "sourceHash": "3f2f162b181b5b185e4ed198f0492dc18a40660f193014ee5cf3b405d4952a30",
+  "runnerHash": "15d4803c7deacf243fe70b58f3bd5594c6c2b7eaea58c2913650790ef5249200",
+  "note": "Snapshot for the first 10-request regression. Later offline replays are separate, post-exposure checks."
+}

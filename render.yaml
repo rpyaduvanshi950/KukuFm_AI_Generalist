@@ -10,7 +10,7 @@ services:
   - type: web
     name: nyaya-render
     runtime: node
-    branch: render-deploy
+    branch: main
     region: singapore
     plan: free
     buildCommand: npm ci --include=dev --include=optional && npm run build

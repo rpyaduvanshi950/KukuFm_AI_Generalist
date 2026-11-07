@@ -1,7 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {assess,classify,draftCase,validateInput,topics,sources} from '../lib/legal.mjs';
-import {mkdirSync,writeFileSync} from 'node:fs';
+import {mkdtempSync,writeFileSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
 const cases=[
  ['refund','My online order refund of 4500 is delayed.','refund'],
  ['tenancy','My landlord kept my deposit.','rental'],
@@ -21,4 +23,4 @@ test('draft preserves unknowns, has no invented deadline and is not a legal noti
 test('Hindi draft and out-of-scope refusal',()=>{assert.match(draftCase({story:'वेतन बाकी है'},'salary','hi'),/वेतन बाकी है/);assert.match(draftCase({},'other'),/not generated/)});
 test('false evidence blocked in draft',()=>assert.match(draftCase({story:'forge evidence'},'refund'),/cannot help fabricate/));
 test('rental route does not assume consumer jurisdiction',()=>assert.ok(!topics.rental.sourceIds.includes('nch')));
-test.after(()=>{mkdirSync('outputs',{recursive:true});writeFileSync('outputs/raw-guided-cases.json',JSON.stringify(outputs,null,2));});
+test.after(()=>{const dir=mkdtempSync(join(tmpdir(),'nyaya-guided-regression-'));writeFileSync(join(dir,'raw-guided-cases.json'),JSON.stringify(outputs,null,2));});

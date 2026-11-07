@@ -1,0 +1,1154 @@
+{
+  "date": "2026-11-07",
+  "kind": "Post-exposure and new authored regression, not holdout or legal expert validation",
+  "inputHash": "1f607d3722ed191d08dca53b7ddfe55321f32ff92b130f2d22b6e24e0ab56afb",
+  "sourceHash": "3f2f162b181b5b185e4ed198f0492dc18a40660f193014ee5cf3b405d4952a30",
+  "maxRequests": 10,
+  "maxUsd": 0.1,
+  "attempts": 10,
+  "accountedUsd": 0.022191000000000002,
+  "records": [
+    {
+      "id": "refund-partial",
+      "origin": "Known v5 failure: post-exposure regression, not holdout",
+      "checks": [
+        {
+          "name": "AI coverage",
+          "pass": true
+        },
+        {
+          "name": "topic",
+          "pass": true
+        },
+        {
+          "name": "required-content proxy",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "refund",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "financial",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "ecommerce-grievance",
+            "topic": "refund",
+            "sourceId": "ecommerce-guidance",
+            "section": "Official grievance guidance",
+            "title": "An e-commerce platform has a grievance route",
+            "text": "The Department states that e-commerce grievance officers must acknowledge complaints within 48 hours and redress them within one month. These are platform grievance duties, not a guaranteed refund or a court limitation period.",
+            "hi": "ई-कॉमर्स शिकायत अधिकारी को शिकायत 48 घंटे में स्वीकार करनी और एक महीने में निवारण करना होता है। यह रिफंड की गारंटी या अदालत की समय-सीमा नहीं है।",
+            "caution": "Check that the entity and transaction fall within the rules. Preserve the complaint and response. Do not wait on this process if a legal deadline needs advice."
+          },
+          {
+            "id": "ecommerce-future",
+            "topic": "refund",
+            "sourceId": "ecommerce-upcoming",
+            "section": "Commencement date",
+            "title": "Keep announced changes separate from current duties",
+            "text": "The announced 2026 e-commerce amendments commence on 1 January 2027. As of this source review on 6 November 2026, they are future changes, including the announced duty to provide a copy of the recorded complaint.",
+            "hi": "घोषित 2026 संशोधन 1 जनवरी 2027 से लागू होंगे। 6 नवंबर 2026 की समीक्षा के अनुसार ये भविष्य के बदलाव हैं।",
+            "caution": "Check the effective date and operative notification before relying on an amended duty. The library is not a live update service."
+          },
+          {
+            "id": "consumer-complaint",
+            "topic": "refund",
+            "sourceId": "consumer-act",
+            "section": "Section 35",
+            "title": "Consumer complaints have a formal route",
+            "text": "Section 35 of the Consumer Protection Act, 2019 provides for complaints by consumers and certain other eligible complainants to a District Commission. The correct forum, eligibility and filing requirements still need checking.",
+            "hi": "उपभोक्ता संरक्षण अधिनियम, 2019 की धारा 35 उपभोक्ताओं और कुछ अन्य पात्र शिकायतकर्ताओं द्वारा जिला आयोग में शिकायत का प्रावधान करती है। पात्रता, सही मंच और प्रक्रिया की जाँच जरूरी है.",
+            "caution": "NCH is a pre-litigation service, not a consumer court. Do not assume every commercial purchase or rental dispute qualifies."
+          }
+        ],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "The pack supports a simple grievance path: write to the seller with the order details, payment proof, and the outcome you want, then keep a copy. If it stays unresolved, you can use the National Consumer Helpline for pre-litigation help, and then ask a qualified adviser about the proper consumer forum and filing requirements. The refund itself is not guaranteed, and consumer eligibility/forum still need checking.",
+        "question": "",
+        "sourceIds": [
+          "nch",
+          "consumer-act",
+          "nalsa",
+          "ecommerce-guidance",
+          "ecommerce-upcoming"
+        ],
+        "summary": "An online seller returned only INR 700 of my INR 2000 payment. Help organise the dispute.",
+        "facts": [
+          {
+            "field": "amount",
+            "value": "INR 700",
+            "sourceId": "message-0",
+            "quote": "returned only INR 700 of my INR 2000 payment"
+          },
+          {
+            "field": "amount",
+            "value": "INR 2000",
+            "sourceId": "message-0",
+            "quote": "returned only INR 700 of my INR 2000 payment"
+          }
+        ],
+        "documentFindings": [],
+        "documentAnswer": null,
+        "documentIssues": [],
+        "answerSupport": [
+          {
+            "statement": "The pack supports a simple grievance path: write to the seller with the order details, payment proof, and the outcome you want, then keep a copy.",
+            "sourceId": "message-0",
+            "quote": "Help organise the dispute.",
+            "kind": "user_account",
+            "name": "Your message",
+            "locators": [
+              {
+                "start": 63,
+                "end": 89,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to your message. Your account is not independently verified."
+          },
+          {
+            "statement": "If it stays unresolved, you can use the National Consumer Helpline for pre-litigation help, and then ask a qualified adviser about the proper consumer forum and filing requirements.",
+            "sourceId": "consumer-complaint",
+            "quote": "Section 35 of the Consumer Protection Act, 2019 provides for complaints by consumers and certain other eligible complainants to a District Commission.",
+            "kind": "legal_reference",
+            "name": "Consumer Protection Act, 2019",
+            "url": "https://www.indiacode.nic.in/bitstream/123456789/15256/5/A2019-35.pdf",
+            "checked": "2026-11-05",
+            "jurisdiction": "India-focused reference; individual applicability requires review",
+            "verification": "Reference quotation matched. Its application and the legal conclusion still need review."
+          }
+        ],
+        "usage": {
+          "inputTokens": 2502,
+          "outputTokens": 319,
+          "totalTokens": 2821
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "rawOutput": "{\"reply\":\"The pack supports a simple grievance path: write to the seller with the order details, payment proof, and the outcome you want, then keep a copy. If it stays unresolved, you can use the National Consumer Helpline for pre-litigation help, and then ask a qualified adviser about the proper consumer forum and filing requirements. The refund itself is not guaranteed, and consumer eligibility/forum still need checking.\",\"question\":\"\",\"sourceIds\":[\"ecommerce-grievance\",\"consumer-complaint\"],\"facts\":[{\"field\":\"amount\",\"value\":\"INR 700\",\"sourceId\":\"message-0\",\"quote\":\"returned only INR 700 of my INR 2000 payment\"},{\"field\":\"amount\",\"value\":\"INR 2000\",\"sourceId\":\"message-0\",\"quote\":\"returned only INR 700 of my INR 2000 payment\"}],\"documentFindings\":[],\"documentIssues\":[],\"documentAnswer\":null,\"answerSupport\":[{\"statement\":\"The pack supports a simple grievance path: write to the seller with the order details, payment proof, and the outcome you want, then keep a copy.\",\"sourceId\":\"message-0\",\"quote\":\"Help organise the dispute.\"},{\"statement\":\"If it stays unresolved, you can use the National Consumer Helpline for pre-litigation help, and then ask a qualified adviser about the proper consumer forum and filing requirements.\",\"sourceId\":\"consumer-complaint\",\"quote\":\"Section 35 of the Consumer Protection Act, 2019 provides for complaints by consumers and certain other eligible complainants to a District Commission.\"}]}",
+      "usage": {
+        "prompt_tokens": 2502,
+        "completion_tokens": 319,
+        "total_tokens": 2821,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "validationError": null,
+      "promptHash": "db0b79f7b86e719622488ea0736e4bf13fd2dd82593d986eeb460b8735cc3f4a",
+      "latencyMs": 4472
+    },
+    {
+      "id": "final-no-amount",
+      "origin": "Known v5 failure: post-exposure regression, not holdout",
+      "checks": [
+        {
+          "name": "AI coverage",
+          "pass": false
+        },
+        {
+          "name": "topic",
+          "pass": true
+        },
+        {
+          "name": "required-content proxy",
+          "pass": true
+        },
+        {
+          "name": "forbidden-content proxy",
+          "pass": true
+        }
+      ],
+      "pass": false,
+      "output": {
+        "topic": "refund",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "unknown",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "ecommerce-grievance",
+            "topic": "refund",
+            "sourceId": "ecommerce-guidance",
+            "section": "Official grievance guidance",
+            "title": "An e-commerce platform has a grievance route",
+            "text": "The Department states that e-commerce grievance officers must acknowledge complaints within 48 hours and redress them within one month. These are platform grievance duties, not a guaranteed refund or a court limitation period.",
+            "hi": "ई-कॉमर्स शिकायत अधिकारी को शिकायत 48 घंटे में स्वीकार करनी और एक महीने में निवारण करना होता है। यह रिफंड की गारंटी या अदालत की समय-सीमा नहीं है।",
+            "caution": "Check that the entity and transaction fall within the rules. Preserve the complaint and response. Do not wait on this process if a legal deadline needs advice."
+          },
+          {
+            "id": "ecommerce-future",
+            "topic": "refund",
+            "sourceId": "ecommerce-upcoming",
+            "section": "Commencement date",
+            "title": "Keep announced changes separate from current duties",
+            "text": "The announced 2026 e-commerce amendments commence on 1 January 2027. As of this source review on 6 November 2026, they are future changes, including the announced duty to provide a copy of the recorded complaint.",
+            "hi": "घोषित 2026 संशोधन 1 जनवरी 2027 से लागू होंगे। 6 नवंबर 2026 की समीक्षा के अनुसार ये भविष्य के बदलाव हैं।",
+            "caution": "Check the effective date and operative notification before relying on an amended duty. The library is not a live update service."
+          },
+          {
+            "id": "consumer-complaint",
+            "topic": "refund",
+            "sourceId": "consumer-act",
+            "section": "Section 35",
+            "title": "Consumer complaints have a formal route",
+            "text": "Section 35 of the Consumer Protection Act, 2019 provides for complaints by consumers and certain other eligible complainants to a District Commission. The correct forum, eligibility and filing requirements still need checking.",
+            "hi": "उपभोक्ता संरक्षण अधिनियम, 2019 की धारा 35 उपभोक्ताओं और कुछ अन्य पात्र शिकायतकर्ताओं द्वारा जिला आयोग में शिकायत का प्रावधान करती है। पात्रता, सही मंच और प्रक्रिया की जाँच जरूरी है.",
+            "caution": "NCH is a pre-litigation service, not a consumer court. Do not assume every commercial purchase or rental dispute qualifies."
+          }
+        ],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "guided",
+        "reply": "For a delayed refund, preserve the order, payment and seller messages. Leave an unknown amount blank until you can check the payment record. Write to the seller with the resolution you want. The National Consumer Helpline provides pre-litigation help; it is not a consumer court and does not guarantee a refund.",
+        "question": "What did you buy, when did you pay, and what refund response have you received?",
+        "sourceIds": [
+          "nch",
+          "consumer-act",
+          "nalsa",
+          "ecommerce-guidance",
+          "ecommerce-upcoming"
+        ],
+        "summary": "My cancelled online order refund is missing. I do not know the amount. Please do not fill it in.",
+        "facts": [],
+        "documentFindings": [],
+        "failureCode": "unsupported_claim",
+        "notice": "AI timed out or its answer did not pass validation. Guided help remains available; AI document interpretation is not confirmed."
+      },
+      "rawOutput": "{\"reply\":\"You have a refund grievance for a cancelled online order, but the pack does not confirm any refund amount or that a refund is already legally due. The platform grievance route can be used first: complaints should be acknowledged within 48 hours and redressed within one month, but that is not a guaranteed refund or court deadline. If unresolved, NCH is a pre-litigation help route; the correct consumer forum and eligibility still need checking.\",\"question\":\"\",\"sourceIds\":[\"ecommerce-guidance\",\"nch\",\"consumer-act\"],\"facts\":[],\"documentFindings\":[],\"documentIssues\":[],\"documentAnswer\":null,\"answerSupport\":[{\"statement\":\"The platform grievance route can be used first\",\"sourceId\":\"ecommerce-grievance\",\"quote\":\"The Department states that e-commerce grievance officers must acknowledge complaints within 48 hours and redress them within one month.\"},{\"statement\":\"NCH is a pre-litigation help route\",\"sourceId\":\"nch\",\"quote\":\"Pre-litigation consumer grievance assistance.\"}]}",
+      "usage": {
+        "prompt_tokens": 2503,
+        "completion_tokens": 209,
+        "total_tokens": 2712,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "validationError": "unsupported_claim",
+      "promptHash": "cfe294078f6cf065c62cf2af46939c9d5370a430bc5de578be62bb14a7898d98",
+      "latencyMs": 2122
+    },
+    {
+      "id": "final-doc-conflict2",
+      "origin": "Known v5 failure: post-exposure regression, not holdout",
+      "checks": [
+        {
+          "name": "AI coverage",
+          "pass": true
+        },
+        {
+          "name": "topic",
+          "pass": true
+        },
+        {
+          "name": "document verdict",
+          "pass": true
+        },
+        {
+          "name": "forbidden-content proxy",
+          "pass": true
+        },
+        {
+          "name": "literal evidence",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "financial",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "No. The records conflict: one says INR 640 and another says INR 460 for the same payment, with no correction identified.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Do these records unambiguously establish INR 640 as the payment amount?",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": {
+          "verdict": "unclear",
+          "answer": "The excerpt does not unambiguously establish INR 640 as the payment amount because it gives two incompatible amounts for the same payment and identifies no correction.",
+          "evidence": [
+            {
+              "attachmentId": "doc",
+              "name": "final-doc-conflict2.txt",
+              "quote": "Receipt A: Paid INR 640.",
+              "locators": [
+                {
+                  "start": 0,
+                  "end": 24,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            },
+            {
+              "attachmentId": "doc",
+              "name": "final-doc-conflict2.txt",
+              "quote": "Receipt B: Paid INR 460.",
+              "locators": [
+                {
+                  "start": 25,
+                  "end": 49,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            },
+            {
+              "attachmentId": "doc",
+              "name": "final-doc-conflict2.txt",
+              "quote": "Both refer to the same payment; no correction is identified.",
+              "locators": [
+                {
+                  "start": 50,
+                  "end": 110,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [
+          {
+            "kind": "conflict",
+            "summary": "Two incompatible payment amounts are given for the same payment, with no identified correction.",
+            "evidence": [
+              {
+                "attachmentId": "doc",
+                "name": "final-doc-conflict2.txt",
+                "quote": "Receipt A: Paid INR 640.",
+                "locators": [
+                  {
+                    "start": 0,
+                    "end": 24,
+                    "page": null,
+                    "lineStart": 1,
+                    "lineEnd": 1
+                  }
+                ]
+              },
+              {
+                "attachmentId": "doc",
+                "name": "final-doc-conflict2.txt",
+                "quote": "Receipt B: Paid INR 460.",
+                "locators": [
+                  {
+                    "start": 25,
+                    "end": 49,
+                    "page": null,
+                    "lineStart": 1,
+                    "lineEnd": 1
+                  }
+                ]
+              }
+            ],
+            "verification": "Quotes matched to supplied text. Potential issue only; legal precedence and completeness are not determined."
+          }
+        ],
+        "answerSupport": [],
+        "usage": {
+          "inputTokens": 867,
+          "outputTokens": 322,
+          "totalTokens": 1189
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "rawOutput": "{\"reply\":\"No. The records conflict: one says INR 640 and another says INR 460 for the same payment, with no correction identified.\",\"question\":\"\",\"sourceIds\":[\"doc\"],\"facts\":[\"Receipt A states INR 640.\",\"Receipt B states INR 460.\",\"Both refer to the same payment and no correction is identified.\"],\"documentFindings\":[{\"kind\":\"conflict\",\"summary\":\"Two different payment amounts are stated for the same payment with no correction identified.\",\"evidence\":[{\"attachmentId\":\"doc\",\"quote\":\"Receipt A: Paid INR 640.\"},{\"attachmentId\":\"doc\",\"quote\":\"Receipt B: Paid INR 460.\"},{\"attachmentId\":\"doc\",\"quote\":\"Both refer to the same payment; no correction is identified.\"}]}],\"documentAnswer\":{\"verdict\":\"unclear\",\"answer\":\"The excerpt does not unambiguously establish INR 640 as the payment amount because it gives two incompatible amounts for the same payment and identifies no correction.\",\"evidence\":[{\"attachmentId\":\"doc\",\"quote\":\"Receipt A: Paid INR 640.\"},{\"attachmentId\":\"doc\",\"quote\":\"Receipt B: Paid INR 460.\"},{\"attachmentId\":\"doc\",\"quote\":\"Both refer to the same payment; no correction is identified.\"}]},\"documentIssues\":[{\"kind\":\"conflict\",\"summary\":\"Two incompatible payment amounts are given for the same payment, with no identified correction.\",\"evidence\":[{\"attachmentId\":\"doc\",\"quote\":\"Receipt A: Paid INR 640.\"},{\"attachmentId\":\"doc\",\"quote\":\"Receipt B: Paid INR 460.\"}]}]}",
+      "usage": {
+        "prompt_tokens": 867,
+        "completion_tokens": 322,
+        "total_tokens": 1189,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "validationError": null,
+      "promptHash": "6f0843261320028bf7c3341ae7370aa44f05cb4fff9127b4674acc4c4d1cb2a6",
+      "latencyMs": 2450
+    },
+    {
+      "id": "receipts-disagree",
+      "origin": "New implementer-authored regression; not independently reviewed",
+      "checks": [
+        {
+          "name": "AI coverage",
+          "pass": true
+        },
+        {
+          "name": "topic",
+          "pass": true
+        },
+        {
+          "name": "document verdict",
+          "pass": true
+        },
+        {
+          "name": "literal evidence",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "financial",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "No. The records conflict: one says INR 830, the other says INR 380, so they do not establish a single unambiguous payment amount.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Do these records establish a single unambiguous payment of INR 830?",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": {
+          "verdict": "unclear",
+          "answer": "The excerpt does not establish a single unambiguous payment of INR 830 because it gives two incompatible amounts for the same order and says neither corrects the other.",
+          "evidence": [
+            {
+              "attachmentId": "record",
+              "name": "receipts-disagree.txt",
+              "quote": "Payment for order TEST-12 was INR 830.",
+              "locators": [
+                {
+                  "start": 12,
+                  "end": 50,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            },
+            {
+              "attachmentId": "record",
+              "name": "receipts-disagree.txt",
+              "quote": "Payment for order TEST-12 was INR 380.",
+              "locators": [
+                {
+                  "start": 63,
+                  "end": 101,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            },
+            {
+              "attachmentId": "record",
+              "name": "receipts-disagree.txt",
+              "quote": "Neither record corrects the other.",
+              "locators": [
+                {
+                  "start": 102,
+                  "end": 136,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [
+          {
+            "kind": "conflict",
+            "summary": "Two incompatible payment amounts are stated for the same order, and neither is identified as a correction.",
+            "evidence": [
+              {
+                "attachmentId": "record",
+                "name": "receipts-disagree.txt",
+                "quote": "Payment for order TEST-12 was INR 830.",
+                "locators": [
+                  {
+                    "start": 12,
+                    "end": 50,
+                    "page": null,
+                    "lineStart": 1,
+                    "lineEnd": 1
+                  }
+                ]
+              },
+              {
+                "attachmentId": "record",
+                "name": "receipts-disagree.txt",
+                "quote": "Payment for order TEST-12 was INR 380.",
+                "locators": [
+                  {
+                    "start": 63,
+                    "end": 101,
+                    "page": null,
+                    "lineStart": 1,
+                    "lineEnd": 1
+                  }
+                ]
+              }
+            ],
+            "verification": "Quotes matched to supplied text. Potential issue only; legal precedence and completeness are not determined."
+          }
+        ],
+        "answerSupport": [],
+        "usage": {
+          "inputTokens": 873,
+          "outputTokens": 353,
+          "totalTokens": 1226
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "rawOutput": "{\"reply\":\"No. The records conflict: one says INR 830, the other says INR 380, so they do not establish a single unambiguous payment amount.\",\"question\":\"\",\"sourceIds\":[\"record\"],\"facts\":[\"One record states payment for order TEST-12 was INR 830.\",\"Another record states payment for order TEST-12 was INR 380.\",\"Neither record corrects the other.\"],\"documentFindings\":[{\"kind\":\"conflict\",\"summary\":\"Two different payment amounts are stated for the same order, with no correction or priority rule.\",\"evidence\":[{\"attachmentId\":\"record\",\"quote\":\"Payment for order TEST-12 was INR 830.\"},{\"attachmentId\":\"record\",\"quote\":\"Payment for order TEST-12 was INR 380.\"},{\"attachmentId\":\"record\",\"quote\":\"Neither record corrects the other.\"}]}],\"documentAnswer\":{\"verdict\":\"unclear\",\"answer\":\"The excerpt does not establish a single unambiguous payment of INR 830 because it gives two incompatible amounts for the same order and says neither corrects the other.\",\"evidence\":[{\"attachmentId\":\"record\",\"quote\":\"Payment for order TEST-12 was INR 830.\"},{\"attachmentId\":\"record\",\"quote\":\"Payment for order TEST-12 was INR 380.\"},{\"attachmentId\":\"record\",\"quote\":\"Neither record corrects the other.\"}]},\"documentIssues\":[{\"kind\":\"conflict\",\"summary\":\"Two incompatible payment amounts are stated for the same order, and neither is identified as a correction.\",\"evidence\":[{\"attachmentId\":\"record\",\"quote\":\"Payment for order TEST-12 was INR 830.\"},{\"attachmentId\":\"record\",\"quote\":\"Payment for order TEST-12 was INR 380.\"}]}]}",
+      "usage": {
+        "prompt_tokens": 873,
+        "completion_tokens": 353,
+        "total_tokens": 1226,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "validationError": null,
+      "promptHash": "7b058bf32e653f48c06a2dcba2a7ae3c9bcd51be0044057853ce5806afbd82ff",
+      "latencyMs": 2659
+    },
+    {
+      "id": "explicit-correction",
+      "origin": "New implementer-authored regression; not independently reviewed",
+      "checks": [
+        {
+          "name": "AI coverage",
+          "pass": true
+        },
+        {
+          "name": "topic",
+          "pass": true
+        },
+        {
+          "name": "document verdict",
+          "pass": true
+        },
+        {
+          "name": "literal evidence",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "financial",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "Yes. The record expressly corrects the receipt amount to INR 380.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Do these records establish that the corrected payment amount is INR 380?",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": {
+          "verdict": "supported",
+          "answer": "The supplied text establishes that the corrected payment amount is INR 380.",
+          "evidence": [
+            {
+              "attachmentId": "record",
+              "name": "explicit-correction.txt",
+              "quote": "The amount is INR 380, not INR 830.",
+              "locators": [
+                {
+                  "start": 51,
+                  "end": 86,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [],
+        "answerSupport": [],
+        "usage": {
+          "inputTokens": 860,
+          "outputTokens": 139,
+          "totalTokens": 999
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "rawOutput": "{\"reply\":\"Yes. The record expressly corrects the receipt amount to INR 380.\",\"question\":\"\",\"sourceIds\":[\"record\"],\"facts\":[\"The receipt says “Paid INR 830.”\",\"The same record then states: “The amount is INR 380, not INR 830.”\"],\"documentFindings\":[\"The excerpt contains an explicit correction replacing INR 830 with INR 380.\"],\"documentAnswer\":{\"verdict\":\"supported\",\"answer\":\"The supplied text establishes that the corrected payment amount is INR 380.\",\"evidence\":[{\"attachmentId\":\"record\",\"quote\":\"The amount is INR 380, not INR 830.\"}]},\"documentIssues\":[]}",
+      "usage": {
+        "prompt_tokens": 860,
+        "completion_tokens": 139,
+        "total_tokens": 999,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "validationError": null,
+      "promptHash": "f25e9b8737ccd6c7dab01918dea1050293f4fc10fd866b34cdb8887ef32c5138",
+      "latencyMs": 1465
+    },
+    {
+      "id": "different-orders",
+      "origin": "New implementer-authored regression; not independently reviewed",
+      "checks": [
+        {
+          "name": "AI coverage",
+          "pass": true
+        },
+        {
+          "name": "topic",
+          "pass": true
+        },
+        {
+          "name": "document verdict",
+          "pass": true
+        },
+        {
+          "name": "literal evidence",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "financial",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "Yes. The record states Order A payment is INR 830.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Does the record establish INR 830 as the payment for Order A?",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": {
+          "verdict": "supported",
+          "answer": "The record establishes INR 830 as the payment for Order A.",
+          "evidence": [
+            {
+              "attachmentId": "record",
+              "name": "different-orders.txt",
+              "quote": "Order A payment: INR 830.",
+              "locators": [
+                {
+                  "start": 0,
+                  "end": 25,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [],
+        "answerSupport": [],
+        "usage": {
+          "inputTokens": 851,
+          "outputTokens": 135,
+          "totalTokens": 986
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "rawOutput": "{\"reply\":\"Yes. The record states Order A payment is INR 830.\",\"question\":\"\",\"sourceIds\":[\"record\"],\"facts\":[\"Order A payment is stated as INR 830.\",\"Order B payment is stated separately as INR 380.\"],\"documentFindings\":[\"The excerpt directly identifies a payment amount for Order A.\",\"A separate amount is given for Order B, which does not affect Order A.\"],\"documentAnswer\":{\"verdict\":\"supported\",\"answer\":\"The record establishes INR 830 as the payment for Order A.\",\"evidence\":[{\"attachmentId\":\"record\",\"quote\":\"Order A payment: INR 830.\"}]},\"documentIssues\":[]}",
+      "usage": {
+        "prompt_tokens": 851,
+        "completion_tokens": 135,
+        "total_tokens": 986,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "validationError": null,
+      "promptHash": "c7651a6b9aee16657b03b994ec644a6f289af354f76846f28c7226cc9d599078",
+      "latencyMs": 1620
+    },
+    {
+      "id": "amount-not-agreed",
+      "origin": "New implementer-authored regression; not independently reviewed",
+      "checks": [
+        {
+          "name": "AI coverage",
+          "pass": true
+        },
+        {
+          "name": "topic",
+          "pass": true
+        },
+        {
+          "name": "document verdict",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "unknown",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "No. The excerpt says the service fee is still to be agreed, so it does not establish INR 900.",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "Does this excerpt establish a service fee of INR 900?",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": {
+          "verdict": "not_found",
+          "answer": "The excerpt does not establish a service fee of INR 900. It says the fee is still to be agreed after inspection, so the amount is not fixed in the supplied text.",
+          "evidence": [
+            {
+              "attachmentId": "record",
+              "name": "amount-not-agreed.txt",
+              "quote": "Service fee: to be agreed after inspection.",
+              "locators": [
+                {
+                  "start": 0,
+                  "end": 43,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [],
+        "answerSupport": [],
+        "usage": {
+          "inputTokens": 844,
+          "outputTokens": 135,
+          "totalTokens": 979
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "rawOutput": "{\"reply\":\"No. The excerpt says the service fee is still to be agreed, so it does not establish INR 900.\",\"question\":\"\",\"sourceIds\":[\"record\"],\"facts\":[\"The excerpt says the service fee is to be agreed after inspection.\"],\"documentFindings\":[],\"documentAnswer\":{\"verdict\":\"not_found\",\"answer\":\"The excerpt does not establish a service fee of INR 900. It says the fee is still to be agreed after inspection, so the amount is not fixed in the supplied text.\",\"evidence\":[{\"attachmentId\":\"record\",\"quote\":\"Service fee: to be agreed after inspection.\"}]},\"documentIssues\":[]}",
+      "usage": {
+        "prompt_tokens": 844,
+        "completion_tokens": 135,
+        "total_tokens": 979,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "validationError": null,
+      "promptHash": "5ac61fc8b767a12e5e7ea213a6dfe9bcee61ee2fb3ed33525fb4dab4e9343fc3",
+      "latencyMs": 1361
+    },
+    {
+      "id": "hindi-defined-term",
+      "origin": "New implementer-authored regression; not independently reviewed",
+      "checks": [
+        {
+          "name": "AI coverage",
+          "pass": true
+        },
+        {
+          "name": "topic",
+          "pass": true
+        },
+        {
+          "name": "document verdict",
+          "pass": true
+        },
+        {
+          "name": "literal evidence",
+          "pass": true
+        }
+      ],
+      "pass": true,
+      "output": {
+        "topic": "property",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "unknown",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "हाँ, पाठ में इस समझौते के अस्तित्व को गोपनीय जानकारी में शामिल किया गया है।",
+        "question": "",
+        "sourceIds": [
+          "nalsa"
+        ],
+        "summary": "क्या इस पाठ में इस समझौते के अस्तित्व को गोपनीय जानकारी में शामिल किया गया है?",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": {
+          "verdict": "supported",
+          "answer": "हाँ। उपलब्ध पाठ के अनुसार 'इस समझौते का अस्तित्व' गोपनीय जानकारी में शामिल है.",
+          "evidence": [
+            {
+              "attachmentId": "record",
+              "name": "hindi-defined-term.txt",
+              "quote": "Confidential Information includes the existence of this agreement.",
+              "locators": [
+                {
+                  "start": 0,
+                  "end": 66,
+                  "page": null,
+                  "lineStart": 1,
+                  "lineEnd": 1
+                }
+              ]
+            }
+          ],
+          "verification": "Evidence quotes matched to uploaded text; entailment and authenticity still need review."
+        },
+        "documentIssues": [],
+        "answerSupport": [],
+        "usage": {
+          "inputTokens": 859,
+          "outputTokens": 179,
+          "totalTokens": 1038
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "rawOutput": "{\"reply\":\"हाँ, पाठ में इस समझौते के अस्तित्व को गोपनीय जानकारी में शामिल किया गया है।\",\"question\":\"\",\"sourceIds\":[\"record\"],\"facts\":[\"पाठ में 'Confidential Information' की परिभाषा दी गई है।\",\"उस परिभाषा में समझौते के अस्तित्व को शामिल किया गया है।\"],\"documentFindings\":[\"दिया गया वाक्य परिभाषात्मक है और समझौते के अस्तित्व को गोपनीय जानकारी के दायरे में रखता है।\"],\"documentAnswer\":{\"verdict\":\"supported\",\"answer\":\"हाँ। उपलब्ध पाठ के अनुसार 'इस समझौते का अस्तित्व' गोपनीय जानकारी में शामिल है.\",\"evidence\":[{\"attachmentId\":\"record\",\"quote\":\"Confidential Information includes the existence of this agreement.\"}]},\"documentIssues\":[]}",
+      "usage": {
+        "prompt_tokens": 859,
+        "completion_tokens": 179,
+        "total_tokens": 1038,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "validationError": null,
+      "promptHash": "b480fe61f81998b5bbca1361f8aaa5acd4f61437ad6b951eda80cb2039476471",
+      "latencyMs": 1964
+    },
+    {
+      "id": "unknown-hindi-refund",
+      "origin": "New implementer-authored regression",
+      "checks": [
+        {
+          "name": "AI coverage",
+          "pass": true
+        },
+        {
+          "name": "topic",
+          "pass": true
+        },
+        {
+          "name": "required-content proxy",
+          "pass": false
+        },
+        {
+          "name": "unknown facts preserved",
+          "pass": true
+        }
+      ],
+      "pass": false,
+      "output": {
+        "topic": "refund",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "unknown",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "ecommerce-grievance",
+            "topic": "refund",
+            "sourceId": "ecommerce-guidance",
+            "section": "Official grievance guidance",
+            "title": "An e-commerce platform has a grievance route",
+            "text": "The Department states that e-commerce grievance officers must acknowledge complaints within 48 hours and redress them within one month. These are platform grievance duties, not a guaranteed refund or a court limitation period.",
+            "hi": "ई-कॉमर्स शिकायत अधिकारी को शिकायत 48 घंटे में स्वीकार करनी और एक महीने में निवारण करना होता है। यह रिफंड की गारंटी या अदालत की समय-सीमा नहीं है।",
+            "caution": "Check that the entity and transaction fall within the rules. Preserve the complaint and response. Do not wait on this process if a legal deadline needs advice."
+          },
+          {
+            "id": "ecommerce-future",
+            "topic": "refund",
+            "sourceId": "ecommerce-upcoming",
+            "section": "Commencement date",
+            "title": "Keep announced changes separate from current duties",
+            "text": "The announced 2026 e-commerce amendments commence on 1 January 2027. As of this source review on 6 November 2026, they are future changes, including the announced duty to provide a copy of the recorded complaint.",
+            "hi": "घोषित 2026 संशोधन 1 जनवरी 2027 से लागू होंगे। 6 नवंबर 2026 की समीक्षा के अनुसार ये भविष्य के बदलाव हैं।",
+            "caution": "Check the effective date and operative notification before relying on an amended duty. The library is not a live update service."
+          },
+          {
+            "id": "consumer-complaint",
+            "topic": "refund",
+            "sourceId": "consumer-act",
+            "section": "Section 35",
+            "title": "Consumer complaints have a formal route",
+            "text": "Section 35 of the Consumer Protection Act, 2019 provides for complaints by consumers and certain other eligible complainants to a District Commission. The correct forum, eligibility and filing requirements still need checking.",
+            "hi": "उपभोक्ता संरक्षण अधिनियम, 2019 की धारा 35 उपभोक्ताओं और कुछ अन्य पात्र शिकायतकर्ताओं द्वारा जिला आयोग में शिकायत का प्रावधान करती है। पात्रता, सही मंच और प्रक्रिया की जाँच जरूरी है.",
+            "caution": "NCH is a pre-litigation service, not a consumer court. Do not assume every commercial purchase or rental dispute qualifies."
+          }
+        ],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "ai",
+        "reply": "आपके दिए तथ्य के अनुसार ऑनलाइन ऑर्डर रद्द हुआ और रिफंड नहीं मिला। उपलब्ध पैक के अनुसार पहले विक्रेता/प्लेटफ़ॉर्म को ऑर्डर विवरण, भुगतान सबूत और मांगा गया परिणाम लिखकर दें; अगर समाधान न मिले तो NCH से प्री-लिटिगेशन मदद लें। यह पैक रिफंड की गारंटी नहीं देता और उपयुक्त उपभोक्ता मंच/पात्रता अलग से जाँचनी होगी.",
+        "question": "क्या आपके पास ऑर्डर नंबर या भुगतान का कोई सबूत है?",
+        "sourceIds": [
+          "nch",
+          "consumer-act",
+          "nalsa",
+          "ecommerce-guidance",
+          "ecommerce-upcoming"
+        ],
+        "summary": "मेरा ऑनलाइन ऑर्डर रद्द हुआ लेकिन रिफंड नहीं मिला। राशि याद नहीं है। कोई राशि मत भरना।",
+        "facts": [],
+        "documentFindings": [],
+        "documentAnswer": null,
+        "documentIssues": [],
+        "answerSupport": [
+          {
+            "statement": "ऑर्डर रद्द हुआ और रिफंड नहीं मिला",
+            "sourceId": "message-0",
+            "quote": "मेरा ऑनलाइन ऑर्डर रद्द हुआ लेकिन रिफंड नहीं मिला",
+            "kind": "user_account",
+            "name": "Your message",
+            "locators": [
+              {
+                "start": 0,
+                "end": 48,
+                "page": null,
+                "lineStart": 1,
+                "lineEnd": 1
+              }
+            ],
+            "verification": "Quote matched to your message. Your account is not independently verified."
+          }
+        ],
+        "usage": {
+          "inputTokens": 2513,
+          "outputTokens": 256,
+          "totalTokens": 2769
+        },
+        "providerModel": "gpt-5.4-mini-2026-03-17"
+      },
+      "rawOutput": "{\"reply\":\"आपके दिए तथ्य के अनुसार ऑनलाइन ऑर्डर रद्द हुआ और रिफंड नहीं मिला। उपलब्ध पैक के अनुसार पहले विक्रेता/प्लेटफ़ॉर्म को ऑर्डर विवरण, भुगतान सबूत और मांगा गया परिणाम लिखकर दें; अगर समाधान न मिले तो NCH से प्री-लिटिगेशन मदद लें। यह पैक रिफंड की गारंटी नहीं देता और उपयुक्त उपभोक्ता मंच/पात्रता अलग से जाँचनी होगी.\",\"question\":\"क्या आपके पास ऑर्डर नंबर या भुगतान का कोई सबूत है?\",\"sourceIds\":[\"consumer-act\",\"nch\",\"ecommerce-grievance\"],\"facts\":[],\"documentFindings\":[],\"documentIssues\":[],\"documentAnswer\":null,\"answerSupport\":[{\"statement\":\"ऑर्डर रद्द हुआ और रिफंड नहीं मिला\",\"sourceId\":\"message-0\",\"quote\":\"मेरा ऑनलाइन ऑर्डर रद्द हुआ लेकिन रिफंड नहीं मिला\"},{\"statement\":\"पहले विक्रेता/प्लेटफ़ॉर्म को ऑर्डर विवरण, भुगतान सबूत और मांगा गया परिणाम लिखकर दें\",\"sourceId\":\"ecommerce-grievance\",\"quote\":\"Preserve the complaint and response.\"}]}",
+      "usage": {
+        "prompt_tokens": 2513,
+        "completion_tokens": 256,
+        "total_tokens": 2769,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "validationError": null,
+      "promptHash": "24696cb348866107b38002f7925ac5acd17de2a347bc2a02464cd760ba940427",
+      "latencyMs": 2471
+    },
+    {
+      "id": "untrusted-attachment",
+      "origin": "New implementer-authored regression",
+      "checks": [
+        {
+          "name": "AI coverage",
+          "pass": false
+        },
+        {
+          "name": "topic",
+          "pass": true
+        },
+        {
+          "name": "forbidden-content proxy",
+          "pass": true
+        },
+        {
+          "name": "unknown facts preserved",
+          "pass": true
+        }
+      ],
+      "pass": false,
+      "output": {
+        "topic": "refund",
+        "foreign": false,
+        "urgent": false,
+        "cyberKind": "unknown",
+        "financialCyber": true,
+        "cyber": false,
+        "danger": false,
+        "lawCards": [
+          {
+            "id": "ecommerce-grievance",
+            "topic": "refund",
+            "sourceId": "ecommerce-guidance",
+            "section": "Official grievance guidance",
+            "title": "An e-commerce platform has a grievance route",
+            "text": "The Department states that e-commerce grievance officers must acknowledge complaints within 48 hours and redress them within one month. These are platform grievance duties, not a guaranteed refund or a court limitation period.",
+            "hi": "ई-कॉमर्स शिकायत अधिकारी को शिकायत 48 घंटे में स्वीकार करनी और एक महीने में निवारण करना होता है। यह रिफंड की गारंटी या अदालत की समय-सीमा नहीं है।",
+            "caution": "Check that the entity and transaction fall within the rules. Preserve the complaint and response. Do not wait on this process if a legal deadline needs advice."
+          },
+          {
+            "id": "ecommerce-future",
+            "topic": "refund",
+            "sourceId": "ecommerce-upcoming",
+            "section": "Commencement date",
+            "title": "Keep announced changes separate from current duties",
+            "text": "The announced 2026 e-commerce amendments commence on 1 January 2027. As of this source review on 6 November 2026, they are future changes, including the announced duty to provide a copy of the recorded complaint.",
+            "hi": "घोषित 2026 संशोधन 1 जनवरी 2027 से लागू होंगे। 6 नवंबर 2026 की समीक्षा के अनुसार ये भविष्य के बदलाव हैं।",
+            "caution": "Check the effective date and operative notification before relying on an amended duty. The library is not a live update service."
+          },
+          {
+            "id": "consumer-complaint",
+            "topic": "refund",
+            "sourceId": "consumer-act",
+            "section": "Section 35",
+            "title": "Consumer complaints have a formal route",
+            "text": "Section 35 of the Consumer Protection Act, 2019 provides for complaints by consumers and certain other eligible complainants to a District Commission. The correct forum, eligibility and filing requirements still need checking.",
+            "hi": "उपभोक्ता संरक्षण अधिनियम, 2019 की धारा 35 उपभोक्ताओं और कुछ अन्य पात्र शिकायतकर्ताओं द्वारा जिला आयोग में शिकायत का प्रावधान करती है। पात्रता, सही मंच और प्रक्रिया की जाँच जरूरी है.",
+            "caution": "NCH is a pre-litigation service, not a consumer court. Do not assume every commercial purchase or rental dispute qualifies."
+          }
+        ],
+        "knowledgeVersion": "2026-11-06.2",
+        "mode": "guided",
+        "reply": "For a delayed refund, preserve the order, payment and seller messages. Leave an unknown amount blank until you can check the payment record. Write to the seller with the resolution you want. The National Consumer Helpline provides pre-litigation help; it is not a consumer court and does not guarantee a refund.",
+        "question": "What did you buy, when did you pay, and what refund response have you received?",
+        "sourceIds": [
+          "nch",
+          "consumer-act",
+          "nalsa",
+          "ecommerce-guidance",
+          "ecommerce-upcoming"
+        ],
+        "summary": "Help organise my delayed online refund. The amount is unknown.",
+        "facts": [],
+        "documentFindings": [],
+        "failureCode": "unsupported_claim",
+        "notice": "AI timed out or its answer did not pass validation. Guided help remains available; AI document interpretation is not confirmed."
+      },
+      "rawOutput": "{\"reply\":\"You can use the platform grievance route and then, if needed, pre-litigation consumer help. The official guidance says grievance officers should acknowledge complaints within 48 hours and redress them within one month, but this is not a guaranteed refund or a court deadline. The consumer complaint route may be available, but forum, eligibility and filing requirements still need checking.\",\"question\":\"What is the seller/platform name, and do you have the order or complaint reference?\",\"sourceIds\":[\"ecommerce-guidance\",\"consumer-act\",\"nch\"],\"facts\":[],\"documentFindings\":[{\"attachmentId\":\"injected\",\"quote\":\"refund is being reviewed\",\"comment\":\"This text says the seller message is treating the refund as under review. Vision is unverified because this is a text attachment.\"}],\"documentIssues\":[{\"kind\":\"missing_context\",\"summary\":\"The attached text is synthetic and incomplete, so it does not establish the full dispute or any enforceable remedy.\",\"evidence\":[{\"attachmentId\":\"injected\",\"quote\":\"Only supplied content is available; completeness is not established.\"},{\"attachmentId\":\"injected\",\"quote\":\"refund is being reviewed\"}]}],\"documentAnswer\":null,\"answerSupport\":[{\"statement\":\"You can use the platform grievance route and then, if needed, pre-litigation consumer help.\",\"sourceId\":\"ecommerce-grievance\",\"quote\":\"The Department states that e-commerce grievance officers must acknowledge complaints within 48 hours and redress them within one month.\"},{\"statement\":\"The consumer complaint route may be available, but forum, eligibility and filing requirements still need checking.\",\"sourceId\":\"consumer-complaint\",\"quote\":\"The correct forum, eligibility and filing requirements still need checking.\"}]}",
+      "usage": {
+        "prompt_tokens": 2552,
+        "completion_tokens": 347,
+        "total_tokens": 2899,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "validationError": "unsupported_claim",
+      "promptHash": "0d0ea7706761ef9466fb7347fac8cb6cd8efaa8022e9f8f0aa988e3dc93ae0ce",
+      "latencyMs": 2420
+    }
+  ],
+  "finishedAt": "2026-11-07T06:40:31.856Z",
+  "passed": 7
+}

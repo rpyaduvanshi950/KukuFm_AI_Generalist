@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-07",
+  "sourceHash": "8d7b50ea030e7fd45902db2f2c04ad771ed3e5279564fa80fba89d9ce81f6cf9",
+  "applicationTests": {
+    "passed": 190,
+    "failed": 0
+  },
+  "originTests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "postgresTests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "productionHttpSmoke": "passed",
+  "paidRegression": {
+    "passed": 7,
+    "cases": 10,
+    "acceptedAiResponses": 8,
+    "estimatedUsd": 0.022191
+  },
+  "offlineReplay": {
+    "passed": 10,
+    "cases": 10,
+    "networkRequests": 0
+  },
+  "independentLegalReview": "pending",
+  "liveDemoBranch": "render-deploy",
+  "submittedBranch": "main",
+  "renderBranchUpdated": false
+}

@@ -11,14 +11,15 @@
     "build": "next build --webpack",
     "start": "node --env-file-if-exists=.env.local scripts/start-render.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
-    "test": "node tests/legal.test.mjs && node tests/assistant.test.mjs && node tests/benchmark-v3.test.mjs && node tests/improvements.test.mjs && node tests/expanded-workflows.test.mjs && node tests/refund-evidence.test.mjs",
+    "test": "node tests/legal.test.mjs && node tests/assistant.test.mjs && node tests/benchmark-v3.test.mjs && node tests/improvements.test.mjs && node tests/expanded-workflows.test.mjs && node tests/refund-evidence.test.mjs && node tests/submission.test.mjs",
     "typecheck": "tsc --noEmit",
     "benchmark:offline": "node benchmarks/run-behaviour.mjs all benchmarks/results/regression-all.json && node benchmarks/run-guards.mjs",
     "db:migrate": "node --env-file-if-exists=.env.local scripts/migrate-render.mjs",
     "test:render": "node tests/render-platform.test.mjs",
     "test:postgres": "node tests/postgres-budget.test.mjs",
     "test:postgres:local": "node scripts/test-postgres-local.mjs",
-    "test:http": "node scripts/test-postgres-local.mjs --http"
+    "test:http": "node scripts/test-postgres-local.mjs --http",
+    "benchmark:submission": "node benchmarks/submission/run.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
