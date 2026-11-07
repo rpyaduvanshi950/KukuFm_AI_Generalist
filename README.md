@@ -19,7 +19,7 @@ Create a private `.env.local` from `.env.example`. Set `APP_PASSWORD` to a priva
 npm start
 ```
 
-The production server migrates the dedicated PostgreSQL database, binds `0.0.0.0`, and reads `PORT` (default 3000 locally). Protected reviewer access is the default; the browser accepts username `reviewer` and the configured password. The health endpoint is `/api/health`.
+The production server migrates the dedicated PostgreSQL database, binds `0.0.0.0`, and reads `PORT` (default 3000 locally). Protected reviewer access is the default. The public home page shows a sign-in link; click it and enter username `reviewer` and the configured password. The workspace and APIs require authentication. The health endpoint is `/api/health`; startup logs report local health and home-page response statuses.
 
 For a localhost-only no-key preview, use `ACCESS_MODE=public npm run dev`. Guided chat and local preparation work without a provider key. A missing key never triggers an external AI call. The default hosted configuration remains password-gated; public access must be explicitly chosen by the operator.
 

@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {reviewerLanding} from '../lib/reviewer-page.mjs';
 import {accessResponse} from '../lib/render-access.mjs';
 import {requestOriginAllowed} from '../lib/render-origin.mjs';
 const env={ACCESS_MODE:'protected',APP_PASSWORD:'synthetic-test-password-only'};
@@ -32,4 +33,9 @@ test('custom domain overrides Render default and malformed config fails closed',
  assert.equal(requestOriginAllowed(req,{APP_ORIGIN:'https://law.example',RENDER_EXTERNAL_URL:'https://old.onrender.com'}),true);
  assert.equal(requestOriginAllowed(req,{APP_ORIGIN:'not a url'}),false);
  assert.equal(requestOriginAllowed(new Request('http://localhost:5173/api/chat',{headers:{origin:'http://localhost:5173'}}),{}),true);
+});
+
+test('public reviewer landing contains no workspace and does not cache access state',async()=>{
+ const page=reviewerLanding();assert.equal(page.status,200);assert.match(page.headers.get('cache-control'),/no-store/);assert.match(page.headers.get('Content-Security-Policy'),/default-src 'none'/);
+ const html=await page.text();assert.match(html,/href="\/reviewer-login"/);assert.doesNotMatch(html,/Your workspace|AI_API_KEY|APP_PASSWORD/);
 });

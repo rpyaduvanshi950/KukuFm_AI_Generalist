@@ -40,9 +40,9 @@ For a custom domain, also set `APP_ORIGIN=https://your-domain.example`. Otherwis
 
 ## Reviewer access
 
-Protected mode is the default. The browser asks for HTTP Basic credentials. Use `reviewer` as the username and your `APP_PASSWORD` as the password. Render terminates HTTPS. Browser-managed Basic authentication can remain cached until the browser session is closed; it is a shared reviewer gate, not a per-user account system.
+Protected mode is the default. The unauthenticated homepage shows only a small sign-in page with HTTP 200, so an HTTP readiness check aimed at `/` does not receive a password challenge. Click **Sign in** to open the HTTP Basic credential prompt. The workspace, benchmark page and API remain protected. Use `reviewer` as the username and your `APP_PASSWORD` as the password. Render terminates HTTPS. Browser-managed Basic authentication can remain cached until the browser session is closed; it is a shared reviewer gate, not a per-user account system.
 
-`/api/health` and public static assets are accessible without credentials. Pages and other API routes are gated. Authenticated responses are marked private/no-store. Cloudflare and Sites identity headers are ignored.
+`/api/health` and public static assets are accessible without credentials. Workspace pages and other API routes are gated; only the minimal root sign-in page is public. Authenticated responses are marked private/no-store. Cloudflare and Sites identity headers are ignored.
 
 The operator may explicitly set `ACCESS_MODE=public` for a public demo. This exposes the app and its shared AI allowance, so make that choice deliberately in Render; no access change is performed by this branch push. Missing/short passwords or invalid access modes prevent normal startup. The proxy also fails closed if configuration is missing.
 
@@ -88,3 +88,9 @@ On other platforms, set `TEST_DATABASE_URL` to a dedicated test PostgreSQL datab
 - [Render PostgreSQL connections](https://render.com/docs/postgresql-creating-connecting)
 - [Render environment variables](https://render.com/docs/configure-environment-variables)
 - [Render free-instance limits](https://render.com/docs/free)
+
+## Readiness diagnostics
+
+Use `/api/health` as the Render Health Check Path. The root `/` now also returns HTTP 200 with a public sign-in page when credentials are absent; it contains no workspace or case information. `/reviewer-login` requires the existing reviewer password and redirects to the authenticated workspace.
+
+After startup, logs include `startup_probe` entries for `/api/health` and `/`. A status of 200 for both confirms the server responds locally. If Render still reports a deployment timeout with both probes at 200, inspect the service's Health Check Path, Events and Render networking rather than treating the log as a confirmed code crash. The probe logs contain no passwords, bodies or database URLs. The optional missing `.env.local` message remains normal on Render.

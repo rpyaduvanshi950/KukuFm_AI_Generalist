@@ -5,7 +5,7 @@ Deployment instructions are in [RENDER.md](RENDER.md). The branch is password-ga
 ## Access and monitoring
 
 - `ACCESS_MODE=protected` requires a private `APP_PASSWORD` of at least 16 characters. Missing configuration fails closed. The password is a shared reviewer gate, not individual accounts.
-- Only explicit `ACCESS_MODE=public` removes that gate. The branch push does not deploy or change hosting access.
+- The unauthenticated homepage is a minimal HTTP 200 sign-in page, allowing a root readiness probe to pass without exposing the workspace. `/reviewer-login` supplies the password challenge. Only explicit `ACCESS_MODE=public` removes the workspace gate. The branch push does not deploy or change hosting access.
 - Sites and Cloudflare identity headers have no authority here. The paid limiter uses a shared database scope rather than forgeable user/IP headers.
 - Health is `/api/health`; paid-AI readiness is `/api/status` behind the access gate. Origin checks use `APP_ORIGIN`, Render's external URL, or localhost for development.
 - Logs intentionally contain only request IDs, modes, status/failure categories and timing. Database errors are logged without connection URLs or credentials. Messages, document text and AI output are not intentionally logged.
