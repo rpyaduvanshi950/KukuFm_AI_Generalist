@@ -27,24 +27,20 @@ Set these privately under Render **Environment**:
 | --- | --- |
 | `NODE_VERSION` | `22` |
 | `NEXT_TELEMETRY_DISABLED` | `1` |
-| `ACCESS_MODE` | `protected` |
-| `APP_PASSWORD` | A private password of at least 16 characters |
 | `DATABASE_URL` | Your dedicated Render PostgreSQL internal URL |
 | `AI_BASE_URL` | `https://api.openai.com/v1` |
 | `AI_MODEL` | `gpt-5.4-mini-2026-03-17` |
 | `AI_API_KEY` | Optional. Leave absent/blank for guided mode |
 
-Do not use `NEXT_PUBLIC_` for the key, password or database URL. Do not copy `.env.local`, `.env.openai.local` or `.dev.vars` into GitHub. No actual credentials are included in this branch or Blueprint.
+Do not use `NEXT_PUBLIC_` for the key or database URL. Do not copy `.env.local`, `.env.openai.local` or `.dev.vars` into GitHub. No actual credentials are included in this branch or Blueprint.
 
 For a custom domain, also set `APP_ORIGIN=https://your-domain.example`. Otherwise, the API uses Render's supplied `RENDER_EXTERNAL_URL` for origin checks. This handles external HTTPS correctly behind Render's internal HTTP connection without trusting arbitrary forwarded host headers.
 
-## Reviewer access
+## Public access
 
-Protected mode is the default. The unauthenticated homepage shows only a small sign-in page with HTTP 200, so an HTTP readiness check aimed at `/` does not receive a password challenge. Click **Sign in** to open the HTTP Basic credential prompt. The workspace, benchmark page and API remain protected. Use `reviewer` as the username and your `APP_PASSWORD` as the password. Render terminates HTTPS. Browser-managed Basic authentication can remain cached until the browser session is closed; it is a shared reviewer gate, not a per-user account system.
+The workspace, guide, benchmarks and APIs open without sign-in. The former reviewer-login URL redirects directly to the workspace. `ACCESS_MODE` and `APP_PASSWORD` are no longer used and can be removed from existing Render environment settings. Existing values do not block startup or access.
 
-`/api/health` and public static assets are accessible without credentials. Workspace pages and other API routes are gated; only the minimal root sign-in page is public. Authenticated responses are marked private/no-store. Cloudflare and Sites identity headers are ignored.
-
-The operator may explicitly set `ACCESS_MODE=public` for a public demo. This exposes the app and its shared AI allowance, so make that choice deliberately in Render; no access change is performed by this branch push. Missing/short passwords or invalid access modes prevent normal startup. The proxy also fails closed if configuration is missing.
+Responses are marked private/no-store. The shared database-backed AI spending limits and origin checks still apply.
 
 ## AI spending and database behavior
 
@@ -68,7 +64,7 @@ npm run typecheck
 npm run build
 ```
 
-For local guided preview, set `ACCESS_MODE=public` explicitly and run `npm run dev`. This is a localhost-only development server. For production-like startup, use a private `.env.local` based on `.env.example`, then run `npm start`. Production startup also supports guided mode without a database if no AI key is set.
+For local guided preview, run `npm run dev`. This is a localhost-only development server. For production-like startup, use a private `.env.local` based on `.env.example`, then run `npm start`. Production startup also supports guided mode without a database if no AI key is set.
 
 Real PostgreSQL verification:
 
@@ -77,7 +73,7 @@ npm run test:postgres:local
 npm run test:http
 ```
 
-These commands require PostgreSQL binaries at `/usr/lib/postgresql/16/bin` or `POSTGRES_BIN`. They create and clean up an isolated temporary database, accessible only through a private Unix socket. They do not use the live Site database or make paid AI calls. The HTTP check starts a temporary password-protected production server, verifies authentication, health, assets, origin checks, guided chat and zero paid reservations without a key, then stops it.
+These commands require PostgreSQL binaries at `/usr/lib/postgresql/16/bin` or `POSTGRES_BIN`. They create and clean up an isolated temporary database, accessible only through a private Unix socket. They do not use the live Site database or make paid AI calls. The HTTP check starts a temporary public production server, verifies access without credentials, health, assets, origin checks, guided chat and zero paid reservations without a key, then stops it.
 
 On other platforms, set `TEST_DATABASE_URL` to a dedicated test PostgreSQL database and run `npm run test:postgres`. The tests create and remove only their own randomly named schema. The test user needs permission to create schemas.
 
@@ -91,6 +87,6 @@ On other platforms, set `TEST_DATABASE_URL` to a dedicated test PostgreSQL datab
 
 ## Readiness diagnostics
 
-Use `/api/health` as the Render Health Check Path. The root `/` now also returns HTTP 200 with a public sign-in page when credentials are absent; it contains no workspace or case information. `/reviewer-login` requires the existing reviewer password and redirects to the authenticated workspace.
+Use `/api/health` as the Render Health Check Path. The root `/` opens the workspace directly without credentials.
 
 After startup, logs include `startup_probe` entries for `/api/health` and `/`. A status of 200 for both confirms the server responds locally. If Render still reports a deployment timeout with both probes at 200, inspect the service's Health Check Path, Events and Render networking rather than treating the log as a confirmed code crash. The probe logs contain no passwords, bodies or database URLs. The optional missing `.env.local` message remains normal on Render.

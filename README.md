@@ -13,15 +13,15 @@ npm ci --include=dev --include=optional
 npm run build
 ```
 
-Create a private `.env.local` from `.env.example`. Set `APP_PASSWORD` to a private value of at least 16 characters. For AI, add `DATABASE_URL` and `AI_API_KEY`. Then:
+Create a private `.env.local` from `.env.example`. For AI, add `DATABASE_URL` and `AI_API_KEY`. Then:
 
 ```sh
 npm start
 ```
 
-The production server migrates the dedicated PostgreSQL database, binds `0.0.0.0`, and reads `PORT` (default 3000 locally). Protected reviewer access is the default. The public home page shows a sign-in link; click it and enter username `reviewer` and the configured password. The workspace and APIs require authentication. The health endpoint is `/api/health`; startup logs report local health and home-page response statuses.
+The production server migrates the dedicated PostgreSQL database, binds `0.0.0.0`, and reads `PORT` (default 3000 locally). The workspace opens directly without sign-in. The health endpoint is `/api/health`; startup logs report local health and home-page response statuses.
 
-For a localhost-only no-key preview, use `ACCESS_MODE=public npm run dev`. Guided chat and local preparation work without a provider key. A missing key never triggers an external AI call. The default hosted configuration remains password-gated; public access must be explicitly chosen by the operator.
+For a localhost-only no-key preview, use `npm run dev`. Guided chat and local preparation work without a provider key. A missing key never triggers an external AI call.
 
 ## Verification
 
