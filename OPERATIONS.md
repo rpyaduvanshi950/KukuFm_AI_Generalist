@@ -1,27 +1,25 @@
-# Private pilot operations
+# Render review-demo operations
 
-The hosted app remains owner-private. It is not represented as independently lawyer-validated or ready for an unrestricted public release.
+Deployment instructions are in [RENDER.md](RENDER.md). The branch is password-gated by default and is not represented as independently lawyer-reviewed or production-ready for unrestricted public legal assistance.
 
-## AI usage controls
+## Access and monitoring
 
-- GPT-5.4 mini snapshot only; 1,200 completion tokens. Unpriced providers/models are blocked by the web endpoint.
-- The D1 `ai_budget` table persists a **$0.50 conservative daily AI allowance** and 100-attempt ceiling across all users and Worker restarts. The day resets at 00:00 UTC (05:30 IST). The earlier per-identity 40/hour memory limiter remains an additional best-effort throttle.
-- An atomic conditional UPSERT reserves estimated cost before sending a request. Actual provider usage reconciles that reservation without cache discounts. Failures and unknown usage retain the reservation; there are no automatic retries or model/key rotation.
-- Missing/broken tracking, oversized context or exhausted allowance stops paid requests and keeps guided information available. This is an application allowance based on checked token prices, not an account billing limit or a guarantee against future pricing changes. Configure account billing controls separately before wider use.
-- Text reservation uses a generous byte-based bound and a separate image allowance. Images use high detail, resized locally to 1,800 pixels on the longest edge. Unsupported model settings cannot silently bypass pricing.
+- `ACCESS_MODE=protected` requires a private `APP_PASSWORD` of at least 16 characters. Missing configuration fails closed. The password is a shared reviewer gate, not individual accounts.
+- Only explicit `ACCESS_MODE=public` removes that gate. The branch push does not deploy or change hosting access.
+- Sites and Cloudflare identity headers have no authority here. The paid limiter uses a shared database scope rather than forgeable user/IP headers.
+- Health is `/api/health`; paid-AI readiness is `/api/status` behind the access gate. Origin checks use `APP_ORIGIN`, Render's external URL, or localhost for development.
+- Logs intentionally contain only request IDs, modes, status/failure categories and timing. Database errors are logged without connection URLs or credentials. Messages, document text and AI output are not intentionally logged.
 
-## Monitoring and privacy
+## Storage and allowances
 
-`/api/status` reports availability and aggregate remaining allowance, never a key. Structured `legal_request` logs contain a random request ID, mode, status/failure category and duration. Settlement failures emit `usage_settlement_failed`. No messages, model answers, document bodies, user identifiers or keys are intentionally logged. These logs support diagnosis; no external alert delivery or unattended source monitor has been configured.
+PostgreSQL stores aggregate daily/hourly counters and random reservation IDs/amounts. No automatic retention pruning is currently configured. Case facts, conversations and attachments remain in browser memory, with the existing optional local fact storage and user-controlled exports. AI-provider retention is separate.
 
-The usage table contains only UTC day and aggregate counters. Case facts/timeline remain in browser memory, with optional browser persistence that is off by default and not encrypted. Original attachments and selected PDF pages stay in browser memory until consented sending; they are not stored in D1 or R2. Case export/summary downloads are user-controlled. Removing an attachment or starting a new case clears its application reference. The AI provider's own retention terms are separate from the app's local storage behavior.
+Atomic reservations protect the shared daily amount and attempts under concurrency. Settlement is idempotent and uses the stored reservation amount. Missing or unavailable tracking stops paid requests; unknown usage retains the full reservation. Limits are based on the selected model's recorded token prices and are not a provider billing cap.
 
-Keep the Site owner-private pending independent legal and security review. Before broad access, add a durable per-user quota and abuse controls, define an operational owner and incident procedure, review retention/access policy and obtain a qualified Indian lawyer's review of the benchmark and legal source pack.
+Startup migrations use a transaction and advisory lock. Applied migration content hashes are checked; create a new SQL migration instead of editing one already applied. A new Render database does not inherit the live Site's usage history. Use a dedicated database for this deployment.
 
-## Database and release
+## Verification and wider use
 
-Schema is declared in `db/schema.ts`; generated migrations and metadata are committed under `drizzle/`. Hosted publication applies pending migrations before uploading the Worker. Never edit an applied migration. Local preview and production databases are separate.
+The migration preserves historical benchmark inputs and outputs and adds Node access/origin tests, real PostgreSQL concurrency/restart/migration tests, and production HTTP smoke checks without paid AI calls. Run the commands in RENDER.md after platform changes. A fresh versioned evaluation is required for new model-performance claims.
 
-The local migration was exercised through Wrangler and the spending SQL was also tested against SQLite with concurrent connections. A Worker-only redirect incompatibility found in the first scanned-page check was fixed by using `redirect: manual`, preserving the no-cross-host-credential-forwarding boundary. Unknown-usage reservations from that failed check were not erased to improve figures.
-
-Re-run core tests and type checks after changes. Use a new versioned benchmark directory when changing the evaluated engine. Keep final evaluation results separate from development and do not tune on their outcomes while claiming an untouched final set.
+Before unrestricted use, obtain qualified legal/security review and implement the desired individual-account, abuse-control, retention and operational support policies. Free Render services and databases have idle/expiry limits; consult Render before relying on them for durable service.

@@ -1,0 +1,36 @@
+# Creates resources only when you explicitly apply this Blueprint in Render.
+# Free plans are for a review/demo deployment. Check Render's current expiry/idle limits.
+databases:
+  - name: nyaya-render-db
+    databaseName: nyaya
+    user: nyaya
+    region: singapore
+    plan: free
+services:
+  - type: web
+    name: nyaya-render
+    runtime: node
+    branch: render-deploy
+    region: singapore
+    plan: free
+    buildCommand: npm ci --include=dev --include=optional && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NEXT_TELEMETRY_DISABLED
+        value: "1"
+      - key: ACCESS_MODE
+        value: protected
+      - key: APP_PASSWORD
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: nyaya-render-db
+          property: connectionString
+      - key: AI_BASE_URL
+        value: https://api.openai.com/v1
+      - key: AI_MODEL
+        value: gpt-5.4-mini-2026-03-17
+      # Optional: add AI_API_KEY privately in Render Environment after creation.
