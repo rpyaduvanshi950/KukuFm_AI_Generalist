@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-08",
+  "baseCommit": "7116f78",
+  "localOnly": true,
+  "softwareChecks": {
+    "tests": 207,
+    "pass": 207,
+    "fail": 0
+  },
+  "originChecks": 2,
+  "typecheck": "passed",
+  "productionBuild": "passed",
+  "guidedHttp": "passed",
+  "mockedProviderHttp": "passed",
+  "paidRequests": 0,
+  "browser": {
+    "viewport": {
+      "innerWidth": 390,
+      "innerHeight": 844
+    },
+    "keyboardComposerFocus": "observed solid focus-visible outline",
+    "staleDraftControls": "disabled and edited text preserved",
+    "saveReloadClear": "observed",
+    "fileUploadAndDownload": "not verified: browser capabilities stalled"
+  },
+  "independentLegalReview": "pending",
+  "historicalResultsChanged": false,
+  "historicalReportTypoCorrected": true,
+  "pushed": false,
+  "deployed": false,
+  "phase": "Local audit verification before publication was authorized"
+}

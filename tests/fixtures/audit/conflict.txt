@@ -1,0 +1,3 @@
+Receipt A: INR 830.
+Receipt B: INR 380.
+Both refer to the same payment; neither corrects the other.

@@ -1,4 +1,5 @@
 import {getDatabase} from '../../../lib/postgres.mjs';
+import {buildIdentity} from '../../../lib/build-identity.mjs';
 import {readBudget} from '../../../lib/budget-postgres.mjs';
 export const runtime='nodejs';
 export const dynamic='force-dynamic';
@@ -13,5 +14,5 @@ export async function GET(){
    service=remainingUsd>0&&(row?.attempts||0)<DAILY_REQUEST_LIMIT?'available':'allowance-reached';
   }
  }catch{service='tracking-unavailable'}
- return Response.json({configured:service==='available',service,remainingUsd,dailyAllowanceUsd:DAILY_BUDGET_MICROS/1000000,resetsAt:'00:00 UTC'},{headers:{'Cache-Control':'no-store'}});
+ return Response.json({configured:service==='available',service,remainingUsd,dailyAllowanceUsd:DAILY_BUDGET_MICROS/1000000,resetsAt:'00:00 UTC',build:buildIdentity()},{headers:{'Cache-Control':'no-store'}});
 }

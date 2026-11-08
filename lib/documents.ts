@@ -1,7 +1,7 @@
 import { unzipSync, strFromU8 } from 'fflate';
 
 export type Attachment = {
-  id: string; name: string; kind: 'text' | 'image'; text: string;
+  id: string; revision?:string; name: string; kind: 'text' | 'image'; text: string;
   image?: string; pages?: number; page?:number; coverage?:string; sourceFile?:File; warnings: string[]; size: number;
 };
 export const DOCUMENT_LIMITS={files:3,bytes:10*1024*1024,characters:18000,pages:20,imagePixels:1800};

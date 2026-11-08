@@ -4,7 +4,22 @@ An India-focused legal-information and case-preparation **web app** for **Proble
 
 [Hosted demo](https://kukufm-ai-generalist.onrender.com/) · [50-case benchmark](https://kukufm-ai-generalist.onrender.com/benchmarks) · [User guide](https://kukufm-ai-generalist.onrender.com/how-it-works) · [Submission walkthrough](docs/SUBMISSION.md)
 
-**Branch status:** `main` contains the submitted Node/Next.js version. The hosted demo currently runs the separate `render-deploy` branch; subsequent submission fixes are not live there. This update does not push that branch or change the existing Sites deployment. Earlier Sites source remains in Git history at [`c7f3986`](https://github.com/rpyaduvanshi950/KukuFm_AI_Generalist/tree/c7f3986).
+**Branch status:** `main` and `render-deploy` publish the same reviewed Node/Next.js source. The existing Render service uses `render-deploy`; check its deployment status and the app's build identifier before assuming the live demo has updated. Pushing these branches does not publish the earlier Sites deployment. Its source remains in Git history at [`c7f3986`](https://github.com/rpyaduvanshi950/KukuFm_AI_Generalist/tree/c7f3986).
+
+## Local audit hardening: 8 November 2026
+
+The local main source now blocks stale draft copying/downloads, preserves edited versions, separates superseded reviews from current evidence, and requires explained selection of competing facts or recorded corrections. Changes to document material withdraw consent and create a new record revision. Sentence associations are labelled related passages with support unverified, rather than semantic proof.
+
+See the [finding-by-finding audit report](docs/audit-2026-11-08/REPORT.md) for actual software results, mobile/keyboard observations, incomplete browser file/download checks and remaining legal/localisation review. Audit verification used no paid AI calls. Publication to GitHub is separate from verification of a successful live deployment.
+
+Additional deterministic verification:
+
+```sh
+npm run test:audit
+node scripts/test-postgres-local.mjs --audit-http
+```
+
+The HTTP check requires a production build and local PostgreSQL binaries. It uses a synthetic credential and blocked-network provider fixture; it is not fresh AI evaluation. The build identity in the footer and `/api/status` reports only a source fingerprint, source-pack version and prompt version.
 
 ## What works
 

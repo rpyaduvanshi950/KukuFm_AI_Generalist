@@ -11,5 +11,5 @@ try{
  run('initdb',['-D',data,'-U','postgres','-A','trust','--no-locale']);
  run('pg_ctl',['-D',data,'-l',join(root,'postgres.log'),'-o',`-h '' -k ${socket}`,'-w','start']);started=true;
  const url=new URL('postgresql://postgres@localhost/postgres');url.searchParams.set('host',socket);
- const result=spawnSync(process.execPath,process.argv.includes('--http')?['tests/render-http-smoke.mjs']:['tests/postgres-budget.test.mjs'],{stdio:'inherit',env:{...process.env,TEST_DATABASE_URL:url.toString()}});process.exitCode=result.status??1;
+ const result=spawnSync(process.execPath,process.argv.includes('--audit-preview')?['tests/audit-preview.mjs']:process.argv.includes('--audit-http')?['tests/audit-http-smoke.mjs']:process.argv.includes('--http')?['tests/render-http-smoke.mjs']:['tests/postgres-budget.test.mjs'],{stdio:'inherit',env:{...process.env,TEST_DATABASE_URL:url.toString()}});process.exitCode=result.status??1;
 }finally{if(started)run('pg_ctl',['-D',data,'-m','fast','-w','stop']);rmSync(root,{recursive:true,force:true})}

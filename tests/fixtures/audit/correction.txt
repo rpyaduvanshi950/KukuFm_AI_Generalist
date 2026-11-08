@@ -1,0 +1,3 @@
+Original receipt: INR 830.
+Correction: amount is INR 380.
+The correction replaces the original amount for the same payment.

@@ -1,6 +1,6 @@
 # Deploy Nyaya to Render
 
-The submission branch `main` uses standard Next.js on Node 22 and PostgreSQL. The existing Render service uses the separate `render-deploy` branch, which is left unchanged by this submission update. The earlier Cloudflare/Sites source remains in Git history at `c7f3986` (also retained as a local archive branch); this Node build is not a Sites Worker build.
+The submission branch `main` uses standard Next.js on Node 22 and PostgreSQL. The existing Render service uses `render-deploy`; both branches publish the same reviewed source. Check deployment completion and the live build identifier after a push. The earlier Cloudflare/Sites source remains in Git history at `c7f3986` (also retained as a local archive branch); this Node build is not a Sites Worker build.
 
 ## Render settings
 

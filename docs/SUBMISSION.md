@@ -3,7 +3,7 @@
 ## Review order
 
 1. Read the [README](../README.md) for setup, scope and safeguards.
-2. Open the [hosted demo](https://kukufm-ai-generalist.onrender.com/). It runs `render-deploy`; use `main` locally for the latest submission fixes.
+2. Open the [hosted demo](https://kukufm-ai-generalist.onrender.com/). It runs `render-deploy`. Both branches publish the reviewed source, but the live deployment can lag; check its build identifier.
 3. Try the refund journey below. It produces a factual request even without AI.
 4. Inspect [50 original inputs](../benchmarks/v5/cases.json), [raw final outputs](../benchmarks/v5/results/final.json), [historical report](../benchmarks/v5/REPORT.md) and [later regression](../benchmarks/submission/REPORT.md).
 
@@ -37,4 +37,4 @@ Voice and argument rehearsal are absent; the statement allows text **or** voice 
 
 ## Branches
 
-`main` is the submitted Node/Next.js/PostgreSQL app. The existing Render service remains on `render-deploy`; this update does not push that branch. Earlier Sites source remains at `c7f3986`. Secrets, real case records and the confidential Problem 1 input pack are outside this submission.
+`main` is the submitted Node/Next.js/PostgreSQL app. The existing Render service uses `render-deploy`; both branches publish the same reviewed source. A GitHub push does not itself verify successful deployment. Earlier Sites source remains at `c7f3986`. Secrets, real case records and the confidential Problem 1 input pack are outside this submission.

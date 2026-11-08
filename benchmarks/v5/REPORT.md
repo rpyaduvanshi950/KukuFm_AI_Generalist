@@ -49,7 +49,7 @@ Full failures and raw model text are preserved in the recorded development/final
 
 After recording the first final results, those three routing weaknesses were fixed. `post-final-routing.json` records four distinct, deterministic regression examples, including an active attack alongside a general-question phrase. This is **post-final regression evidence**, not another unseen evaluation. The release source hash differs from the evaluated final snapshot. The final scores above were not overwritten, regraded or advertised as measurements of the later release.
 
-The final automated software suite has 184 passing checks. These checks are not 183 independent legal cases. Manual browser checks cover the refund request, confirmation invalidation, consent, exports and quotation navigation; see the UI verification note for the observed outcome.
+The final automated software suite has 184 passing checks. These checks are not 184 independent legal cases. Manual browser checks cover the refund request, confirmation invalidation, consent, exports and quotation navigation; see the UI verification note for the observed outcome.
 
 ## Reviewer handoff and reproducibility
 

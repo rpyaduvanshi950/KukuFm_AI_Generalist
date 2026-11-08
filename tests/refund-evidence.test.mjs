@@ -30,7 +30,7 @@ test('sentence support uses known sources and exact reply statements',()=>{
 test('legal reference metadata comes from the library, never the model',()=>{
  const reply='NCH offers pre-litigation assistance.';
  const result=checkedAnswerSupport([{statement:reply,sourceId:'route',quote:cards[0].text,url:'https://attacker.example',checked:'2099-01-01'}],reply,input,cards,sources);
- assert.equal(result[0].url,sources[0].url);assert.equal(result[0].checked,'2026-11-07');assert.match(result[0].verification,/legal conclusion still need review/);
+ assert.equal(result[0].url,sources[0].url);assert.equal(result[0].checked,'2026-11-07');assert.match(result[0].verification,/Legal applicability and meaning need qualified review/);
  assert.equal(checkedAnswerSupport([{statement:reply,sourceId:'unknown',quote:cards[0].text}],reply,input,cards,sources).length,0);
 });
 test('user allegations stay labelled as user account, assistant messages cannot support facts',()=>{
@@ -44,7 +44,7 @@ test('invalid support is dropped without inventing replacement citations',()=>{
 });
 test('summary preserves matched support and its review limits',()=>{
  const text=lawyerBrief({facts,topic:'Refund',analysis:{answerSupport:[{statement:'The payment is pending.',kind:'document',name:'receipt.txt',quote:'Payment is pending.',verification:'Authenticity unverified.'}]}});
- assert.match(text,/SUPPORT FOR A RESPONSE SENTENCE/);assert.match(text,/Authenticity unverified/);
+ assert.match(text,/RELATED PASSAGE: SUPPORT NOT VERIFIED/);assert.match(text,/Authenticity unverified/);
 });
 
 test('a model cannot attach a link, date or fake jurisdiction to user-account evidence',()=>{
@@ -52,9 +52,9 @@ test('a model cannot attach a link, date or fake jurisdiction to user-account ev
  const entry={statement:reply,sourceId:'message-0',quote:'The seller promised a refund.',url:'https://attacker.example',checked:'2099-01-01',jurisdiction:'Everywhere'};
  const result=checkedAnswerSupport([entry],reply,input,cards,sources)[0];assert.equal(result.url,undefined);assert.equal(result.checked,undefined);assert.equal(result.jurisdiction,undefined);
 });
-test('an allowed official summary can support a sentence without a law card',()=>{
+test('a short official-summary fragment is omitted instead of claiming sentence support',()=>{
  const reply='NCH offers pre-litigation assistance.';
- assert.equal(checkedAnswerSupport([{statement:reply,sourceId:'nch',quote:sources[0].scope}],reply,input,[],sources)[0].kind,'legal_reference');
+ assert.deepEqual(checkedAnswerSupport([{statement:reply,sourceId:'nch',quote:sources[0].scope}],reply,input,[],sources),[]);
  assert.deepEqual(checkedAnswerSupport([{statement:reply,sourceId:'nch',quote:sources[0].scope}],reply,input,[],[]),[]);
 });
 
